@@ -6,20 +6,20 @@ import preprocess from 'svelte-preprocess';
 const config = {
 	preprocess: preprocess({
 		scss: { renderSync: true },
-	  }),
+	}),
 
 	kit: {
-		vite: {
+		/*vite: {
 			optimizeDeps: {
 				include: ['just-throttle', 'dayjs', '@fullcalendar/common']
 			},
 			resolve: {
 				dedupe: ['@fullcalendar/common']
 			},
-			ssr: {
-				external: ['@xstate/svelte']
-			}
-		},
+			//	ssr: {
+			//		external: ['@xstate/svelte']
+			//	}
+		},*/
 		adapter: adapter()
 	}
 };
