@@ -1,7 +1,6 @@
 <script>
+    import { browser } from "$app/environment";
     import Bar from "svelte-chartjs/src/Bar.svelte";
-    export let dataColors;
-    import { browser } from "$app/env";
 
     function getChartColorsArray(colors) {
         if (browser) {

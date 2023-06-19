@@ -1,7 +1,6 @@
 <script>
-	import {onMount} from 'svelte';
-	export let dataColors;
-	import { browser } from "$app/env";
+	import { browser } from "$app/environment";
+	import { onMount } from "svelte";
 
 	function getChartColorsArray(colors) {
 		if (browser) {
@@ -11,8 +10,7 @@
 					var color = getComputedStyle(
 						document.documentElement
 					).getPropertyValue(newValue);
-					if (color.indexOf("#") !== -1)
-						color = color.replace(" ", "");
+					if (color.indexOf("#") !== -1) color = color.replace(" ", "");
 					if (color) return color;
 					else return newValue;
 				} else {
@@ -46,15 +44,15 @@
 			{
 				name: "Males",
 				data: [
-					0.4, 0.65, 0.76, 0.88, 1.5, 2.1, 2.9, 3.8, 3.9, 4.2, 4, 4.3,
-					4.1, 4.2, 4.5, 3.9, 3.5, 3,
+					0.4, 0.65, 0.76, 0.88, 1.5, 2.1, 2.9, 3.8, 3.9, 4.2, 4, 4.3, 4.1, 4.2,
+					4.5, 3.9, 3.5, 3,
 				],
 			},
 			{
 				name: "Females",
 				data: [
-					-0.8, -1.05, -1.06, -1.18, -1.4, -2.2, -2.85, -3.7, -3.96,
-					-4.22, -4.3, -4.4, -4.1, -4, -4.1, -3.4, -3.1, -2.8,
+					-0.8, -1.05, -1.06, -1.18, -1.4, -2.2, -2.85, -3.7, -3.96, -4.22,
+					-4.3, -4.4, -4.1, -4, -4.1, -3.4, -3.1, -2.8,
 				],
 			},
 		],
@@ -141,9 +139,12 @@
 		},
 	};
 	onMount(() => {
-		const chart = new ApexCharts(document.querySelector("#negativebarchart"), options)
-  		chart.render()
-	})
+		const chart = new ApexCharts(
+			document.querySelector("#negativebarchart"),
+			options
+		);
+		chart.render();
+	});
 </script>
 
-<div id="negativebarchart" class="apex-charts" dir="ltr"></div>
+<div id="negativebarchart" class="apex-charts" dir="ltr" />

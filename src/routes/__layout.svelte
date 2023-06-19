@@ -1,7 +1,7 @@
 <script>
+	import { browser } from "$app/environment";
 	import { page } from "$app/stores";
 	import { onMount } from "svelte";
-	import { browser } from "$app/env";
 	const publicRoutes = [
 		"/authenticationInner/login/auth-signin-basic",
 		"/authenticationInner/login/auth-signin-cover",
@@ -35,10 +35,10 @@
 	import { addMessages, init } from "svelte-i18n";
 	import en from "../lang/en.json";
 
-	import Sidebar from "../Layouts/Sidebar.svelte";
-	import Header from "../Layouts/Header.svelte";
-	import Footer from "../Layouts/Footer.svelte";
 	import Rightbar from "../Components/Common/RightSidebar.svelte";
+	import Footer from "../Layouts/Footer.svelte";
+	import Header from "../Layouts/Header.svelte";
+	import Sidebar from "../Layouts/Sidebar.svelte";
 
 	let open = false;
 	let headerClass = "";
@@ -60,13 +60,13 @@
 		}, 350);
 	});
 	function scrollNavigation() {
-        var scrollup = document.documentElement.scrollTop;
-        if (scrollup > 50) {
-            headerClass = "topbar-shadow";
-        } else {
-            headerClass = "";
-        }
-    }
+		var scrollup = document.documentElement.scrollTop;
+		if (scrollup > 50) {
+			headerClass = "topbar-shadow";
+		} else {
+			headerClass = "";
+		}
+	}
 </script>
 
 <svelte:head>
@@ -74,20 +74,21 @@
 	<script src="//cdn.lordicon.com/xdjxvujz.js"></script>
 	<script src="//unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 	<script
-		src="//cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+		src="//cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"
+	></script>
 </svelte:head>
-	<div id="preloader">
-        <div id="status">
-            <div class="spinner-border text-primary avatar-sm" role="status">
-                <span class="visually-hidden">Loading...</span>
-            </div>
-        </div>
-    </div>
+<div id="preloader">
+	<div id="status">
+		<div class="spinner-border text-primary avatar-sm" role="status">
+			<span class="visually-hidden">Loading...</span>
+		</div>
+	</div>
+</div>
 {#if isPublic}
 	<slot />
 {:else}
 	<div id="layout-wrapper">
-		<Header headerClass={headerClass}/>
+		<Header {headerClass} />
 		<Sidebar {layoutType} />
 		<div class="main-content" id="maincontent">
 			<slot />

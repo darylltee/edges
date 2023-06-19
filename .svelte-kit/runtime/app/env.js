@@ -1,19 +1,19 @@
 export { prerendering } from '../env.js';
 
 /**
- * @type {import('$app/env').browser}
+ * @type {import('$app/environment').browser}
  */
 const browser = !import.meta.env.SSR;
 /**
- * @type {import('$app/env').dev}
+ * @type {import('$app/environment').dev}
  */
 const dev = !!import.meta.env.DEV;
 /**
- * @type {import('$app/env').mode}
+ * @type {import('$app/environment').mode}
  */
 const mode = import.meta.env.MODE;
 /**
- * @type {import('$app/env').amp}
+ * @type {import('$app/environment').amp}
  */
 const amp = !!import.meta.env.VITE_SVELTEKIT_AMP;
 

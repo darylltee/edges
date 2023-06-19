@@ -1,7 +1,6 @@
 <script>
-	import {onMount} from 'svelte';
-	export let dataColors;
-	import { browser } from "$app/env";
+	import { browser } from "$app/environment";
+	import { onMount } from "svelte";
 
 	function getChartColorsArray(colors) {
 		if (browser) {
@@ -11,8 +10,7 @@
 					var color = getComputedStyle(
 						document.documentElement
 					).getPropertyValue(newValue);
-					if (color.indexOf("#") !== -1)
-						color = color.replace(" ", "");
+					if (color.indexOf("#") !== -1) color = color.replace(" ", "");
 					if (color) return color;
 					else return newValue;
 				} else {
@@ -129,9 +127,7 @@
 		dataLabels: {
 			formatter: function (val, opt) {
 				var goals =
-					opt.w.config.series[opt.seriesIndex].data[
-						opt.dataPointIndex
-					].goals;
+					opt.w.config.series[opt.seriesIndex].data[opt.dataPointIndex].goals;
 
 				if (goals && goals.length) {
 					return `${val} / ${goals[0].value}`;
@@ -149,9 +145,12 @@
 		},
 	};
 	onMount(() => {
-		const chart = new ApexCharts(document.querySelector("#markerbarchart"), options)
-  		chart.render()
-	})
+		const chart = new ApexCharts(
+			document.querySelector("#markerbarchart"),
+			options
+		);
+		chart.render();
+	});
 </script>
 
-<div id="markerbarchart" class="apex-charts" dir="ltr"></div>
+<div id="markerbarchart" class="apex-charts" dir="ltr" />

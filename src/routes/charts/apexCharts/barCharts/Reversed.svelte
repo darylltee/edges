@@ -1,6 +1,6 @@
 <script>
-	import {onMount} from 'svelte';
-	import { browser } from "$app/env";
+	import { browser } from "$app/environment";
+	import { onMount } from "svelte";
 
 	export let dataColors;
 
@@ -12,8 +12,7 @@
 					var color = getComputedStyle(
 						document.documentElement
 					).getPropertyValue(newValue);
-					if (color.indexOf("#") !== -1)
-						color = color.replace(" ", "");
+					if (color.indexOf("#") !== -1) color = color.replace(" ", "");
 					if (color) return color;
 					else return newValue;
 				} else {
@@ -107,9 +106,12 @@
 		},
 	};
 	onMount(() => {
-		const chart = new ApexCharts(document.querySelector("#reversedchart"), options)
-  		chart.render()
-	})
+		const chart = new ApexCharts(
+			document.querySelector("#reversedchart"),
+			options
+		);
+		chart.render();
+	});
 </script>
 
-<div id="reversedchart" class="apex-charts" dir="ltr"></div>
+<div id="reversedchart" class="apex-charts" dir="ltr" />

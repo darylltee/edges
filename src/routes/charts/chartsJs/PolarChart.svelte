@@ -1,7 +1,6 @@
 <script>
+    import { browser } from "$app/environment";
     import Polar from "svelte-chartjs/src/Polar.svelte";
-    export let dataColors;
-    import { browser } from "$app/env";
 
     function getChartColorsArray(colors) {
         if (browser) {

@@ -16,7 +16,7 @@
     "@fullcalendar/common": "^5.11.3",
     "@fullcalendar/core": "^5.11.3",
     "@playwright/test": "^1.19.1",
-    "@sveltejs/adapter-auto": "next",
+    "@sveltejs/adapter-auto": "^2.0.0",
     "@sveltejs/kit": "^1.20.4",
     "@sveltejs/vite-plugin-svelte": "^2.4.1",
     "@typescript-eslint/eslint-plugin": "^5.10.1",
@@ -74,7 +74,7 @@
     "svelte-select": "^4.4.7",
     "svelte-slimscroll": "^1.0.6",
     "svelte-toasts": "^1.1.2",
-    "sveltestrap": "^5.9.0",
+    "sveltestrap": "^5.10.0",
     "swiper": "^8.4.3",
     "tsparticles": "^2.3.4",
     "yup": "^0.32.11"

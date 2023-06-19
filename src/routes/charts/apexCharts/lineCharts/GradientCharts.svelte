@@ -1,7 +1,6 @@
 <script>
-	import {onMount} from 'svelte';
-	export let dataColors;
-	import { browser } from "$app/env";
+	import { browser } from "$app/environment";
+	import { onMount } from "svelte";
 
 	function getChartColorsArray(colors) {
 		if (browser) {
@@ -11,8 +10,7 @@
 					var color = getComputedStyle(
 						document.documentElement
 					).getPropertyValue(newValue);
-					if (color.indexOf("#") !== -1)
-						color = color.replace(" ", "");
+					if (color.indexOf("#") !== -1) color = color.replace(" ", "");
 					if (color) return color;
 					else return newValue;
 				} else {
@@ -43,10 +41,7 @@
 		series: [
 			{
 				name: "Likes",
-				data: [
-					4, 3, 10, 9, 29, 19, 22, 9, 12, 7, 19, 5, 13, 9, 17, 2, 7,
-					5,
-				],
+				data: [4, 3, 10, 9, 29, 19, 22, 9, 12, 7, 19, 5, 13, 9, 17, 2, 7, 5],
 			},
 		],
 		stroke: {
@@ -114,9 +109,12 @@
 		},
 	};
 	onMount(() => {
-		const chart = new ApexCharts(document.querySelector("#gradientcharts"), options)
-  		chart.render()
-	})
+		const chart = new ApexCharts(
+			document.querySelector("#gradientcharts"),
+			options
+		);
+		chart.render();
+	});
 </script>
 
-<div id="gradientcharts" class="apex-charts" dir="ltr"></div>
+<div id="gradientcharts" class="apex-charts" dir="ltr" />

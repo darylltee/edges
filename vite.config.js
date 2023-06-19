@@ -14,6 +14,9 @@ export default defineConfig({
   //  },
   //  dedupe: ["svelte", "@fullcalendar/common", 'svelte-apexcharts']
   //},
+  ssr: {
+    noExternal: ['@carbon/charts', '@popperjs/core']
+  },
   plugins: [sveltekit()],
   optimizeDeps: {
     include: ['svelte-apexcharts']

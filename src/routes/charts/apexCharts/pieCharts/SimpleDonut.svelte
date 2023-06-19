@@ -1,7 +1,6 @@
 <script>
-    import {onMount} from 'svelte';
-    export let dataColors;
-    import { browser } from "$app/env";
+    import { browser } from "$app/environment";
+    import { onMount } from "svelte";
 
     function getChartColorsArray(colors) {
         if (browser) {
@@ -48,10 +47,13 @@
         },
         colors: chartDonutBasicColors,
     };
-	onMount(() => {
-		const chart = new ApexCharts(document.querySelector("#simpledountpiechart"), options)
-  		chart.render()
-	})
+    onMount(() => {
+        const chart = new ApexCharts(
+            document.querySelector("#simpledountpiechart"),
+            options
+        );
+        chart.render();
+    });
 </script>
 
-<div id="simpledountpiechart" class="apex-charts" dir="ltr"></div>
+<div id="simpledountpiechart" class="apex-charts" dir="ltr" />

@@ -1,28 +1,28 @@
 <script>
-    import { browser } from "$app/env";
+    import { browser } from "$app/environment";
     import { onMount } from "svelte";
+    import Link from "svelte-link";
     import { Collapse, Container, NavbarToggler, NavLink } from "sveltestrap";
     import LogoDark from "../../../assets/images/logo-dark.png";
     import LogoLight from "../../../assets/images/logo-light.png";
-    import Link from 'svelte-link';
-    var navClass = '';
-    let isOpen = true
-    const toggle = () => isOpen = !isOpen;
+    var navClass = "";
+    let isOpen = true;
+    const toggle = () => (isOpen = !isOpen);
 
     onMount(() => {
         if (browser) {
             window.addEventListener("scroll", scrollNavigation, true);
         }
     });
-    
+
     const scrollNavigation = () => {
-    var scrollup = document.documentElement.scrollTop;
-    if (scrollup > 50) {
-      navClass = " is-sticky";
-    } else {
-        navClass = '';
-    }
-  };
+        var scrollup = document.documentElement.scrollTop;
+        if (scrollup > 50) {
+            navClass = " is-sticky";
+        } else {
+            navClass = "";
+        }
+    };
 </script>
 
 <nav
@@ -59,10 +59,7 @@
         </NavbarToggler>
 
         <Collapse class="navbar-collapse" id="navbarSupportedContent" {isOpen}>
-            <nav
-                class="navbar-nav mx-auto mt-2 mt-lg-0"
-                id="navbar-example"
-            >
+            <nav class="navbar-nav mx-auto mt-2 mt-lg-0" id="navbar-example">
                 <li class="nav-item">
                     <NavLink class="fs-16" href="#hero">Home</NavLink>
                 </li>
@@ -88,7 +85,10 @@
             </nav>
 
             <div>
-                <Link href="/authenticationInner/login/auth-signin-basic" class="btn btn-soft-danger">
+                <Link
+                    href="/authenticationInner/login/auth-signin-basic"
+                    class="btn btn-soft-danger"
+                >
                     <i class="ri-user-3-line align-bottom me-1" /> Login & Register
                 </Link>
             </div>

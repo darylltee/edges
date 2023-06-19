@@ -1,7 +1,6 @@
 <script>
+    import { browser } from "$app/environment";
     import { onMount } from "svelte";
-    export let dataColors;
-    import { browser } from "$app/env";
     function getChartColorsArray(colors) {
         if (browser) {
             return colors.map(function (value) {

@@ -1,7 +1,6 @@
 <script>
+	import { browser } from "$app/environment";
 	import { onMount } from "svelte";
-	export let dataColors;
-	import { browser } from "$app/env";
 
 	function getChartColorsArray(colors) {
 		if (browser) {
@@ -11,8 +10,7 @@
 					var color = getComputedStyle(
 						document.documentElement
 					).getPropertyValue(newValue);
-					if (color.indexOf("#") !== -1)
-						color = color.replace(" ", "");
+					if (color.indexOf("#") !== -1) color = color.replace(" ", "");
 					if (color) return color;
 					else return newValue;
 				} else {
@@ -37,8 +35,7 @@
 		while (i < count) {
 			var x = (i + 1).toString();
 			var y =
-				Math.floor(Math.random() * (yrange.max - yrange.min + 1)) +
-				yrange.min;
+				Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
 
 			series.push({
 				x: x,
@@ -164,7 +161,10 @@
 				},
 			},
 		};
-		const chart = new ApexCharts(document.querySelector("#rangewithoutshades"),options);
+		const chart = new ApexCharts(
+			document.querySelector("#rangewithoutshades"),
+			options
+		);
 		chart.render();
 	});
 </script>

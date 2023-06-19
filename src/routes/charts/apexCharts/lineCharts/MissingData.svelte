@@ -1,7 +1,6 @@
 <script>
-	import {onMount} from 'svelte';
-	export let dataColors;
-	import { browser } from "$app/env";
+	import { browser } from "$app/environment";
+	import { onMount } from "svelte";
 
 	function getChartColorsArray(colors) {
 		if (browser) {
@@ -11,8 +10,7 @@
 					var color = getComputedStyle(
 						document.documentElement
 					).getPropertyValue(newValue);
-					if (color.indexOf("#") !== -1)
-						color = color.replace(" ", "");
+					if (color.indexOf("#") !== -1) color = color.replace(" ", "");
 					if (color) return color;
 					else return newValue;
 				} else {
@@ -47,24 +45,7 @@
 		series: [
 			{
 				name: "Peter",
-				data: [
-					5,
-					5,
-					10,
-					8,
-					7,
-					5,
-					4,
-					null,
-					null,
-					null,
-					10,
-					10,
-					7,
-					8,
-					6,
-					9,
-				],
+				data: [5, 5, 10, 8, 7, 5, 4, null, null, null, 10, 10, 7, 8, 6, 9],
 			},
 			{
 				name: "Johnny",
@@ -124,9 +105,12 @@
 		colors: MissingDataColors,
 	};
 	onMount(() => {
-		const chart = new ApexCharts(document.querySelector("#MissingData"), options)
-  		chart.render()
-	})
+		const chart = new ApexCharts(
+			document.querySelector("#MissingData"),
+			options
+		);
+		chart.render();
+	});
 </script>
 
-<div id="MissingData" class="apex-charts" dir="ltr"></div>
+<div id="MissingData" class="apex-charts" dir="ltr" />

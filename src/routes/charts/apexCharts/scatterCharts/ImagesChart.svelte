@@ -1,9 +1,8 @@
 <script>
-	import {onMount} from 'svelte';
-	export let dataColors;
+	import { browser } from "$app/environment";
+	import { onMount } from "svelte";
 	import avatar1 from "../../../../assets/images/users/avatar-1.jpg";
 	import avatar2 from "../../../../assets/images/users/avatar-2.jpg";
-	import { browser } from "$app/env";
 	function getChartColorsArray(colors) {
 		if (browser) {
 			return colors.map(function (value) {
@@ -12,8 +11,7 @@
 					var color = getComputedStyle(
 						document.documentElement
 					).getPropertyValue(newValue);
-					if (color.indexOf("#") !== -1)
-						color = color.replace(" ", "");
+					if (color.indexOf("#") !== -1) color = color.replace(" ", "");
 					if (color) return color;
 					else return newValue;
 				} else {
@@ -125,9 +123,12 @@
 		},
 	};
 	onMount(() => {
-		const chart = new ApexCharts(document.querySelector("#imagesscatterchart"), options)
-  		chart.render()
-	})
+		const chart = new ApexCharts(
+			document.querySelector("#imagesscatterchart"),
+			options
+		);
+		chart.render();
+	});
 </script>
 
-<div id="imagesscatterchart" class="apex-charts" dir="ltr"></div>
+<div id="imagesscatterchart" class="apex-charts" dir="ltr" />

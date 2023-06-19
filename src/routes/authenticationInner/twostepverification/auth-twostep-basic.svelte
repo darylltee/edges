@@ -1,9 +1,17 @@
 <script>
+	import { browser } from "$app/environment";
 	import Link from "svelte-link";
-	import { Card, CardBody, Col, Container, Row, Button,Label } from "sveltestrap";
-	import ParticlesAuth from "../ParticlesAuth.svelte";
+	import {
+		Button,
+		Card,
+		CardBody,
+		Col,
+		Container,
+		Label,
+		Row,
+	} from "sveltestrap";
 	import logoLight from "../../../assets/images/logo-light.png";
-	import { browser } from "$app/env";
+	import ParticlesAuth from "../ParticlesAuth.svelte";
 
 	const moveToNext = (value, count) => {
 		if (browser) {
@@ -27,10 +35,7 @@
 					<Col lg={12}>
 						<div class="text-center mt-sm-5 mb-4 text-white-50">
 							<div>
-								<Link
-									href="/dashboard"
-									class="d-inline-block auth-logo"
-								>
+								<Link href="/dashboard" class="d-inline-block auth-logo">
 									<img src={logoLight} alt="" height="20" />
 								</Link>
 							</div>
@@ -47,7 +52,8 @@
 							<CardBody class="p-4">
 								<div class="mb-4">
 									<div class="avatar-lg mx-auto">
-										<div class="avatar-title bg-light text-primary display-5 rounded-circle"
+										<div
+											class="avatar-title bg-light text-primary display-5 rounded-circle"
 										>
 											<i class="ri-mail-line" />
 										</div>
@@ -55,13 +61,11 @@
 								</div>
 
 								<div class="p-2 mt-4">
-									<div class="text-muted text-center mb-4 mx-lg-3"
-									>
+									<div class="text-muted text-center mb-4 mx-lg-3">
 										<h4 class="">Verify Your Email</h4>
 										<p>
-											Please enter the 4 digit code sent
-											to <span class="fw-semibold"
-												>example@abc.com</span
+											Please enter the 4 digit code sent to <span
+												class="fw-semibold">example@abc.com</span
 											>
 										</p>
 									</div>
@@ -70,21 +74,14 @@
 										<Row>
 											<Col class="col-3">
 												<div class="mb-3">
-													<Label
-														for="digit1-input"
-														class="visually-hidden"
+													<Label for="digit1-input" class="visually-hidden"
 														>Dight 1</Label
 													>
 													<input
 														type="text"
 														class="form-control form-control-lg bg-light border-light text-center"
-														on:keyup={({
-															target: { value },
-														}) =>
-															moveToNext(
-																value,
-																2
-															)}
+														on:keyup={({ target: { value } }) =>
+															moveToNext(value, 2)}
 														maxLength="1"
 														id="digit1-input"
 													/>
@@ -93,21 +90,14 @@
 
 											<Col class="col-3">
 												<div class="mb-3">
-													<Label
-														for="digit2-input"
-														class="visually-hidden"
+													<Label for="digit2-input" class="visually-hidden"
 														>Dight 2</Label
 													>
 													<input
 														type="text"
 														class="form-control form-control-lg bg-light border-light text-center"
-														on:keyup={({
-															target: { value },
-														}) =>
-															moveToNext(
-																value,
-																3
-															)}
+														on:keyup={({ target: { value } }) =>
+															moveToNext(value, 3)}
 														maxLength="1"
 														id="digit2-input"
 													/>
@@ -116,21 +106,14 @@
 
 											<Col class="col-3">
 												<div class="mb-3">
-													<Label
-														for="digit3-input"
-														class="visually-hidden"
+													<Label for="digit3-input" class="visually-hidden"
 														>Dight 3</Label
 													>
 													<input
 														type="text"
 														class="form-control form-control-lg bg-light border-light text-center"
-														on:keyup={({
-															target: { value },
-														}) =>
-															moveToNext(
-																value,
-																4
-															)}
+														on:keyup={({ target: { value } }) =>
+															moveToNext(value, 4)}
 														maxLength="1"
 														id="digit3-input"
 													/>
@@ -139,21 +122,14 @@
 
 											<Col class="col-3">
 												<div class="mb-3">
-													<Label
-														for="digit4-input"
-														class="visually-hidden"
+													<Label for="digit4-input" class="visually-hidden"
 														>Dight 4</Label
 													>
 													<input
 														type="text"
 														class="form-control form-control-lg bg-light border-light text-center"
-														on:keyup={({
-															target: { value },
-														}) =>
-															moveToNext(
-																value,
-																4
-															)}
+														on:keyup={({ target: { value } }) =>
+															moveToNext(value, 4)}
 														maxLength="1"
 														id="digit4-input"
 													/>
@@ -162,9 +138,7 @@
 										</Row>
 									</form>
 									<div class="mt-3">
-										<Button color="success" class="w-100"
-											>Confirm</Button
-										>
+										<Button color="success" class="w-100">Confirm</Button>
 									</div>
 								</div>
 							</CardBody>

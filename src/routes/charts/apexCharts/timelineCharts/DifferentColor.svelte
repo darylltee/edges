@@ -1,9 +1,9 @@
 <script>
-	import { onMount } from "svelte";
 	import dayjs from "dayjs";
+	import { onMount } from "svelte";
 	export let dataColors;
 
-	import { browser } from "$app/env";
+	import { browser } from "$app/environment";
 	function getChartColorsArray(colors) {
 		if (browser) {
 			return colors.map(function (value) {
@@ -12,8 +12,7 @@
 					var color = getComputedStyle(
 						document.documentElement
 					).getPropertyValue(newValue);
-					if (color.indexOf("#") !== -1)
-						color = color.replace(" ", "");
+					if (color.indexOf("#") !== -1) color = color.replace(" ", "");
 					if (color) return color;
 					else return newValue;
 				} else {

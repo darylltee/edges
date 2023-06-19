@@ -1,7 +1,6 @@
 <script>
-    import {onMount} from 'svelte';
-    export let dataColors;
-    import { browser } from "$app/env";
+    import { browser } from "$app/environment";
+    import { onMount } from "svelte";
 
     function getChartColorsArray(colors) {
         if (browser) {
@@ -36,23 +35,27 @@
     var options = {
         labels: ["New Application", "Approved", "Rejected"],
         chart: {
-        height: 300,
-        type: "donut",
+            height: 300,
+            type: "donut",
         },
         series: series,
         legend: {
-        position: "bottom",
+            position: "bottom",
         },
         dataLabels: {
-        dropShadow: {
-            enabled: false,
-        },
+            dropShadow: {
+                enabled: false,
+            },
         },
         colors: chartDonutBasicColors,
     };
     onMount(() => {
-		const chart = new ApexCharts(document.querySelector("#appsummarychart"), options)
-  		chart.render()
-	})
+        const chart = new ApexCharts(
+            document.querySelector("#appsummarychart"),
+            options
+        );
+        chart.render();
+    });
 </script>
-<div id="appsummarychart" class="apex-charts" dir="ltr"></div>
+
+<div id="appsummarychart" class="apex-charts" dir="ltr" />

@@ -1,8 +1,6 @@
 <script>
+    import { browser } from "$app/environment";
     import Radar from "svelte-chartjs/src/Radar.svelte";
-
-    export let dataColors;
-    import { browser } from "$app/env";
 
     function getChartColorsArray(colors) {
         if (browser) {

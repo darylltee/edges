@@ -1,7 +1,6 @@
 <script>
+	import { browser } from "$app/environment";
 	import { onMount } from "svelte";
-	export let dataColors;
-	import { browser } from "$app/env";
 	function getChartColorsArray(colors) {
 		if (browser) {
 			return colors.map(function (value) {
@@ -10,8 +9,7 @@
 					var color = getComputedStyle(
 						document.documentElement
 					).getPropertyValue(newValue);
-					if (color.indexOf("#") !== -1)
-						color = color.replace(" ", "");
+					if (color.indexOf("#") !== -1) color = color.replace(" ", "");
 					if (color) return color;
 					else return newValue;
 				} else {
@@ -51,8 +49,8 @@
 					name: "Revenue",
 					type: "area",
 					data: [
-						89.25, 98.58, 68.74, 108.87, 77.54, 84.03, 51.24, 28.57,
-						92.57, 42.36, 88.51, 36.57,
+						89.25, 98.58, 68.74, 108.87, 77.54, 84.03, 51.24, 28.57, 92.57,
+						42.36, 88.51, 36.57,
 					],
 				},
 				{

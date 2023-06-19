@@ -1,9 +1,17 @@
 <script>
-    import {Card,CardBody,CardHeader,Col,DropdownItem,DropdownMenu,DropdownToggle,Dropdown,} from "sveltestrap";
+    import {
+        Card,
+        CardBody,
+        CardHeader,
+        Col,
+        Dropdown,
+        DropdownItem,
+        DropdownMenu,
+        DropdownToggle,
+    } from "sveltestrap";
 
-	import {onMount} from 'svelte';
-	export let dataColors;
-	import { browser } from "$app/env";
+    import { browser } from "$app/environment";
+    import { onMount } from "svelte";
 
     function getChartColorsArray(colors) {
         if (browser) {
@@ -92,10 +100,12 @@
     };
 
     onMount(() => {
-		const chart = new ApexCharts(document.querySelector("#jobsummary"), options)
-  		chart.render()
-	})
-
+        const chart = new ApexCharts(
+            document.querySelector("#jobsummary"),
+            options
+        );
+        chart.render();
+    });
 </script>
 
 <Col xxl={8} md={6}>
@@ -129,7 +139,7 @@
             </div>
         </CardHeader>
         <CardBody class="card-body px-0">
-            <div id="jobsummary" class="apex-charts" dir="ltr"></div>
+            <div id="jobsummary" class="apex-charts" dir="ltr" />
         </CardBody>
     </Card>
 </Col>

@@ -1,7 +1,6 @@
 <script>
-	import {onMount} from 'svelte';
-	export let dataColors;
-	import { browser } from "$app/env";
+	import { browser } from "$app/environment";
+	import { onMount } from "svelte";
 
 	function getChartColorsArray(colors) {
 		if (browser) {
@@ -11,8 +10,7 @@
 					var color = getComputedStyle(
 						document.documentElement
 					).getPropertyValue(newValue);
-					if (color.indexOf("#") !== -1)
-						color = color.replace(" ", "");
+					if (color.indexOf("#") !== -1) color = color.replace(" ", "");
 					if (color) return color;
 					else return newValue;
 				} else {
@@ -44,9 +42,7 @@
 		series: [
 			{
 				name: "Inflation",
-				data: [
-					2.5, 3.2, 5.0, 10.1, 4.2, 3.8, 3, 2.4, 4.0, 1.2, 3.5, 0.8,
-				],
+				data: [2.5, 3.2, 5.0, 10.1, 4.2, 3.8, 3, 2.4, 4.0, 1.2, 3.5, 0.8],
 			},
 		],
 		plotOptions: {
@@ -151,9 +147,12 @@
 		},
 	};
 	onMount(() => {
-		const chart = new ApexCharts(document.querySelector("#columnwithlabel"), options)
-  		chart.render()
-	})
+		const chart = new ApexCharts(
+			document.querySelector("#columnwithlabel"),
+			options
+		);
+		chart.render();
+	});
 </script>
 
-<div id="columnwithlabel" class="apex-charts" dir="ltr"></div>
+<div id="columnwithlabel" class="apex-charts" dir="ltr" />

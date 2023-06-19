@@ -1,11 +1,11 @@
 <script>
+	import { browser } from "$app/environment";
+	import { page } from "$app/stores";
 	import { onMount } from "svelte";
+	import { _ } from "svelte-i18n";
+	import Link from "svelte-link";
 	import { Col, Collapse, Row } from "sveltestrap";
 	import data from "./LayoutMenuData";
-	import Link from "svelte-link";
-	import { _ } from "svelte-i18n";
-	import { browser } from "$app/env";
-	import { page } from "$app/stores";
 
 	const navData = data.Navdata;
 	let pathName = "";
@@ -108,8 +108,8 @@
 				if (parentElementDiv) {
 					parentElementDiv.classList.add("active");
 					var parentElementSibling =
-						parentElementDiv.parentElement.parentElement
-							.parentElement.previousElementSibling;
+						parentElementDiv.parentElement.parentElement.parentElement
+							.previousElementSibling;
 					if (parentElementSibling)
 						parentElementSibling.classList.add("active");
 				}
@@ -144,9 +144,12 @@
 		});
 	};
 </script>
+
 <svelte:head>
 	<script src="//unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
-	<script src="//cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
+	<script
+		src="//cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"
+	></script>
 </svelte:head>
 
 {#each menuItems as item}
@@ -179,8 +182,7 @@
 												<Link
 													href={subItem.link}
 													class="nav-link"
-													on:click={callInitMenu}
-													>{$_(subItem.label)}</Link
+													on:click={callInitMenu}>{$_(subItem.label)}</Link
 												>
 											</li>
 										</ul>
@@ -192,8 +194,7 @@
 												<Link
 													href={subItem.link}
 													class="nav-link"
-													on:click={callInitMenu}
-													>{$_(subItem.label)}</Link
+													on:click={callInitMenu}>{$_(subItem.label)}</Link
 												>
 											</li>
 										</ul>
@@ -208,9 +209,7 @@
 									<li class="nav-item">
 										<Link
 											on:click={callInitMenu}
-											href={subItem.link
-												? subItem.link
-												: "/#"}
+											href={subItem.link ? subItem.link : "/#"}
 											class="nav-link"
 										>
 											{$_(subItem.label)}
@@ -220,7 +219,7 @@
 									<li class="nav-item">
 										<Link
 											class="nav-link not"
-											href="{null}"
+											href={null}
 											id={subItem.stateVariables}
 											data-bs-toggle="collapse"
 											on:click={callInitMenu}
@@ -236,9 +235,7 @@
 												{#if subItem.childItems}
 													{#each subItem.childItems as subChildItem}
 														{#if !subChildItem.isChildItem}
-															<li
-																class="nav-item"
-															>
+															<li class="nav-item">
 																<Link
 																	href={subChildItem.link
 																		? subChildItem.link
@@ -246,39 +243,29 @@
 																	on:click={callInitMenu}
 																	class="nav-link not open"
 																>
-																	{$_(
-																		subChildItem.label
-																	)}
+																	{$_(subChildItem.label)}
 																</Link>
 															</li>
 														{:else}
-															<li
-																class="nav-item"
-															>
+															<li class="nav-item">
 																<Link
 																	class="nav-link iopen"
-																	href="{null}"
+																	href={null}
 																	data-bs-toggle="collapse"
 																	id={subChildItem.stateVariables}
 																	on:click={callInitMenu}
 																>
-																	{$_(
-																		subChildItem.label
-																	)}
+																	{$_(subChildItem.label)}
 																</Link>
 																<Collapse
 																	class="menu-dropdown"
 																	toggler="#{subChildItem.stateVariables}"
 																	isOpen={subChildItem.stateVariables}
 																>
-																	<ul
-																		class="nav nav-sm flex-column"
-																	>
+																	<ul class="nav nav-sm flex-column">
 																		{#if subChildItem.childItems}
 																			{#each subChildItem.childItems as subSubChildItem}
-																				<li
-																					class="nav-item apex"
-																				>
+																				<li class="nav-item apex">
 																					<Link
 																						on:click={callInitMenu}
 																						href={subSubChildItem.link
@@ -286,9 +273,7 @@
 																							: "/#"}
 																						class="nav-link"
 																					>
-																						{$_(
-																							subSubChildItem.label
-																						)}
+																						{$_(subSubChildItem.label)}
 																					</Link>
 																				</li>
 																			{/each}
@@ -310,10 +295,7 @@
 			</li>
 		{:else}
 			<li class="nav-item">
-				<Link
-					class="nav-link menu-link"
-					href={item.link ? item.link : "/#"}
-				>
+				<Link class="nav-link menu-link" href={item.link ? item.link : "/#"}>
 					<i class={item.icon} /> <span>{$_(item.label)}</span>
 				</Link>
 			</li>

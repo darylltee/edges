@@ -1,6 +1,6 @@
 <script>
-	import {onMount} from 'svelte';
-	import { browser } from "$app/env";
+	import { browser } from "$app/environment";
+	import { onMount } from "svelte";
 	export let dataColors;
 
 	function getChartColorsArray(colors) {
@@ -11,8 +11,7 @@
 					var color = getComputedStyle(
 						document.documentElement
 					).getPropertyValue(newValue);
-					if (color.indexOf("#") !== -1)
-						color = color.replace(" ", "");
+					if (color.indexOf("#") !== -1) color = color.replace(" ", "");
 					if (color) return color;
 					else return newValue;
 				} else {
@@ -110,9 +109,12 @@
 		colors: chartStackedBarColors,
 	};
 	onMount(() => {
-		const chart = new ApexCharts(document.querySelector("#stackedchart"), options)
-  		chart.render()
-	})
+		const chart = new ApexCharts(
+			document.querySelector("#stackedchart"),
+			options
+		);
+		chart.render();
+	});
 </script>
 
-<div id="stackedchart" class="apex-charts" dir="ltr"></div>
+<div id="stackedchart" class="apex-charts" dir="ltr" />

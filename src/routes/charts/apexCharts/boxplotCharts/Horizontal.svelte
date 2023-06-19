@@ -1,6 +1,6 @@
 <script>
+    import { browser } from "$app/environment";
     import { onMount } from "svelte";
-    import { browser } from "$app/env";
 
     export let dataColors;
 

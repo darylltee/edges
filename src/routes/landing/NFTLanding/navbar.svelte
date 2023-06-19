@@ -1,5 +1,5 @@
 <script>
-    import { browser } from "$app/env";
+    import { browser } from "$app/environment";
     import Link from "svelte-link";
     import { Collapse, Container, NavbarToggler, NavLink } from "sveltestrap";
     // Import Images

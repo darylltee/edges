@@ -1,35 +1,33 @@
 <script>
-	import {onMount} from 'svelte';
+	import { browser } from "$app/environment";
+	import { onMount } from "svelte";
 	import { Card, CardBody, CardHeader, Col, Row } from "sveltestrap";
-    export let dataColors;
-    import { browser } from "$app/env";
-    function getChartColorsArray(colors) {
-        if (browser) {
-            return colors.map(function (value) {
-                var newValue = value.replace(" ", "");
-                if (newValue.indexOf(",") === -1) {
-                    var color = getComputedStyle(
-                        document.documentElement
-                    ).getPropertyValue(newValue);
-                    if (color.indexOf("#") !== -1)
-                        color = color.replace(" ", "");
-                    if (color) return color;
-                    else return newValue;
-                } else {
-                    var val = value.split(",");
-                    if (val.length === 2) {
-                        var rgbaColor = getComputedStyle(
-                            document.documentElement
-                        ).getPropertyValue(val[0]);
-                        rgbaColor = "rgba(" + rgbaColor + "," + val[1] + ")";
-                        return rgbaColor;
-                    } else {
-                        return newValue;
-                    }
-                }
-            });
-        }
-    }
+	function getChartColorsArray(colors) {
+		if (browser) {
+			return colors.map(function (value) {
+				var newValue = value.replace(" ", "");
+				if (newValue.indexOf(",") === -1) {
+					var color = getComputedStyle(
+						document.documentElement
+					).getPropertyValue(newValue);
+					if (color.indexOf("#") !== -1) color = color.replace(" ", "");
+					if (color) return color;
+					else return newValue;
+				} else {
+					var val = value.split(",");
+					if (val.length === 2) {
+						var rgbaColor = getComputedStyle(
+							document.documentElement
+						).getPropertyValue(val[0]);
+						rgbaColor = "rgba(" + rgbaColor + "," + val[1] + ")";
+						return rgbaColor;
+					} else {
+						return newValue;
+					}
+				}
+			});
+		}
+	}
 	var seriesdata = [
 		{
 			data: [
@@ -276,73 +274,76 @@
 			],
 		},
 	];
-	
+
 	onMount(() => {
-	var MarketchartColors = getChartColorsArray(dataColors);
+		var MarketchartColors = getChartColorsArray(dataColors);
 
 		var options = {
-		chart: {
-			type: "candlestick",
-			height: 360,
-			toolbar: {
-				show: false,
-			},
-		},
-		series: seriesdata,
-		plotOptions: {
-			candlestick: {
-				colors: {
-					upward: MarketchartColors[0],
-					downward: MarketchartColors[1],
+			chart: {
+				type: "candlestick",
+				height: 360,
+				toolbar: {
+					show: false,
 				},
 			},
-		},
-		xaxis: {
-			type: "datetime",
-		},
-		yaxis: {
+			series: seriesdata,
+			plotOptions: {
+				candlestick: {
+					colors: {
+						upward: MarketchartColors[0],
+						downward: MarketchartColors[1],
+					},
+				},
+			},
+			xaxis: {
+				type: "datetime",
+			},
+			yaxis: {
+				tooltip: {
+					enabled: true,
+				},
+				labels: {
+					formatter: function (value) {
+						return "$" + value;
+					},
+				},
+			},
 			tooltip: {
-				enabled: true,
+				shared: true,
+				y: [
+					{
+						formatter: function (y) {
+							if (typeof y !== "undefined") {
+								return y.toFixed(0);
+							}
+							return y;
+						},
+					},
+					{
+						formatter: function (y) {
+							if (typeof y !== "undefined") {
+								return "$" + y.toFixed(2) + "k";
+							}
+							return y;
+						},
+					},
+					{
+						formatter: function (y) {
+							if (typeof y !== "undefined") {
+								return y.toFixed(0) + " Sales";
+							}
+							return y;
+						},
+					},
+				],
 			},
-			labels: {
-				formatter: function (value) {
-					return "$" + value;
-				},
-			},
-		},
-		tooltip: {
-			shared: true,
-			y: [
-				{
-					formatter: function (y) {
-						if (typeof y !== "undefined") {
-							return y.toFixed(0);
-						}
-						return y;
-					},
-				},
-				{
-					formatter: function (y) {
-						if (typeof y !== "undefined") {
-							return "$" + y.toFixed(2) + "k";
-						}
-						return y;
-					},
-				},
-				{
-					formatter: function (y) {
-						if (typeof y !== "undefined") {
-							return y.toFixed(0) + " Sales";
-						}
-						return y;
-					},
-				},
-			],
-		},
-	};
-		const chart = new ApexCharts(document.querySelector("#marketgraph"), options)
-  		chart.render()
-	})
+		};
+		const chart = new ApexCharts(
+			document.querySelector("#marketgraph"),
+			options
+		);
+		chart.render();
+	});
 </script>
 
 <Col xxl={9}>
@@ -350,33 +351,19 @@
 		<CardHeader class="border-0 align-items-center d-flex">
 			<h4 class="card-title mb-0 flex-grow-1">Market Graph</h4>
 			<div>
-				<button
-					type="button"
-					class="btn btn-soft-secondary btn-sm me-1"
-				>
+				<button type="button" class="btn btn-soft-secondary btn-sm me-1">
 					1H
 				</button>
-				<button
-					type="button"
-					class="btn btn-soft-secondary btn-sm me-1"
-				>
+				<button type="button" class="btn btn-soft-secondary btn-sm me-1">
 					7D
 				</button>
-				<button
-					type="button"
-					class="btn btn-soft-secondary btn-sm me-1"
-				>
+				<button type="button" class="btn btn-soft-secondary btn-sm me-1">
 					1M
 				</button>
-				<button
-					type="button"
-					class="btn btn-soft-secondary btn-sm me-1"
-				>
+				<button type="button" class="btn btn-soft-secondary btn-sm me-1">
 					1Y
 				</button>
-				<button type="button" class="btn btn-soft-primary btn-sm">
-					ALL
-				</button>
+				<button type="button" class="btn btn-soft-primary btn-sm"> ALL </button>
 			</div>
 		</CardHeader>
 		<CardBody class="p-0">
@@ -388,18 +375,11 @@
 						<div class="d-flex flex-wrap gap-4 align-items-center">
 							<div>
 								<h3 class="fs-19">
-									$46,959.<small class="fs-14 text-muted"
-										>00</small
-									>
+									$46,959.<small class="fs-14 text-muted">00</small>
 								</h3>
-								<p
-									class="text-muted text-uppercase fw-medium mb-0"
-								>
-									Bitcoin (BTC) <small
-										class="badge badge-soft-success"
-										><i
-											class="ri-arrow-right-up-line align-bottom"
-										/> 2.15%</small
+								<p class="text-muted text-uppercase fw-medium mb-0">
+									Bitcoin (BTC) <small class="badge badge-soft-success"
+										><i class="ri-arrow-right-up-line align-bottom" /> 2.15%</small
 									>
 								</p>
 							</div>
@@ -407,24 +387,20 @@
 					</Col>
 					<Col xs={6}>
 						<div class="d-flex">
-							<div 		class="d-flex justify-content-end text-end flex-wrap gap-4 ms-auto">
+							<div
+								class="d-flex justify-content-end text-end flex-wrap gap-4 ms-auto"
+							>
 								<div class="pe-3">
 									<h6 class="mb-2 text-muted">High</h6>
-									<h5 class="text-success mb-0">
-										$28,722.76
-									</h5>
+									<h5 class="text-success mb-0">$28,722.76</h5>
 								</div>
 								<div class="pe-3">
 									<h6 class="mb-2 text-muted">Low</h6>
 									<h5 class="text-danger mb-0">$68,789.63</h5>
 								</div>
 								<div>
-									<h6 class="mb-2 text-muted">
-										Market Volume
-									</h6>
-									<h5 class="text-danger mb-0">
-										$888,411,910
-									</h5>
+									<h6 class="mb-2 text-muted">Market Volume</h6>
+									<h5 class="text-danger mb-0">$888,411,910</h5>
 								</div>
 							</div>
 						</div>
@@ -434,8 +410,7 @@
 		</CardBody>
 		<CardBody class="p-0 pb-3">
 			<div dir="ltr">
-				<div id="marketgraph" class="apex-charts" dir="ltr"></div>
-
+				<div id="marketgraph" class="apex-charts" dir="ltr" />
 			</div>
 		</CardBody>
 	</Card>

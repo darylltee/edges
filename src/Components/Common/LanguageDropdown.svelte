@@ -1,14 +1,14 @@
 <script>
+	import { browser } from "$app/environment";
 	import {
 		Dropdown,
-		DropdownToggle,
-		DropdownMenu,
 		DropdownItem,
+		DropdownMenu,
+		DropdownToggle,
 	} from "sveltestrap";
-	import { setupI18n } from "../../services/i18n";
+	import usimg from "../../assets/images/flags/us.svg";
 	import languages from "../../common/data/languages";
-	import { browser } from "$app/env";
-	import usimg from '../../assets/images/flags/us.svg'
+	import { setupI18n } from "../../services/i18n";
 
 	export let selectedLang = browser
 		? localStorage.getItem("I18N_LANGUAGE") || "en"
@@ -47,12 +47,7 @@
 					selectedLang === language.value ? "active" : "none"
 				}`}
 			>
-				<img
-					src={language.flag}
-					alt="Skote"
-					class="me-2 rounded"
-					height="18"
-				/>
+				<img src={language.flag} alt="Skote" class="me-2 rounded" height="18" />
 				<span class="align-middle">
 					{language.label}
 				</span>

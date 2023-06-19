@@ -1,7 +1,7 @@
 <script>
-	import { Col, Row, Button } from "sveltestrap";
+	import { browser } from "$app/environment";
 	import Flatpickr from "svelte-flatpickr";
-	import { browser } from "$app/env";
+	import { Button, Col, Row } from "sveltestrap";
 
 	function sidebar() {
 		if (browser) {
@@ -30,34 +30,28 @@
 									options={{
 										mode: "range",
 										dateFormat: "d M, Y",
-										defaultDate: [
-											"01 Jan 2022",
-											"31 Jan 2022",
-										],
+										defaultDate: ["01 Jan 2022", "31 Jan 2022"],
 									}}
 								/>
-								<div class="input-group-text bg-primary border-primary text-white"
+								<div
+									class="input-group-text bg-primary border-primary text-white"
 								>
 									<i class="ri-calendar-2-line" />
 								</div>
 							</div>
 						</div>
 						<div class="col-auto">
-							<Button
-								type="button"
-								color=""
-								class="btn btn-soft-primary"
-								><i
-									class="ri-add-circle-line align-middle me-1"
-								/> Add Product</Button>
+							<Button type="button" color="" class="btn btn-soft-primary"
+								><i class="ri-add-circle-line align-middle me-1" /> Add Product</Button
+							>
 						</div>
 						<div class="col-auto">
 							<Button
 								type="button"
 								color=""
 								class="btn btn-soft-secondary btn-icon waves-effect waves-light layout-rightside-btn"
-								on:click={sidebar}
-								><i class="ri-pulse-line" /></Button>
+								on:click={sidebar}><i class="ri-pulse-line" /></Button
+							>
 						</div>
 					</Row>
 				</form>

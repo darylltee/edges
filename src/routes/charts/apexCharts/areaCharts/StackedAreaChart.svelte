@@ -1,19 +1,16 @@
 <script>
-	import {onMount} from 'svelte';
-	export let dataColors;
-	import { browser } from "$app/env";
+	import { browser } from "$app/environment";
+	import { onMount } from "svelte";
 
 	function getChartColorsArray(colors) {
 		if (browser) {
-			
 			return colors.map(function (value) {
 				var newValue = value.replace(" ", "");
 				if (newValue.indexOf(",") === -1) {
 					var color = getComputedStyle(
 						document.documentElement
 					).getPropertyValue(newValue);
-					if (color.indexOf("#") !== -1)
-						color = color.replace(" ", "");
+					if (color.indexOf("#") !== -1) color = color.replace(" ", "");
 					if (color) return color;
 					else return newValue;
 				} else {
@@ -40,8 +37,7 @@
 		while (i < count) {
 			var x = baseval;
 			var y =
-				Math.floor(Math.random() * (yrange.max - yrange.min + 1)) +
-				yrange.min;
+				Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
 
 			series.push([x, y]);
 			baseval += 86400000;
@@ -122,9 +118,12 @@
 		},
 	};
 	onMount(() => {
-		const chart = new ApexCharts(document.querySelector("#stackedareachart"), options)
-  		chart.render()
-	})
+		const chart = new ApexCharts(
+			document.querySelector("#stackedareachart"),
+			options
+		);
+		chart.render();
+	});
 </script>
 
-<div id="stackedareachart" class="apex-charts" dir="ltr"></div>
+<div id="stackedareachart" class="apex-charts" dir="ltr" />

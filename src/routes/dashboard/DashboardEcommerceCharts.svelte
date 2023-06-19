@@ -1,7 +1,6 @@
 <script>
-    import {onMount} from 'svelte';
-    export let dataColors;
-    import { browser } from "$app/env";
+    import { browser } from "$app/environment";
+    import { onMount } from "svelte";
     function getChartColorsArray(colors) {
         if (browser) {
             return colors.map(function (value) {
@@ -168,10 +167,13 @@
             ],
         },
     };
-	onMount(() => {
-		const chart = new ApexCharts(document.querySelector("#dashboardecommercechart"), options)
-  		chart.render()
-	})
+    onMount(() => {
+        const chart = new ApexCharts(
+            document.querySelector("#dashboardecommercechart"),
+            options
+        );
+        chart.render();
+    });
 </script>
 
-<div id="dashboardecommercechart" class="apex-charts" dir="ltr"></div>
+<div id="dashboardecommercechart" class="apex-charts" dir="ltr" />

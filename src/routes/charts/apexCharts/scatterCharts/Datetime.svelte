@@ -1,8 +1,7 @@
 <script>
-	import {onMount} from 'svelte';
+	import { browser } from "$app/environment";
+	import { onMount } from "svelte";
 	import allseries from "../series";
-	export let dataColors;
-	import { browser } from "$app/env";
 
 	function getChartColorsArray(colors) {
 		if (browser) {
@@ -12,8 +11,7 @@
 					var color = getComputedStyle(
 						document.documentElement
 					).getPropertyValue(newValue);
-					if (color.indexOf("#") !== -1)
-						color = color.replace(" ", "");
+					if (color.indexOf("#") !== -1) color = color.replace(" ", "");
 					if (color) return color;
 					else return newValue;
 				} else {
@@ -39,8 +37,7 @@
 		var series = [];
 		while (i < count) {
 			var y =
-				Math.floor(Math.random() * (yrange.max - yrange.min + 1)) +
-				yrange.min;
+				Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
 
 			series.push([baseval, y]);
 			baseval += 86400000;
@@ -141,9 +138,12 @@
 		colors: chartScatterDateTimeColors,
 	};
 	onMount(() => {
-		const chart = new ApexCharts(document.querySelector("#datetimescatterchart"), options)
-  		chart.render()
-	})
+		const chart = new ApexCharts(
+			document.querySelector("#datetimescatterchart"),
+			options
+		);
+		chart.render();
+	});
 </script>
 
-<div id="datetimescatterchart" class="apex-charts" dir="ltr"></div>
+<div id="datetimescatterchart" class="apex-charts" dir="ltr" />

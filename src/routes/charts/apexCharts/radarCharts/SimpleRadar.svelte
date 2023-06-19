@@ -1,7 +1,6 @@
 <script>
-    import {onMount} from 'svelte';
-    export let dataColors;
-    import { browser } from "$app/env";
+    import { browser } from "$app/environment";
+    import { onMount } from "svelte";
 
     function getChartColorsArray(colors) {
         if (browser) {
@@ -59,10 +58,13 @@
             ],
         },
     };
-	onMount(() => {
-		const chart = new ApexCharts(document.querySelector("#simpleradarchart"), options)
-  		chart.render()
-	})
+    onMount(() => {
+        const chart = new ApexCharts(
+            document.querySelector("#simpleradarchart"),
+            options
+        );
+        chart.render();
+    });
 </script>
 
-<div id="simpleradarchart" class="apex-charts" dir="ltr"></div>
+<div id="simpleradarchart" class="apex-charts" dir="ltr" />

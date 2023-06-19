@@ -1,11 +1,10 @@
 <script>
-	import {onMount} from 'svelte';
+	import { browser } from "$app/environment";
+	import { onMount } from "svelte";
 	import allseries from "../series";
-	import { browser } from "$app/env";
 	export let dataColors;
 
 	function getChartColorsArray(colors) {
-		
 		if (browser) {
 			return colors.map(function (value) {
 				var newValue = value.replace(" ", "");
@@ -13,8 +12,7 @@
 					var color = getComputedStyle(
 						document.documentElement
 					).getPropertyValue(newValue);
-					if (color.indexOf("#") !== -1)
-						color = color.replace(" ", "");
+					if (color.indexOf("#") !== -1) color = color.replace(" ", "");
 					if (color) return color;
 					else return newValue;
 				} else {
@@ -47,9 +45,7 @@
 			events: {
 				mounted: function (chart) {
 					if (browser) {
-						var commitsEl = document.querySelector(
-							".cmeta span.commits"
-						);
+						var commitsEl = document.querySelector(".cmeta span.commits");
 						var commits = chart.getSeriesTotalXRange(
 							chart.w.globals.minX,
 							chart.w.globals.maxX
@@ -60,9 +56,7 @@
 				},
 				updated: function (chart) {
 					if (browser) {
-						var commitsEl = document.querySelector(
-							".cmeta span.commits"
-						);
+						var commitsEl = document.querySelector(".cmeta span.commits");
 						var commits = chart.getSeriesTotalXRange(
 							chart.w.globals.minX,
 							chart.w.globals.maxX
@@ -100,9 +94,12 @@
 		},
 	};
 	onMount(() => {
-		const chart = new ApexCharts(document.querySelector("#githubstylechart"), options)
-  		chart.render()
-	})
+		const chart = new ApexCharts(
+			document.querySelector("#githubstylechart"),
+			options
+		);
+		chart.render();
+	});
 </script>
 
-<div id="githubstylechart" class="apex-charts" dir="ltr"></div>
+<div id="githubstylechart" class="apex-charts" dir="ltr" />

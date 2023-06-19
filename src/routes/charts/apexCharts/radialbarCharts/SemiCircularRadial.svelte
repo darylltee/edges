@@ -1,7 +1,6 @@
 <script>
-	import {onMount} from 'svelte';
-	export let dataColors;
-	import { browser } from "$app/env";
+	import { browser } from "$app/environment";
+	import { onMount } from "svelte";
 
 	function getChartColorsArray(colors) {
 		if (browser) {
@@ -11,8 +10,7 @@
 					var color = getComputedStyle(
 						document.documentElement
 					).getPropertyValue(newValue);
-					if (color.indexOf("#") !== -1)
-						color = color.replace(" ", "");
+					if (color.indexOf("#") !== -1) color = color.replace(" ", "");
 					if (color) return color;
 					else return newValue;
 				} else {
@@ -90,9 +88,12 @@
 		colors: chartStorkeRadialbarColors,
 	};
 	onMount(() => {
-		const chart = new ApexCharts(document.querySelector("#semicircleradialchart"), options)
-  		chart.render()
-	})
+		const chart = new ApexCharts(
+			document.querySelector("#semicircleradialchart"),
+			options
+		);
+		chart.render();
+	});
 </script>
 
-<div id="semicircleradialchart" class="apex-charts" dir="ltr"></div>
+<div id="semicircleradialchart" class="apex-charts" dir="ltr" />

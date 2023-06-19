@@ -1,7 +1,6 @@
 <script>
-    import {onMount} from 'svelte';
-    export let dataColors;
-    import { browser } from "$app/env";
+    import { browser } from "$app/environment";
+    import { onMount } from "svelte";
 
     function getChartColorsArray(colors) {
         if (browser) {
@@ -50,10 +49,13 @@
         },
         colors: chartPieBasicColors,
     };
-	onMount(() => {
-		const chart = new ApexCharts(document.querySelector("#simplepiechart"), options)
-  		chart.render()
-	})
+    onMount(() => {
+        const chart = new ApexCharts(
+            document.querySelector("#simplepiechart"),
+            options
+        );
+        chart.render();
+    });
 </script>
 
-<div id="simplepiechart" class="apex-charts" dir="ltr"></div>
+<div id="simplepiechart" class="apex-charts" dir="ltr" />

@@ -1,11 +1,7 @@
 <script>
+	import { browser } from "$app/environment";
 	import { onMount } from "svelte";
-	export let open = false;
-	import { Label,Collapse} from "sveltestrap";
-	import { browser } from "$app/env";
-
-	export let layoutType;
-
+	import { Collapse, Label } from "sveltestrap";
 	//import Images
 	import img01 from "../../assets/images/sidebar/img-1.jpg";
 	import img02 from "../../assets/images/sidebar/img-2.jpg";
@@ -21,7 +17,7 @@
 	let leftSidebarViewType = "default";
 	let leftSidebarTypes = "gradient";
 	let leftSidebarImageTypes = "none";
-	
+
 	let isOpen = false;
 
 	function topFunction() {
@@ -71,10 +67,7 @@
 	}
 	function changeLayoutPosition(value) {
 		if (document.documentElement)
-			document.documentElement.setAttribute(
-				"data-layout-position",
-				value
-			);
+			document.documentElement.setAttribute("data-layout-position", value);
 	}
 	function changeTopbarTheme(value) {
 		if (document.documentElement)
@@ -120,7 +113,7 @@
 	</button>
 	<div class="customizer-setting d-none d-md-block">
 		<a
-			href="{null}"
+			href={null}
 			class="btn-primary btn-rounded shadow-lg btn btn-icon btn-lg p-2"
 			on:click={() => (open = !open)}
 		>
@@ -148,10 +141,7 @@
 		<div class="offcanvas-body p-0">
 			<div data-simplebar class="h-100">
 				<div class="p-4">
-
-					<h6 class="mt-4 mb-0 fw-semibold text-uppercase">
-						Color Scheme
-					</h6>
+					<h6 class="mt-4 mb-0 fw-semibold text-uppercase">Color Scheme</h6>
 					<p class="text-muted">Choose Light or Dark Scheme.</p>
 
 					<div class="colorscheme-cardradio">
@@ -165,10 +155,7 @@
 										id="layout-mode-light"
 										value="light"
 										on:change={() =>
-											changeBodyAttribute(
-												"data-layout-mode",
-												"light"
-											)}
+											changeBodyAttribute("data-layout-mode", "light")}
 										checked={layoutModeType == "light"}
 									/>
 									<Label
@@ -183,27 +170,15 @@
 													<span
 														class="d-block p-1 px-2 bg-soft-primary rounded mb-2"
 													/>
-													<span
-														class="d-block p-1 px-2 pb-0 bg-soft-primary"
-													/>
-													<span
-														class="d-block p-1 px-2 pb-0 bg-soft-primary"
-													/>
-													<span
-														class="d-block p-1 px-2 pb-0 bg-soft-primary"
-													/>
+													<span class="d-block p-1 px-2 pb-0 bg-soft-primary" />
+													<span class="d-block p-1 px-2 pb-0 bg-soft-primary" />
+													<span class="d-block p-1 px-2 pb-0 bg-soft-primary" />
 												</span>
 											</span>
 											<span class="flex-grow-1">
-												<span
-													class="d-flex h-100 flex-column"
-												>
-													<span
-														class="bg-light d-block p-1"
-													/>
-													<span
-														class="bg-light d-block p-1 mt-auto"
-													/>
+												<span class="d-flex h-100 flex-column">
+													<span class="bg-light d-block p-1" />
+													<span class="bg-light d-block p-1 mt-auto" />
 												</span>
 											</span>
 										</span>
@@ -221,10 +196,7 @@
 										id="layout-mode-dark"
 										value="dark"
 										on:change={() =>
-											changeBodyAttribute(
-												"data-layout-mode",
-												"dark"
-											)}
+											changeBodyAttribute("data-layout-mode", "dark")}
 										checked={layoutModeType == "dark"}
 									/>
 									<Label
@@ -239,27 +211,15 @@
 													<span
 														class="d-block p-1 px-2 bg-soft-light rounded mb-2"
 													/>
-													<span
-														class="d-block p-1 px-2 pb-0 bg-soft-light"
-													/>
-													<span
-														class="d-block p-1 px-2 pb-0 bg-soft-light"
-													/>
-													<span
-														class="d-block p-1 px-2 pb-0 bg-soft-light"
-													/>
+													<span class="d-block p-1 px-2 pb-0 bg-soft-light" />
+													<span class="d-block p-1 px-2 pb-0 bg-soft-light" />
+													<span class="d-block p-1 px-2 pb-0 bg-soft-light" />
 												</span>
 											</span>
 											<span class="flex-grow-1">
-												<span
-													class="d-flex h-100 flex-column"
-												>
-													<span
-														class="bg-soft-light d-block p-1"
-													/>
-													<span
-														class="bg-soft-light d-block p-1 mt-auto"
-													/>
+												<span class="d-flex h-100 flex-column">
+													<span class="bg-soft-light d-block p-1" />
+													<span class="bg-soft-light d-block p-1 mt-auto" />
 												</span>
 											</span>
 										</span>
@@ -271,12 +231,8 @@
 					</div>
 					{#if layoutType !== "twocolumn"}
 						<div id="layout-width">
-							<h6 class="mt-4 mb-0 fw-semibold text-uppercase">
-								Layout Width
-							</h6>
-							<p class="text-muted">
-								Choose Fluid or Boxed layout.
-							</p>
+							<h6 class="mt-4 mb-0 fw-semibold text-uppercase">Layout Width</h6>
+							<p class="text-muted">Choose Fluid or Boxed layout.</p>
 
 							<div class="row">
 								<div class="col-4">
@@ -288,10 +244,7 @@
 											id="layout-width-fluid"
 											value="lg"
 											on:change={() =>
-												changeBodyAttribute(
-													"data-layout-width",
-													"lg"
-												)}
+												changeBodyAttribute("data-layout-width", "lg")}
 											checked={layoutWidthType == "lg"}
 										/>
 										<Label
@@ -318,23 +271,15 @@
 													</span>
 												</span>
 												<span class="flex-grow-1">
-													<span
-														class="d-flex h-100 flex-column"
-													>
-														<span
-															class="bg-light d-block p-1"
-														/>
-														<span
-															class="bg-light d-block p-1 mt-auto"
-														/>
+													<span class="d-flex h-100 flex-column">
+														<span class="bg-light d-block p-1" />
+														<span class="bg-light d-block p-1 mt-auto" />
 													</span>
 												</span>
 											</span>
 										</Label>
 									</div>
-									<h5 class="fs-13 text-center mt-2">
-										Fluid
-									</h5>
+									<h5 class="fs-13 text-center mt-2">Fluid</h5>
 								</div>
 								<div class="col-4">
 									<div class="form-check card-radio">
@@ -345,19 +290,14 @@
 											id="layout-width-boxed"
 											value="boxed"
 											on:change={() =>
-												changeBodyAttribute(
-													"data-layout-width",
-													"boxed"
-												)}
+												changeBodyAttribute("data-layout-width", "boxed")}
 											checked={layoutWidthType == "boxed"}
 										/>
 										<Label
 											class="form-check-label p-0 avatar-md w-100 px-2"
 											for="layout-width-boxed"
 										>
-											<span
-												class="d-flex gap-1 h-100 border-start border-end"
-											>
+											<span class="d-flex gap-1 h-100 border-start border-end">
 												<span class="flex-shrink-0">
 													<span
 														class="bg-light d-flex h-100 flex-column gap-1 p-1"
@@ -377,23 +317,15 @@
 													</span>
 												</span>
 												<span class="flex-grow-1">
-													<span
-														class="d-flex h-100 flex-column"
-													>
-														<span
-															class="bg-light d-block p-1"
-														/>
-														<span
-															class="bg-light d-block p-1 mt-auto"
-														/>
+													<span class="d-flex h-100 flex-column">
+														<span class="bg-light d-block p-1" />
+														<span class="bg-light d-block p-1 mt-auto" />
 													</span>
 												</span>
 											</span>
 										</Label>
 									</div>
-									<h5 class="fs-13 text-center mt-2">
-										Boxed
-									</h5>
+									<h5 class="fs-13 text-center mt-2">Boxed</h5>
 								</div>
 							</div>
 						</div>
@@ -414,15 +346,11 @@
 									id="layout-position-fixed"
 									value="fixed"
 									on:change={() =>
-										changeBodyAttribute(
-											"data-layout-width",
-											"fixed"
-										)}
+										changeBodyAttribute("data-layout-width", "fixed")}
 									checked={layoutPositionType == "fixed"}
 								/>
-								<Label
-									class="btn btn-light w-sm"
-									for="layout-position-fixed">Fixed</Label
+								<Label class="btn btn-light w-sm" for="layout-position-fixed"
+									>Fixed</Label
 								>
 
 								<input
@@ -432,24 +360,18 @@
 									id="layout-position-scrollable"
 									value="scrollable"
 									on:change={() =>
-										changeBodyAttribute(
-											"data-layout-width",
-											"scrollable"
-										)}
+										changeBodyAttribute("data-layout-width", "scrollable")}
 									checked={layoutPositionType == "scrollable"}
 								/>
 								<Label
 									class="btn btn-light w-sm ms-0"
-									for="layout-position-scrollable"
-									>Scrollable</Label
+									for="layout-position-scrollable">Scrollable</Label
 								>
 							</div>
 						</div>
 					{/if}
 
-					<h6 class="mt-4 mb-0 fw-semibold text-uppercase">
-						Topbar Color
-					</h6>
+					<h6 class="mt-4 mb-0 fw-semibold text-uppercase">Topbar Color</h6>
 					<p class="text-muted">Choose Light or Dark Topbar Color.</p>
 
 					<div class="row">
@@ -461,11 +383,7 @@
 									name="data-topbar"
 									id="topbar-color-light"
 									value="light"
-									on:change={() =>
-										changeBodyAttribute(
-											"data-topbar",
-											"light"
-										)}
+									on:change={() => changeBodyAttribute("data-topbar", "light")}
 									checked={topbarThemeType == "light"}
 								/>
 								<Label
@@ -474,33 +392,19 @@
 								>
 									<span class="d-flex gap-1 h-100">
 										<span class="flex-shrink-0">
-											<span
-												class="bg-light d-flex h-100 flex-column gap-1 p-1"
-											>
+											<span class="bg-light d-flex h-100 flex-column gap-1 p-1">
 												<span
 													class="d-block p-1 px-2 bg-soft-primary rounded mb-2"
 												/>
-												<span
-													class="d-block p-1 px-2 pb-0 bg-soft-primary"
-												/>
-												<span
-													class="d-block p-1 px-2 pb-0 bg-soft-primary"
-												/>
-												<span
-													class="d-block p-1 px-2 pb-0 bg-soft-primary"
-												/>
+												<span class="d-block p-1 px-2 pb-0 bg-soft-primary" />
+												<span class="d-block p-1 px-2 pb-0 bg-soft-primary" />
+												<span class="d-block p-1 px-2 pb-0 bg-soft-primary" />
 											</span>
 										</span>
 										<span class="flex-grow-1">
-											<span
-												class="d-flex h-100 flex-column"
-											>
-												<span
-													class="bg-light d-block p-1"
-												/>
-												<span
-													class="bg-light d-block p-1 mt-auto"
-												/>
+											<span class="d-flex h-100 flex-column">
+												<span class="bg-light d-block p-1" />
+												<span class="bg-light d-block p-1 mt-auto" />
 											</span>
 										</span>
 									</span>
@@ -516,11 +420,7 @@
 									name="data-topbar"
 									id="topbar-color-dark"
 									value="dark"
-									on:change={() =>
-										changeBodyAttribute(
-											"data-topbar",
-											"dark"
-										)}
+									on:change={() => changeBodyAttribute("data-topbar", "dark")}
 									checked={topbarThemeType == "dark"}
 								/>
 								<Label
@@ -529,33 +429,19 @@
 								>
 									<span class="d-flex gap-1 h-100">
 										<span class="flex-shrink-0">
-											<span
-												class="bg-light d-flex h-100 flex-column gap-1 p-1"
-											>
+											<span class="bg-light d-flex h-100 flex-column gap-1 p-1">
 												<span
 													class="d-block p-1 px-2 bg-soft-primary rounded mb-2"
 												/>
-												<span
-													class="d-block p-1 px-2 pb-0 bg-soft-primary"
-												/>
-												<span
-													class="d-block p-1 px-2 pb-0 bg-soft-primary"
-												/>
-												<span
-													class="d-block p-1 px-2 pb-0 bg-soft-primary"
-												/>
+												<span class="d-block p-1 px-2 pb-0 bg-soft-primary" />
+												<span class="d-block p-1 px-2 pb-0 bg-soft-primary" />
+												<span class="d-block p-1 px-2 pb-0 bg-soft-primary" />
 											</span>
 										</span>
 										<span class="flex-grow-1">
-											<span
-												class="d-flex h-100 flex-column"
-											>
-												<span
-													class="bg-primary d-block p-1"
-												/>
-												<span
-													class="bg-light d-block p-1 mt-auto"
-												/>
+											<span class="d-flex h-100 flex-column">
+												<span class="bg-primary d-block p-1" />
+												<span class="bg-light d-block p-1 mt-auto" />
 											</span>
 										</span>
 									</span>
@@ -566,15 +452,12 @@
 					</div>
 					{#if layoutType === "vertical"}
 						<div id="sidebar-size">
-							<h6 class="mt-4 mb-0 fw-semibold text-uppercase">
-								Sidebar Size
-							</h6>
+							<h6 class="mt-4 mb-0 fw-semibold text-uppercase">Sidebar Size</h6>
 							<p class="text-muted">Choose a size of Sidebar.</p>
 
 							<div class="row">
 								<div class="col-4">
-									<div class="form-check sidebar-setting card-radio"
-									>
+									<div class="form-check sidebar-setting card-radio">
 										<input
 											class="form-check-input"
 											type="radio"
@@ -582,10 +465,7 @@
 											id="sidebar-size-default"
 											value="lg"
 											on:change={() =>
-												changeBodyAttribute(
-													"data-sidebar-size",
-													"lg"
-												)}
+												changeBodyAttribute("data-sidebar-size", "lg")}
 											checked={leftsidbarSizeType == "lg"}
 										/>
 										<Label
@@ -612,28 +492,19 @@
 													</span>
 												</span>
 												<span class="flex-grow-1">
-													<span
-														class="d-flex h-100 flex-column"
-													>
-														<span
-															class="bg-light d-block p-1"
-														/>
-														<span
-															class="bg-light d-block p-1 mt-auto"
-														/>
+													<span class="d-flex h-100 flex-column">
+														<span class="bg-light d-block p-1" />
+														<span class="bg-light d-block p-1 mt-auto" />
 													</span>
 												</span>
 											</span>
 										</Label>
 									</div>
-									<h5 class="fs-13 text-center mt-2">
-										Default
-									</h5>
+									<h5 class="fs-13 text-center mt-2">Default</h5>
 								</div>
 
 								<div class="col-4">
-									<div class="form-check sidebar-setting card-radio"
-									>
+									<div class="form-check sidebar-setting card-radio">
 										<input
 											class="form-check-input"
 											type="radio"
@@ -641,10 +512,7 @@
 											id="sidebar-size-compact"
 											value="md"
 											on:change={() =>
-												changeBodyAttribute(
-													"data-sidebar-size",
-													"md"
-												)}
+												changeBodyAttribute("data-sidebar-size", "md")}
 											checked={leftsidbarSizeType == "md"}
 										/>
 										<Label
@@ -659,40 +527,25 @@
 														<span
 															class="d-block p-1 bg-soft-primary rounded mb-2"
 														/>
-														<span
-															class="d-block p-1 pb-0 bg-soft-primary"
-														/>
-														<span
-															class="d-block p-1 pb-0 bg-soft-primary"
-														/>
-														<span
-															class="d-block p-1 pb-0 bg-soft-primary"
-														/>
+														<span class="d-block p-1 pb-0 bg-soft-primary" />
+														<span class="d-block p-1 pb-0 bg-soft-primary" />
+														<span class="d-block p-1 pb-0 bg-soft-primary" />
 													</span>
 												</span>
 												<span class="flex-grow-1">
-													<span
-														class="d-flex h-100 flex-column"
-													>
-														<span
-															class="bg-light d-block p-1"
-														/>
-														<span
-															class="bg-light d-block p-1 mt-auto"
-														/>
+													<span class="d-flex h-100 flex-column">
+														<span class="bg-light d-block p-1" />
+														<span class="bg-light d-block p-1 mt-auto" />
 													</span>
 												</span>
 											</span>
 										</Label>
 									</div>
-									<h5 class="fs-13 text-center mt-2">
-										Compact
-									</h5>
+									<h5 class="fs-13 text-center mt-2">Compact</h5>
 								</div>
 
 								<div class="col-4">
-									<div class="form-check sidebar-setting card-radio"
-									>
+									<div class="form-check sidebar-setting card-radio">
 										<input
 											class="form-check-input"
 											type="radio"
@@ -700,10 +553,7 @@
 											id="sidebar-size-small"
 											value="sm"
 											on:change={() =>
-												changeBodyAttribute(
-													"data-sidebar-size",
-													"sm"
-												)}
+												changeBodyAttribute("data-sidebar-size", "sm")}
 											checked={leftsidbarSizeType == "sm"}
 										/>
 										<Label
@@ -712,46 +562,27 @@
 										>
 											<span class="d-flex gap-1 h-100">
 												<span class="flex-shrink-0">
-													<span
-														class="bg-light d-flex h-100 flex-column gap-1"
-													>
-														<span
-															class="d-block p-1 bg-soft-primary mb-2"
-														/>
-														<span
-															class="d-block p-1 pb-0 bg-soft-primary"
-														/>
-														<span
-															class="d-block p-1 pb-0 bg-soft-primary"
-														/>
-														<span
-															class="d-block p-1 pb-0 bg-soft-primary"
-														/>
+													<span class="bg-light d-flex h-100 flex-column gap-1">
+														<span class="d-block p-1 bg-soft-primary mb-2" />
+														<span class="d-block p-1 pb-0 bg-soft-primary" />
+														<span class="d-block p-1 pb-0 bg-soft-primary" />
+														<span class="d-block p-1 pb-0 bg-soft-primary" />
 													</span>
 												</span>
 												<span class="flex-grow-1">
-													<span
-														class="d-flex h-100 flex-column"
-													>
-														<span
-															class="bg-light d-block p-1"
-														/>
-														<span
-															class="bg-light d-block p-1 mt-auto"
-														/>
+													<span class="d-flex h-100 flex-column">
+														<span class="bg-light d-block p-1" />
+														<span class="bg-light d-block p-1 mt-auto" />
 													</span>
 												</span>
 											</span>
 										</Label>
 									</div>
-									<h5 class="fs-13 text-center mt-2">
-										Small (Icon View)
-									</h5>
+									<h5 class="fs-13 text-center mt-2">Small (Icon View)</h5>
 								</div>
 
 								<div class="col-4">
-									<div class="form-check sidebar-setting card-radio"
-									>
+									<div class="form-check sidebar-setting card-radio">
 										<input
 											class="form-check-input"
 											type="radio"
@@ -759,12 +590,8 @@
 											id="sidebar-size-small-hover"
 											value="sm-hover"
 											on:change={() =>
-												changeBodyAttribute(
-													"data-sidebar-size",
-													"sm-hover"
-												)}
-											checked={leftsidbarSizeType ==
-												"sm-hover"}
+												changeBodyAttribute("data-sidebar-size", "sm-hover")}
+											checked={leftsidbarSizeType == "sm-hover"}
 										/>
 										<Label
 											class="form-check-label p-0 avatar-md w-100"
@@ -772,57 +599,34 @@
 										>
 											<span class="d-flex gap-1 h-100">
 												<span class="flex-shrink-0">
-													<span
-														class="bg-light d-flex h-100 flex-column gap-1"
-													>
-														<span
-															class="d-block p-1 bg-soft-primary mb-2"
-														/>
-														<span
-															class="d-block p-1 pb-0 bg-soft-primary"
-														/>
-														<span
-															class="d-block p-1 pb-0 bg-soft-primary"
-														/>
-														<span
-															class="d-block p-1 pb-0 bg-soft-primary"
-														/>
+													<span class="bg-light d-flex h-100 flex-column gap-1">
+														<span class="d-block p-1 bg-soft-primary mb-2" />
+														<span class="d-block p-1 pb-0 bg-soft-primary" />
+														<span class="d-block p-1 pb-0 bg-soft-primary" />
+														<span class="d-block p-1 pb-0 bg-soft-primary" />
 													</span>
 												</span>
 												<span class="flex-grow-1">
-													<span
-														class="d-flex h-100 flex-column"
-													>
-														<span
-															class="bg-light d-block p-1"
-														/>
-														<span
-															class="bg-light d-block p-1 mt-auto"
-														/>
+													<span class="d-flex h-100 flex-column">
+														<span class="bg-light d-block p-1" />
+														<span class="bg-light d-block p-1 mt-auto" />
 													</span>
 												</span>
 											</span>
 										</Label>
 									</div>
-									<h5 class="fs-13 text-center mt-2">
-										Small Hover View
-									</h5>
+									<h5 class="fs-13 text-center mt-2">Small Hover View</h5>
 								</div>
 							</div>
 						</div>
 
 						<div id="sidebar-view">
-							<h6 class="mt-4 mb-0 fw-semibold text-uppercase">
-								Sidebar View
-							</h6>
-							<p class="text-muted">
-								Choose Default or Detached Sidebar view.
-							</p>
+							<h6 class="mt-4 mb-0 fw-semibold text-uppercase">Sidebar View</h6>
+							<p class="text-muted">Choose Default or Detached Sidebar view.</p>
 
 							<div class="row">
 								<div class="col-4">
-									<div class="form-check sidebar-setting card-radio"
-									>
+									<div class="form-check sidebar-setting card-radio">
 										<input
 											class="form-check-input"
 											type="radio"
@@ -830,12 +634,8 @@
 											id="sidebar-view-default"
 											value="default"
 											on:change={() =>
-												changeBodyAttribute(
-													"data-layout-style",
-													"default"
-												)}
-											checked={leftSidebarViewType ==
-												"default"}
+												changeBodyAttribute("data-layout-style", "default")}
+											checked={leftSidebarViewType == "default"}
 										/>
 										<Label
 											class="form-check-label p-0 avatar-md w-100"
@@ -861,27 +661,18 @@
 													</span>
 												</span>
 												<span class="flex-grow-1">
-													<span
-														class="d-flex h-100 flex-column"
-													>
-														<span
-															class="bg-light d-block p-1"
-														/>
-														<span
-															class="bg-light d-block p-1 mt-auto"
-														/>
+													<span class="d-flex h-100 flex-column">
+														<span class="bg-light d-block p-1" />
+														<span class="bg-light d-block p-1 mt-auto" />
 													</span>
 												</span>
 											</span>
 										</Label>
 									</div>
-									<h5 class="fs-13 text-center mt-2">
-										Default
-									</h5>
+									<h5 class="fs-13 text-center mt-2">Default</h5>
 								</div>
 								<div class="col-4">
-									<div class="form-check sidebar-setting card-radio"
-									>
+									<div class="form-check sidebar-setting card-radio">
 										<input
 											class="form-check-input"
 											type="radio"
@@ -889,20 +680,14 @@
 											id="sidebar-view-detached"
 											value="detached"
 											on:change={() =>
-												changeBodyAttribute(
-													"data-layout-style",
-													"detached"
-												)}
-											checked={leftSidebarViewType ==
-												"detached"}
+												changeBodyAttribute("data-layout-style", "detached")}
+											checked={leftSidebarViewType == "detached"}
 										/>
 										<Label
 											class="form-check-label p-0 avatar-md w-100"
 											for="sidebar-view-detached"
 										>
-											<span
-												class="d-flex h-100 flex-column"
-											>
+											<span class="d-flex h-100 flex-column">
 												<span
 													class="bg-light d-flex p-1 gap-1 align-items-center px-2"
 												>
@@ -912,13 +697,9 @@
 													<span
 														class="d-block p-1 pb-0 px-2 bg-soft-primary ms-auto"
 													/>
-													<span
-														class="d-block p-1 pb-0 px-2 bg-soft-primary"
-													/>
+													<span class="d-block p-1 pb-0 px-2 bg-soft-primary" />
 												</span>
-												<span
-													class="d-flex gap-1 h-100 p-1 px-2"
-												>
+												<span class="d-flex gap-1 h-100 p-1 px-2">
 													<span class="flex-shrink-0">
 														<span
 															class="bg-light d-flex h-100 flex-column gap-1 p-1"
@@ -935,15 +716,11 @@
 														</span>
 													</span>
 												</span>
-												<span
-													class="bg-light d-block p-1 mt-auto px-2"
-												/>
+												<span class="bg-light d-block p-1 mt-auto px-2" />
 											</span>
 										</Label>
 									</div>
-									<h5 class="fs-13 text-center mt-2">
-										Detached
-									</h5>
+									<h5 class="fs-13 text-center mt-2">Detached</h5>
 								</div>
 							</div>
 						</div>
@@ -954,14 +731,11 @@
 							<h6 class="mt-4 mb-0 fw-semibold text-uppercase">
 								Sidebar Color
 							</h6>
-							<p class="text-muted">
-								Choose Ligth or Dark Sidebar Color.
-							</p>
+							<p class="text-muted">Choose Ligth or Dark Sidebar Color.</p>
 
 							<div class="row">
 								<div class="col-4">
-									<div class="form-check sidebar-setting card-radio"
-									>
+									<div class="form-check sidebar-setting card-radio">
 										<input
 											class="form-check-input"
 											type="radio"
@@ -969,12 +743,9 @@
 											id="sidebar-color-light"
 											value="light"
 											on:change={() => {
-												changeBodyAttribute(
-													"data-sidebar",
-													"light"
-												)
-												isOpen = false
-												}}
+												changeBodyAttribute("data-sidebar", "light");
+												isOpen = false;
+											}}
 											checked={leftSidebarType == "light"}
 										/>
 										<Label
@@ -1001,39 +772,27 @@
 													</span>
 												</span>
 												<span class="flex-grow-1">
-													<span
-														class="d-flex h-100 flex-column"
-													>
-														<span
-															class="bg-light d-block p-1"
-														/>
-														<span
-															class="bg-light d-block p-1 mt-auto"
-														/>
+													<span class="d-flex h-100 flex-column">
+														<span class="bg-light d-block p-1" />
+														<span class="bg-light d-block p-1 mt-auto" />
 													</span>
 												</span>
 											</span>
 										</Label>
 									</div>
-									<h5 class="fs-13 text-center mt-2">
-										Light
-									</h5>
+									<h5 class="fs-13 text-center mt-2">Light</h5>
 								</div>
 								<div class="col-4">
-									<div class="form-check sidebar-setting card-radio"
-									>
+									<div class="form-check sidebar-setting card-radio">
 										<input
 											class="form-check-input"
 											type="radio"
 											name="data-sidebar"
 											id="sidebar-color-dark"
 											value="dark"
-											on:change={() =>{
-												changeBodyAttribute(
-													"data-sidebar",
-													"dark"
-											);
-												isOpen = false
+											on:change={() => {
+												changeBodyAttribute("data-sidebar", "dark");
+												isOpen = false;
 											}}
 											checked={leftSidebarType == "dark"}
 										/>
@@ -1049,27 +808,15 @@
 														<span
 															class="d-block p-1 px-2 bg-soft-light rounded mb-2"
 														/>
-														<span
-															class="d-block p-1 px-2 pb-0 bg-soft-light"
-														/>
-														<span
-															class="d-block p-1 px-2 pb-0 bg-soft-light"
-														/>
-														<span
-															class="d-block p-1 px-2 pb-0 bg-soft-light"
-														/>
+														<span class="d-block p-1 px-2 pb-0 bg-soft-light" />
+														<span class="d-block p-1 px-2 pb-0 bg-soft-light" />
+														<span class="d-block p-1 px-2 pb-0 bg-soft-light" />
 													</span>
 												</span>
 												<span class="flex-grow-1">
-													<span
-														class="d-flex h-100 flex-column"
-													>
-														<span
-															class="bg-light d-block p-1"
-														/>
-														<span
-															class="bg-light d-block p-1 mt-auto"
-														/>
+													<span class="d-flex h-100 flex-column">
+														<span class="bg-light d-block p-1" />
+														<span class="bg-light d-block p-1 mt-auto" />
 													</span>
 												</span>
 											</span>
@@ -1080,29 +827,31 @@
 								<div class="col-4">
 									<button
 										on:click={() => {
-											(isOpen = !isOpen)
-											changeBodyAttribute(
-													"data-sidebar",
-													"gradient"
-											)
+											isOpen = !isOpen;
+											changeBodyAttribute("data-sidebar", "gradient");
 										}}
-										class={"btn btn-link avatar-md w-100 p-0 overflow-hidden border" + (isOpen ? ' active': '')}
+										class={"btn btn-link avatar-md w-100 p-0 overflow-hidden border" +
+											(isOpen ? " active" : "")}
 										type="button"
 										data-bs-target="#collapseBgGradient"
 									>
 										<span class="d-flex gap-1 h-100">
 											<span class="flex-shrink-0">
-												<span class="bg-vertical-gradient d-flex h-100 flex-column gap-1 p-1">
-													<span class="d-block p-1 px-2 bg-soft-light rounded mb-2"></span>
-													<span class="d-block p-1 px-2 pb-0 bg-soft-light"></span>
-													<span class="d-block p-1 px-2 pb-0 bg-soft-light"></span>
-													<span class="d-block p-1 px-2 pb-0 bg-soft-light"></span>
+												<span
+													class="bg-vertical-gradient d-flex h-100 flex-column gap-1 p-1"
+												>
+													<span
+														class="d-block p-1 px-2 bg-soft-light rounded mb-2"
+													/>
+													<span class="d-block p-1 px-2 pb-0 bg-soft-light" />
+													<span class="d-block p-1 px-2 pb-0 bg-soft-light" />
+													<span class="d-block p-1 px-2 pb-0 bg-soft-light" />
 												</span>
 											</span>
 											<span class="flex-grow-1">
 												<span class="d-flex h-100 flex-column">
-													<span class="bg-light d-block p-1"></span>
-													<span class="bg-light d-block p-1 mt-auto"></span>
+													<span class="bg-light d-block p-1" />
+													<span class="bg-light d-block p-1 mt-auto" />
 												</span>
 											</span>
 										</span>
@@ -1110,140 +859,210 @@
 									<h5 class="fs-13 text-center mt-2">Gradient</h5>
 								</div>
 							</div>
-							<Collapse
-								{isOpen}
-								class="collapse"
-								id="collapseBgGradient"
-							>
-								<div class="d-flex gap-2 flex-wrap img-switch p-2 px-3 bg-light rounded">
-
+							<Collapse {isOpen} class="collapse" id="collapseBgGradient">
+								<div
+									class="d-flex gap-2 flex-wrap img-switch p-2 px-3 bg-light rounded"
+								>
 									<div class="form-check sidebar-setting card-radio">
-										<input class="form-check-input" type="radio" name="data-sidebar" id="sidebar-color-gradient" value="gradient"
+										<input
+											class="form-check-input"
+											type="radio"
+											name="data-sidebar"
+											id="sidebar-color-gradient"
+											value="gradient"
 											on:change={() =>
-												changeBodyAttribute(
-													"data-sidebar",
-													"gradient"
-											)}
+												changeBodyAttribute("data-sidebar", "gradient")}
 											checked={leftSidebarTypes == "gradient"}
+										/>
+										<Label
+											class="form-check-label p-0 avatar-xs rounded-circle"
+											for="sidebar-color-gradient"
 										>
-										<Label class="form-check-label p-0 avatar-xs rounded-circle" for="sidebar-color-gradient">
-											<span class="avatar-title rounded-circle bg-vertical-gradient"></span>
+											<span
+												class="avatar-title rounded-circle bg-vertical-gradient"
+											/>
 										</Label>
 									</div>
 									<div class="form-check sidebar-setting card-radio">
-										<input class="form-check-input" type="radio" name="data-sidebar" id="sidebar-color-gradient-2" value="gradient-2"
-										on:change={() =>
-											changeBodyAttribute(
-												"data-sidebar",
-												"gradient-2"
-										)}
-										checked={leftSidebarTypes == "gradient-2"}
-										>
-										<Label class="form-check-label p-0 avatar-xs rounded-circle" for="sidebar-color-gradient-2">
-											<span class="avatar-title rounded-circle bg-vertical-gradient-2"></span>
-										</Label>
-									</div>
-									<div class="form-check sidebar-setting card-radio">
-										<input class="form-check-input" type="radio" name="data-sidebar" id="sidebar-color-gradient-3" value="gradient-3"
-										on:change={() =>
-											changeBodyAttribute(
-												"data-sidebar",
-												"gradient-3"
-										)}
-										checked={leftSidebarTypes == "gradient-3"}
-										>
-										<Label class="form-check-label p-0 avatar-xs rounded-circle" for="sidebar-color-gradient-3">
-											<span class="avatar-title rounded-circle bg-vertical-gradient-3"></span>
-										</Label>
-									</div>
-									<div class="form-check sidebar-setting card-radio">
-										<input class="form-check-input" type="radio" name="data-sidebar" id="sidebar-color-gradient-4" value="gradient-4"
+										<input
+											class="form-check-input"
+											type="radio"
+											name="data-sidebar"
+											id="sidebar-color-gradient-2"
+											value="gradient-2"
 											on:change={() =>
-												changeBodyAttribute(
-													"data-sidebar",
-													"gradient-4"
-											)}
-											checked={leftSidebarTypes == "gradient-4"}
+												changeBodyAttribute("data-sidebar", "gradient-2")}
+											checked={leftSidebarTypes == "gradient-2"}
+										/>
+										<Label
+											class="form-check-label p-0 avatar-xs rounded-circle"
+											for="sidebar-color-gradient-2"
 										>
-										<Label class="form-check-label p-0 avatar-xs rounded-circle" for="sidebar-color-gradient-4">
-											<span class="avatar-title rounded-circle bg-vertical-gradient-4"></span>
+											<span
+												class="avatar-title rounded-circle bg-vertical-gradient-2"
+											/>
+										</Label>
+									</div>
+									<div class="form-check sidebar-setting card-radio">
+										<input
+											class="form-check-input"
+											type="radio"
+											name="data-sidebar"
+											id="sidebar-color-gradient-3"
+											value="gradient-3"
+											on:change={() =>
+												changeBodyAttribute("data-sidebar", "gradient-3")}
+											checked={leftSidebarTypes == "gradient-3"}
+										/>
+										<Label
+											class="form-check-label p-0 avatar-xs rounded-circle"
+											for="sidebar-color-gradient-3"
+										>
+											<span
+												class="avatar-title rounded-circle bg-vertical-gradient-3"
+											/>
+										</Label>
+									</div>
+									<div class="form-check sidebar-setting card-radio">
+										<input
+											class="form-check-input"
+											type="radio"
+											name="data-sidebar"
+											id="sidebar-color-gradient-4"
+											value="gradient-4"
+											on:change={() =>
+												changeBodyAttribute("data-sidebar", "gradient-4")}
+											checked={leftSidebarTypes == "gradient-4"}
+										/>
+										<Label
+											class="form-check-label p-0 avatar-xs rounded-circle"
+											for="sidebar-color-gradient-4"
+										>
+											<span
+												class="avatar-title rounded-circle bg-vertical-gradient-4"
+											/>
 										</Label>
 									</div>
 								</div>
 							</Collapse>
 						</div>
 						<div id="sidebar-img">
-							<h6 class="mt-4 mb-0 fw-semibold text-uppercase">Sidebar Images</h6>
+							<h6 class="mt-4 mb-0 fw-semibold text-uppercase">
+								Sidebar Images
+							</h6>
 							<p class="text-muted">Choose a image of Sidebar.</p>
 
 							<div class="d-flex gap-2 flex-wrap img-switch">
 								<div class="form-check sidebar-setting card-radio">
-									<input class="form-check-input" type="radio" name="data-sidebar-image" id="sidebarimg-none" value="none"
+									<input
+										class="form-check-input"
+										type="radio"
+										name="data-sidebar-image"
+										id="sidebarimg-none"
+										value="none"
 										on:change={() =>
-											changeBodyAttribute(
-												"data-sidebar-image",
-												"none"
-										)}
+											changeBodyAttribute("data-sidebar-image", "none")}
 										checked={leftSidebarImageTypes == "none"}
+									/>
+									<Label
+										class="form-check-label p-0 avatar-sm h-auto"
+										for="sidebarimg-none"
 									>
-									<Label class="form-check-label p-0 avatar-sm h-auto" for="sidebarimg-none">
-										<span class="avatar-md w-auto bg-light d-flex align-items-center justify-content-center">
-											<i class="ri-close-fill fs-20"></i>
+										<span
+											class="avatar-md w-auto bg-light d-flex align-items-center justify-content-center"
+										>
+											<i class="ri-close-fill fs-20" />
 										</span>
 									</Label>
 								</div>
-	
+
 								<div class="form-check sidebar-setting card-radio">
-									<input class="form-check-input" type="radio" name="data-sidebar-image" id="sidebarimg-01" value="img-1"
+									<input
+										class="form-check-input"
+										type="radio"
+										name="data-sidebar-image"
+										id="sidebarimg-01"
+										value="img-1"
 										on:change={() =>
-											changeBodyAttribute(
-												"data-sidebar-image",
-												"img-1"
-										)}
+											changeBodyAttribute("data-sidebar-image", "img-1")}
 										checked={leftSidebarImageTypes == "img-1"}
+									/>
+									<Label
+										class="form-check-label p-0 avatar-sm h-auto"
+										for="sidebarimg-01"
 									>
-									<Label class="form-check-label p-0 avatar-sm h-auto" for="sidebarimg-01">
-										<img src={img01} alt="" class="avatar-md w-auto object-cover">
+										<img
+											src={img01}
+											alt=""
+											class="avatar-md w-auto object-cover"
+										/>
 									</Label>
-								</div>	
-	
+								</div>
+
 								<div class="form-check sidebar-setting card-radio">
-									<input class="form-check-input" type="radio" name="data-sidebar-image" id="sidebarimg-02" value="img-2"
+									<input
+										class="form-check-input"
+										type="radio"
+										name="data-sidebar-image"
+										id="sidebarimg-02"
+										value="img-2"
 										on:change={() =>
-											changeBodyAttribute(
-												"data-sidebar-image",
-												"img-2"
-										)}
+											changeBodyAttribute("data-sidebar-image", "img-2")}
 										checked={leftSidebarImageTypes == "img-2"}
+									/>
+									<Label
+										class="form-check-label p-0 avatar-sm h-auto"
+										for="sidebarimg-02"
 									>
-									<Label class="form-check-label p-0 avatar-sm h-auto" for="sidebarimg-02">
-										<img src={img02} alt="" class="avatar-md w-auto object-cover">
+										<img
+											src={img02}
+											alt=""
+											class="avatar-md w-auto object-cover"
+										/>
 									</Label>
 								</div>
 								<div class="form-check sidebar-setting card-radio">
-									<input class="form-check-input" type="radio" name="data-sidebar-image" id="sidebarimg-03" value="img-3"
+									<input
+										class="form-check-input"
+										type="radio"
+										name="data-sidebar-image"
+										id="sidebarimg-03"
+										value="img-3"
 										on:change={() =>
-											changeBodyAttribute(
-												"data-sidebar-image",
-												"img-3"
-										)}
+											changeBodyAttribute("data-sidebar-image", "img-3")}
 										checked={leftSidebarImageTypes == "img-3"}
+									/>
+									<Label
+										class="form-check-label p-0 avatar-sm h-auto"
+										for="sidebarimg-03"
 									>
-									<Label class="form-check-label p-0 avatar-sm h-auto" for="sidebarimg-03">
-										<img src={img03} alt="" class="avatar-md w-auto object-cover">
+										<img
+											src={img03}
+											alt=""
+											class="avatar-md w-auto object-cover"
+										/>
 									</Label>
 								</div>
 								<div class="form-check sidebar-setting card-radio">
-									<input class="form-check-input" type="radio" name="data-sidebar-image" id="sidebarimg-04" value="img-4"
+									<input
+										class="form-check-input"
+										type="radio"
+										name="data-sidebar-image"
+										id="sidebarimg-04"
+										value="img-4"
 										on:change={() =>
-											changeBodyAttribute(
-												"data-sidebar-image",
-												"img-4"
-										)}
+											changeBodyAttribute("data-sidebar-image", "img-4")}
 										checked={leftSidebarImageTypes == "img-4"}
+									/>
+									<Label
+										class="form-check-label p-0 avatar-sm h-auto"
+										for="sidebarimg-04"
 									>
-									<Label class="form-check-label p-0 avatar-sm h-auto" for="sidebarimg-04">
-										<img src={img04} alt="" class="avatar-md w-auto object-cover">
+										<img
+											src={img04}
+											alt=""
+											class="avatar-md w-auto object-cover"
+										/>
 									</Label>
 								</div>
 							</div>
@@ -1255,12 +1074,16 @@
 		<div class="offcanvas-footer border-top p-3 text-center">
 			<div class="row">
 				<div class="col-12">
-					<a href="https://1.envato.market/velzon-admin" type="button" class="btn btn-primary w-100">Preview</a>
+					<a
+						href="https://1.envato.market/velzon-admin"
+						type="button"
+						class="btn btn-primary w-100">Preview</a
+					>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
 {#if open}
-	<div class="offcanvas-backdrop fade show"></div>
+	<div class="offcanvas-backdrop fade show" />
 {/if}

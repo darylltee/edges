@@ -1,7 +1,6 @@
 <script>
-	import {onMount} from 'svelte';
-	export let dataColors;
-	import { browser } from "$app/env";
+	import { browser } from "$app/environment";
+	import { onMount } from "svelte";
 
 	function getChartColorsArray(colors) {
 		if (browser) {
@@ -11,8 +10,7 @@
 					var color = getComputedStyle(
 						document.documentElement
 					).getPropertyValue(newValue);
-					if (color.indexOf("#") !== -1)
-						color = color.replace(" ", "");
+					if (color.indexOf("#") !== -1) color = color.replace(" ", "");
 					if (color) return color;
 					else return newValue;
 				} else {
@@ -37,8 +35,7 @@
 		while (i < count) {
 			var x = (i + 1).toString();
 			var y =
-				Math.floor(Math.random() * (yrange.max - yrange.min + 1)) +
-				yrange.min;
+				Math.floor(Math.random() * (yrange.max - yrange.min + 1)) + yrange.min;
 
 			series.push({
 				x: x,
@@ -197,9 +194,12 @@
 		},
 	};
 	onMount(() => {
-		const chart = new ApexCharts(document.querySelector("#multipleheatmapchart"), options)
-  		chart.render()
-	})
+		const chart = new ApexCharts(
+			document.querySelector("#multipleheatmapchart"),
+			options
+		);
+		chart.render();
+	});
 </script>
 
-<div id="multipleheatmapchart" class="apex-charts" dir="ltr"></div>
+<div id="multipleheatmapchart" class="apex-charts" dir="ltr" />

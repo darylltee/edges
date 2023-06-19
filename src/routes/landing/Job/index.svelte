@@ -1,8 +1,5 @@
-<svelte:head>
-  <title>Job Landing | Velzon - Svelte Admin & Dashboard Template</title>
-</svelte:head>
 <script>
-    import { browser } from "$app/env";
+    import { browser } from "$app/environment";
     import { onMount } from "svelte";
     import Blog from "./Blog.svelte";
     import Candidates from "./Candidates.svelte";
@@ -25,23 +22,26 @@
     const scrollFunction = () => {
         const element = document.getElementById("back-to-top");
         if (element) {
-        if (
-            document.body.scrollTop > 100 ||
-            document.documentElement.scrollTop > 100
-        ) {
-            element.style.display = "block";
-        } else {
-            element.style.display = "none";
-        }
+            if (
+                document.body.scrollTop > 100 ||
+                document.documentElement.scrollTop > 100
+            ) {
+                element.style.display = "block";
+            } else {
+                element.style.display = "none";
+            }
         }
     };
-    
+
     const toTop = () => {
         document.body.scrollTop = 0;
         document.documentElement.scrollTop = 0;
     };
-    
 </script>
+
+<svelte:head>
+    <title>Job Landing | Velzon - Svelte Admin & Dashboard Template</title>
+</svelte:head>
 <div class="layout-wrapper landing">
     <Navbar />
     <Home />
@@ -53,10 +53,10 @@
     <Blog />
     <Footer />
     <button
-      on:click={() => toTop()}
-      class="btn btn-danger btn-icon landing-back-top"
-      id="back-to-top"
+        on:click={() => toTop()}
+        class="btn btn-danger btn-icon landing-back-top"
+        id="back-to-top"
     >
-      <i class="ri-arrow-up-line"></i>
+        <i class="ri-arrow-up-line" />
     </button>
-  </div>
+</div>

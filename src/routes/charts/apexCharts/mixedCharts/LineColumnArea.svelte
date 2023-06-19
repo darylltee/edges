@@ -1,7 +1,6 @@
 <script>
-	import {onMount} from 'svelte';
-	export let dataColors;
-	import { browser } from "$app/env";
+	import { browser } from "$app/environment";
+	import { onMount } from "svelte";
 
 	function getChartColorsArray(colors) {
 		if (browser) {
@@ -11,8 +10,7 @@
 					var color = getComputedStyle(
 						document.documentElement
 					).getPropertyValue(newValue);
-					if (color.indexOf("#") !== -1)
-						color = color.replace(" ", "");
+					if (color.indexOf("#") !== -1) color = color.replace(" ", "");
 					if (color) return color;
 					else return newValue;
 				} else {
@@ -120,9 +118,12 @@
 		colors: chartLineAreaMultiColors,
 	};
 	onMount(() => {
-		const chart = new ApexCharts(document.querySelector("#linecolumnmixedchart"), options)
-  		chart.render()
-	})
+		const chart = new ApexCharts(
+			document.querySelector("#linecolumnmixedchart"),
+			options
+		);
+		chart.render();
+	});
 </script>
 
-<div id="linecolumnmixedchart" class="apex-charts" dir="ltr"></div>
+<div id="linecolumnmixedchart" class="apex-charts" dir="ltr" />

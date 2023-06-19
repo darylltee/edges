@@ -1,36 +1,35 @@
 <script>
-    import {onMount} from 'svelte';
-	export let dataColors,id,seriesData;
-	import { browser } from "$app/env";
+    import { browser } from "$app/environment";
+    import { onMount } from "svelte";
 
-	function getChartColorsArray(colors) {
-		if (browser) {
+    function getChartColorsArray(colors) {
+        if (browser) {
             colors = JSON.parse(colors);
-			return colors.map(function (value) {
-				var newValue = value.replace(" ", "");
-				if (newValue.indexOf(",") === -1) {
-					var color = getComputedStyle(
-						document.documentElement
-					).getPropertyValue(newValue);
-					if (color.indexOf("#") !== -1)
-						color = color.replace(" ", "");
-					if (color) return color;
-					else return newValue;
-				} else {
-					var val = value.split(",");
-					if (val.length === 2) {
-						var rgbaColor = getComputedStyle(
-							document.documentElement
-						).getPropertyValue(val[0]);
-						rgbaColor = "rgba(" + rgbaColor + "," + val[1] + ")";
-						return rgbaColor;
-					} else {
-						return newValue;
-					}
-				}
-			});
-		}
-	}
+            return colors.map(function (value) {
+                var newValue = value.replace(" ", "");
+                if (newValue.indexOf(",") === -1) {
+                    var color = getComputedStyle(
+                        document.documentElement
+                    ).getPropertyValue(newValue);
+                    if (color.indexOf("#") !== -1)
+                        color = color.replace(" ", "");
+                    if (color) return color;
+                    else return newValue;
+                } else {
+                    var val = value.split(",");
+                    if (val.length === 2) {
+                        var rgbaColor = getComputedStyle(
+                            document.documentElement
+                        ).getPropertyValue(val[0]);
+                        rgbaColor = "rgba(" + rgbaColor + "," + val[1] + ")";
+                        return rgbaColor;
+                    } else {
+                        return newValue;
+                    }
+                }
+            });
+        }
+    }
 
     var areachartbitcoinColors = getChartColorsArray(dataColors);
     var options = {
@@ -66,11 +65,12 @@
     };
 
     onMount(() => {
-		const chart = new ApexCharts(document.querySelector("#otherwidget"+id), options)
-  		chart.render()
-	})
-
+        const chart = new ApexCharts(
+            document.querySelector("#otherwidget" + id),
+            options
+        );
+        chart.render();
+    });
 </script>
 
-
-<div id={"otherwidget" + id} class="apex-charts" dir="ltr"></div>
+<div id={"otherwidget" + id} class="apex-charts" dir="ltr" />
