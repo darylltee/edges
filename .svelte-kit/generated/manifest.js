@@ -182,6 +182,7 @@ const c = [
 	() => import("..\\..\\src\\routes\\landing\\OnePage\\index.svelte"),
 	() => import("..\\..\\src\\routes\\landing\\OnePage\\workProcess.svelte"),
 	() => import("..\\..\\src\\routes\\landing\\OnePage\\features.svelte"),
+	() => import("..\\..\\src\\routes\\landing\\OnePage\\products.svelte"),
 	() => import("..\\..\\src\\routes\\landing\\OnePage\\services.svelte"),
 	() => import("..\\..\\src\\routes\\landing\\OnePage\\contact.svelte"),
 	() => import("..\\..\\src\\routes\\landing\\OnePage\\counter.svelte"),
@@ -189,7 +190,6 @@ const c = [
 	() => import("..\\..\\src\\routes\\landing\\OnePage\\client.svelte"),
 	() => import("..\\..\\src\\routes\\landing\\OnePage\\footer.svelte"),
 	() => import("..\\..\\src\\routes\\landing\\OnePage\\navbar.svelte"),
-	() => import("..\\..\\src\\routes\\landing\\OnePage\\plans.svelte"),
 	() => import("..\\..\\src\\routes\\landing\\OnePage\\home.svelte"),
 	() => import("..\\..\\src\\routes\\landing\\OnePage\\team.svelte"),
 	() => import("..\\..\\src\\routes\\landing\\OnePage\\cta.svelte"),
@@ -1031,29 +1031,29 @@ export const routes = [
 	// src/routes/landing/OnePage/features.svelte
 	[/^\/landing\/OnePage\/features\/?$/, [c[0], c[182]], [c[1]]],
 
+	// src/routes/landing/OnePage/products.svelte
+	[/^\/landing\/OnePage\/products\/?$/, [c[0], c[183]], [c[1]]],
+
 	// src/routes/landing/OnePage/services.svelte
-	[/^\/landing\/OnePage\/services\/?$/, [c[0], c[183]], [c[1]]],
+	[/^\/landing\/OnePage\/services\/?$/, [c[0], c[184]], [c[1]]],
 
 	// src/routes/landing/OnePage/contact.svelte
-	[/^\/landing\/OnePage\/contact\/?$/, [c[0], c[184]], [c[1]]],
+	[/^\/landing\/OnePage\/contact\/?$/, [c[0], c[185]], [c[1]]],
 
 	// src/routes/landing/OnePage/counter.svelte
-	[/^\/landing\/OnePage\/counter\/?$/, [c[0], c[185]], [c[1]]],
+	[/^\/landing\/OnePage\/counter\/?$/, [c[0], c[186]], [c[1]]],
 
 	// src/routes/landing/OnePage/reviews.svelte
-	[/^\/landing\/OnePage\/reviews\/?$/, [c[0], c[186]], [c[1]]],
+	[/^\/landing\/OnePage\/reviews\/?$/, [c[0], c[187]], [c[1]]],
 
 	// src/routes/landing/OnePage/client.svelte
-	[/^\/landing\/OnePage\/client\/?$/, [c[0], c[187]], [c[1]]],
+	[/^\/landing\/OnePage\/client\/?$/, [c[0], c[188]], [c[1]]],
 
 	// src/routes/landing/OnePage/footer.svelte
-	[/^\/landing\/OnePage\/footer\/?$/, [c[0], c[188]], [c[1]]],
+	[/^\/landing\/OnePage\/footer\/?$/, [c[0], c[189]], [c[1]]],
 
 	// src/routes/landing/OnePage/navbar.svelte
-	[/^\/landing\/OnePage\/navbar\/?$/, [c[0], c[189]], [c[1]]],
-
-	// src/routes/landing/OnePage/plans.svelte
-	[/^\/landing\/OnePage\/plans\/?$/, [c[0], c[190]], [c[1]]],
+	[/^\/landing\/OnePage\/navbar\/?$/, [c[0], c[190]], [c[1]]],
 
 	// src/routes/landing/OnePage/home.svelte
 	[/^\/landing\/OnePage\/home\/?$/, [c[0], c[191]], [c[1]]],

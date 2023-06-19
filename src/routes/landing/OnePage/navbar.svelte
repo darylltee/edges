@@ -66,10 +66,10 @@
                     <NavLink class="fs-15" href="#services">Farming</NavLink>
                 </li>
                 <li class="nav-item">
-                    <NavLink class="fs-15" href="#features">Features</NavLink>
+                    <NavLink class="fs-15" href="#features">EDGES</NavLink>
                 </li>
                 <li class="nav-item">
-                    <NavLink class="fs-15" href="#plans">Plans</NavLink>
+                    <NavLink class="fs-15" href="#products">Products</NavLink>
                 </li>
                 <li class="nav-item">
                     <NavLink class="fs-15" href="#reviews">Reviews</NavLink>

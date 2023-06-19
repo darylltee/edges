@@ -1,0 +1,1 @@
+import{S as s,i as n,s as a}from"../chunks/vendor-d89f02e8.js";async function u({session:t}){let{user:e}=t;if(e==null)return{status:302,redirect:"/landing/OnePage/"}}class o extends s{constructor(e){super();n(this,e,null,null,a,{})}}export{o as default,u as load};

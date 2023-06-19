@@ -9,7 +9,7 @@
     import Footer from "./footer.svelte";
     import Home from "./home.svelte";
     import Navbar from "./navbar.svelte";
-    import Plans from "./plans.svelte";
+    import Products from "./products.svelte";
     import Reviews from "./reviews.svelte";
     import Services from "./services.svelte";
     import Team from "./team.svelte";
@@ -45,15 +45,15 @@
     <Client />
     <Services />
     <Features />
-    <Plans />
-    <Faqs />
-    <Reviews />
-    <Counter />
-    <WorkProcess />
+    <Products />
+    <!-- <Faqs /> -->
+    <!--<Reviews /> -->
+    <!--<Counter />-->
+    <!-- <WorkProcess />-->
     <Team />
-    <Contact />
-    <Cta />
-    <Footer />
+    <!-- <Contact /> -->
+    <!-- <Cta /> -->
+    <!-- <Footer /> -->
     <button
         class="btn btn-danger btn-icon landing-back-top"
         id="back-to-top"

@@ -13,7 +13,7 @@
                     <h1 class="mb-3 ff-secondary fw-semibold lh-base">
                         Seaweed farming in Sorsogon
                     </h1>
-                    <p class="text-muted " style="font-size:20px;">
+                    <p class="text-muted" style="font-size:20px;">
                         Sorsogon was historically one of the major producers of
                         wild stock seaweeds in the Philippines and was the
                         pioneer of seaweed farming in the Bicol region. However,
@@ -41,13 +41,13 @@
             </Col>
             <Col lg={6}>
                 <div class="text-muted">
-                    <div class="avatar-sm icon-effect mb-4">
+                    <!--<div class="avatar-sm icon-effect mb-4">
                         <div
                             class="avatar-title bg-transparent rounded-circle text-success h1"
                         >
                             <i class="ri-collage-line fs-36" />
                         </div>
-                    </div>
+                    </div>-->
                     <h3 class="mb-3 fs-20" />
                     <p class="mb-4 ff-secondary fs-16">
                         With the growing demand for seaweed products globally,

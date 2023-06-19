@@ -21,6 +21,7 @@
     import slider01 from "./assets/bg-home.png";
     import slider02 from "./assets/farming01.png";
     import slider03 from "./assets/farming02.png";
+    import slider06 from "./assets/farming03.png";
     import slider04 from "./assets/farming04.png";
     import slider05 from "./assets/farming05.png";
 </script>
