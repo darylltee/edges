@@ -1,4 +1,6 @@
 <script>
+	throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
+
 	import {
 		Card,
 		CardBody,
@@ -10,7 +12,7 @@
 		DropdownToggle,
 	} from "sveltestrap";
 	import Link from "svelte-link";
-	import Counter from "../../Components/Common/counter.svelte";
+	import Counter from "../../../Components/Common/counter.svelte";
 	import {
 		UsersIcon,
 		ActivityIcon,

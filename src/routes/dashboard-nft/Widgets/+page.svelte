@@ -1,8 +1,8 @@
 <script>
 import { Card, CardBody, Col, Dropdown,DropdownItem, DropdownMenu, DropdownToggle, Row } from 'sveltestrap';
-import Bgd from "../../assets/images/bg-d.png";
+import Bgd from "../../../assets/images/bg-d.png";
 import Link from 'svelte-link';
-import Counter from '../../Components/Common/counter.svelte';
+import Counter from '../../../Components/Common/counter.svelte';
 </script>
 <Counter />
 <Row>

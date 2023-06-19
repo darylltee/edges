@@ -2,8 +2,8 @@
     import { Row, Col } from 'sveltestrap';
 
         //import Images
-    import logo_dark from "../../../../assets/images/logo-dark.png";
-    import avatar03 from "../../../../assets/images/users/avatar-3.jpg";
+    import logo_dark from "../../../../../assets/images/logo-dark.png";
+    import avatar03 from "../../../../../assets/images/users/avatar-3.jpg";
 
 </script>
 <Row>

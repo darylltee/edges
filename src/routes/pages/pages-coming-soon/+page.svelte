@@ -1,9 +1,9 @@
 <script>
     import { Col, Container, Input, InputGroup, Row } from "sveltestrap";
-    import ParticlesAuth from "../authenticationInner/ParticlesAuth.svelte";
+    import ParticlesAuth from "../../authenticationInner/ParticlesAuth.svelte";
     //import images
     import { browser } from "$app/environment";
-    import comingsoon from "../../assets/images/comingsoon.png";
+    import comingsoon from "../../../assets/images/comingsoon.png";
 
     // Set the date we're counting down to
     var countDownDate = new Date("Jan 1, 2023").getTime();

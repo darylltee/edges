@@ -11,11 +11,11 @@
 		TabPane
 	} from 'sveltestrap';
 	let activeTab = 1;
-	import OverviewTab from './OverviewTab.svelte';
-	import DocumentsTab from './DocumentsTab.svelte';
-	import ActivitiesTab from './ActivitiesTab.svelte';
-	import TeamTab from './TeamTab.svelte';
-	import slack from '../../../assets/images/brands/slack.png'
+	import OverviewTab from '../OverviewTab.svelte';
+	import DocumentsTab from '../DocumentsTab.svelte';
+	import ActivitiesTab from '../ActivitiesTab.svelte';
+	import TeamTab from '../TeamTab.svelte';
+	import slack from '../../../../assets/images/brands/slack.png'
 </script>
 
 <Row>

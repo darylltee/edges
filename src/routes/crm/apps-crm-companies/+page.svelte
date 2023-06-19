@@ -20,14 +20,14 @@
 		Table,
 	} from "sveltestrap";
 	import Select from "svelte-select";
-	import BreadCrumb from "../../Components/Common/BreadCrumb.svelte";
-	import crmData from "../../common/data/crm";
+	import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
+	import crmData from "../../../common/data/crm";
 	import { html } from "gridjs";
 	import Grid from "gridjs-svelte";
 	import { SvelteWrapper } from "gridjs-svelte/plugins";
-	import CompanyAction from "./CompanyAction.svelte";
+	import CompanyAction from "../CompanyAction.svelte";
 
-	import mail_chimp from '../../assets/images/brands/mail_chimp.png'
+	import mail_chimp from '../../../assets/images/brands/mail_chimp.png'
 
 	let open = false;
 	const toggle = () => (open = !open);

@@ -1,14 +1,14 @@
 <script>
 import { Card, CardBody, Col, Container, Row, } from 'sveltestrap';
-import BreadCrumb from '../../Components/Common/BreadCrumb.svelte';
-import PreviewCardHeader from '../../Components/Common/PreviewCardHeader.svelte';
-import Slide from './UiCarousel/slide.svelte'
-import Slidewithcontrol from './UiCarousel/Slidewithcontrol.svelte'
-import Slidewithindicator from './UiCarousel/Slidewithindicator.svelte'
-import Slidewithcaption from './UiCarousel/Slidewithcaption.svelte'
-import Darkvariant from './UiCarousel/Darkvariant.svelte'
-import PrismCode from '../../Components/Common/Prism.svelte'
-import UiContent from "../../Components/Common/UiContent.svelte";
+import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
+import PreviewCardHeader from '../../../Components/Common/PreviewCardHeader.svelte';
+import Slide from '../UiCarousel/slide.svelte'
+import Slidewithcontrol from '../UiCarousel/Slidewithcontrol.svelte'
+import Slidewithindicator from '../UiCarousel/Slidewithindicator.svelte'
+import Slidewithcaption from '../UiCarousel/Slidewithcaption.svelte'
+import Darkvariant from '../UiCarousel/Darkvariant.svelte'
+import PrismCode from '../../../Components/Common/Prism.svelte'
+import UiContent from "../../../Components/Common/UiContent.svelte";
 // Slides Only
 
 const slideOnlyCode =`<Carousel {items} bind:activeIndex>

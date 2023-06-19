@@ -1,19 +1,19 @@
 <script>
   import { Container } from "sveltestrap";
-  import Client from "./client.svelte";
-  import Contact from "./contact.svelte";
-  import Counter from "./counter.svelte";
-  import Cta from "./cta.svelte";
-  import Faqs from "./faq.svelte";
-  import Features from "./features.svelte";
-  import Footer from "./footer.svelte";
-  import Home from "./home.svelte";
-  import Navbar from "./navbar.svelte";
-  import Plans from "./plans.svelte";
-  import Reviews from "./reviews.svelte";
-  import Services from "./services.svelte";
-  import Team from "./team.svelte";
-  import WorkProcess from "./workProcess.svelte";
+  import Client from "../client.svelte";
+  import Contact from "../contact.svelte";
+  import Counter from "../counter.svelte";
+  import Cta from "../cta.svelte";
+  import Faqs from "../faq.svelte";
+  import Features from "../features.svelte";
+  import Footer from "../footer.svelte";
+  import Home from "../home.svelte";
+  import Navbar from "../navbar.svelte";
+  import Plans from "../plans.svelte";
+  import Reviews from "../reviews.svelte";
+  import Services from "../services.svelte";
+  import Team from "../team.svelte";
+  import WorkProcess from "../workProcess.svelte";
 
   /*  window.onscroll = function () {
       scrollFunction();

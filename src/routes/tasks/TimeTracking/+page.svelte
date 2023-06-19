@@ -12,9 +12,9 @@
 	import Link from 'svelte-link';
 	import Select from 'svelte-select';
 
-	import avatar2 from '../../assets/images/users/avatar-2.jpg';
-	import avatar8 from '../../assets/images/users/avatar-8.jpg';
-	import avatar10 from '../../assets/images/users/avatar-10.jpg';
+	import avatar2 from '../../../assets/images/users/avatar-2.jpg';
+	import avatar8 from '../../../assets/images/users/avatar-8.jpg';
+	import avatar10 from '../../../assets/images/users/avatar-10.jpg';
 
     const timeTraking = [
         {

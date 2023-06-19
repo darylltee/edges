@@ -7,11 +7,11 @@
 		Container,
 		Row,
 	} from "sveltestrap";
-	import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
-	import BasicTreemap from "./BasicTreemap.svelte";
-	import MultiTreemap from "./MultiTreemap.svelte";
-	import DiffColorTreemap from "./DiffColorTreemap.svelte";
-	import ColorRangeTreemap from "./ColorRangeTreemap.svelte";
+	import BreadCrumb from "../../../../../Components/Common/BreadCrumb.svelte";
+	import BasicTreemap from "../BasicTreemap.svelte";
+	import MultiTreemap from "../MultiTreemap.svelte";
+	import DiffColorTreemap from "../DiffColorTreemap.svelte";
+	import ColorRangeTreemap from "../ColorRangeTreemap.svelte";
 </script>
 
 <svelte:head>

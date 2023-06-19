@@ -1,8 +1,8 @@
 <script>
 	import { Container, Row, Card, CardBody, Col } from "sveltestrap";
-	import Widgets from "./widgets.svelte";
-	import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
-	import ICO from "./ico.svelte";
+	import Widgets from "../widgets.svelte";
+	import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
+	import ICO from "../ico.svelte";
 </script>
 
 <svelte:head>

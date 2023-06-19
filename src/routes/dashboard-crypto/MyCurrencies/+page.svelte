@@ -8,7 +8,7 @@
 		DropdownToggle,
 		Dropdown
 	} from 'sveltestrap';
-	import data from '../../common/data/crypto';
+	import data from '../../../common/data/crypto';
 </script>
 
 <Col xl={8}>

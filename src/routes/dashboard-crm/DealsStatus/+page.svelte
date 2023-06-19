@@ -9,7 +9,7 @@
 		DropdownToggle,
 		Dropdown
 	} from 'sveltestrap';
-	import data from '../../common/data/dashboardcrm';
+	import data from '../../../common/data/dashboardcrm';
 </script>
 
 <Col xl={7}>

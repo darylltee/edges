@@ -7,8 +7,8 @@
 		Container,
 		Row,
 	} from "sveltestrap";
-	import BreadCrumb from "../../Components/Common/BreadCrumb.svelte";
-	import UiContent from "../../Components/Common/UiContent.svelte";
+	import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
+	import UiContent from "../../../Components/Common/UiContent.svelte";
 </script>
 
 <svelte:head>

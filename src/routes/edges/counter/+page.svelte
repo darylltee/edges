@@ -1,6 +1,6 @@
 <script>
     import { Col, Container, Row } from "sveltestrap";
-    import Counter from "../../Components/Common/counter.svelte";
+    import Counter from "../../../Components/Common/counter.svelte";
 </script>
 
 <Counter />

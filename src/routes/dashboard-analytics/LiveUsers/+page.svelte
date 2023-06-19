@@ -1,7 +1,7 @@
 <script>
     import { Card, CardBody, Col, Row } from 'sveltestrap';
-    import CountriesCharts from "./CountriesCharts.svelte"
-    import Map from '../../Components/Common/Map.svelte'
+    import CountriesCharts from "../CountriesCharts.svelte"
+    import Map from '../../../Components/Common/Map.svelte'
 </script>
 
 <Col xxl={7}>

@@ -1,5 +1,5 @@
 <script>
-	import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
+	import BreadCrumb from "../../../../../Components/Common/BreadCrumb.svelte";
 	import {
 		Card,
 		CardBody,
@@ -9,9 +9,9 @@
 		Row,
 	} from "sveltestrap";
 
-	import Basic from "./Basic.svelte";
-	import Scatter from "./Scatter.svelte";
-	import Horizontal from "./Horizontal.svelte";
+	import Basic from "../Basic.svelte";
+	import Scatter from "../Scatter.svelte";
+	import Horizontal from "../Horizontal.svelte";
 </script>
 
 <svelte:head>

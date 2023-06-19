@@ -6,7 +6,7 @@
     import {
         default as logodark,
         default as logolight,
-    } from "./assets/logo.png";
+    } from "../assets/logo.png";
     let navClass = "";
     let isOpen = true;
 

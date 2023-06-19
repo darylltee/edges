@@ -14,7 +14,7 @@
 		Table,
 		CardHeader
 	} from 'sveltestrap';
-	import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
+	import BreadCrumb from '../../../../Components/Common/BreadCrumb.svelte';
 	import { html } from 'gridjs';
 
 	const data = [

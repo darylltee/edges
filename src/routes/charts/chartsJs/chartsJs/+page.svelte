@@ -7,14 +7,14 @@
 		Container,
 		Row
 	} from "sveltestrap";
-	import LineChart from "./LineChart.svelte";
-	import BarChart from "./BarChart.svelte";
-	import PieChart from "./PieChart.svelte";
-	import DonutChart from "./DonutChart.svelte";
-	import PolarChart from "./PolarChart.svelte";
-	import RadarChart from "./RadarChart.svelte";
+	import LineChart from "../LineChart.svelte";
+	import BarChart from "../BarChart.svelte";
+	import PieChart from "../PieChart.svelte";
+	import DonutChart from "../DonutChart.svelte";
+	import PolarChart from "../PolarChart.svelte";
+	import RadarChart from "../RadarChart.svelte";
 
-	import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
+	import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
 </script>
 
 <svelte:head>

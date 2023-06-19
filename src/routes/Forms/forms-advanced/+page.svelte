@@ -3,7 +3,7 @@
 </svelte:head>
 <script>
 	import { Card, CardBody, CardHeader, Col, Container, Input, Row } from 'sveltestrap';
-	import BreadCrumb from '../../Components/Common/BreadCrumb.svelte';
+	import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
 
     let defaultCounter = 5;
     let lightCounter = 5;

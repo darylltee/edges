@@ -1,6 +1,6 @@
 <script>
 import { Card, CardBody, CardHeader, Col, DropdownItem, DropdownMenu, DropdownToggle, Dropdown } from 'sveltestrap';
-import PrjectsStatusCharts from './PrjectsStatusCharts.svelte';
+import PrjectsStatusCharts from '../PrjectsStatusCharts.svelte';
 
 </script>
 <Col xxl={4} lg={6}>

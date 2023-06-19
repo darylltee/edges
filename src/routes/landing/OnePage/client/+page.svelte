@@ -8,10 +8,10 @@
     import { Autoplay, Pagination } from "swiper";
     import { Swiper, SwiperSlide } from "swiper/svelte";
     // Import Images
-    import dost from "./assets/dost.png";
-    import nstdc from "./assets/nstdc.png";
-    import pcic from "./assets/pcic.png";
-    import sorsu from "./assets/ssu.png";
+    import dost from "../assets/dost.png";
+    import nstdc from "../assets/nstdc.png";
+    import pcic from "../assets/pcic.png";
+    import sorsu from "../assets/ssu.png";
 </script>
 
 <div class="pt-5 mt-5">

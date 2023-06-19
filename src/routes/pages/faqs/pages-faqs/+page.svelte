@@ -3,7 +3,7 @@
 </svelte:head>
 <script>
 	import { Card, Col, Collapse, Container, Row } from 'sveltestrap';
-	import faqimg from '../../../assets/images/faq-img.png'
+	import faqimg from '../../../../assets/images/faq-img.png'
 </script>
 
 <div class="page-content">

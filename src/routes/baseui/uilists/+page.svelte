@@ -8,16 +8,16 @@
 		ListGroupItem,
 		Row,
 	} from "sveltestrap";
-	import BreadCrumb from "../../Components/Common/BreadCrumb.svelte";
-	import PreviewCardHeader from "../../Components/Common/PreviewCardHeader.svelte";
-	import UiContent from "../../Components/Common/UiContent.svelte";
-	import PrismCode from "../../Components/Common/Prism.svelte";
+	import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
+	import PreviewCardHeader from "../../../Components/Common/PreviewCardHeader.svelte";
+	import UiContent from "../../../Components/Common/UiContent.svelte";
+	import PrismCode from "../../../Components/Common/Prism.svelte";
 	import Link from "svelte-link";
 
-	import avatar1 from '../../assets/images/users/avatar-1.jpg';
-	import avatar2 from '../../assets/images/users/avatar-2.jpg';
-	import avatar3 from '../../assets/images/users/avatar-3.jpg';
-	import avatar4 from '../../assets/images/users/avatar-4.jpg';
+	import avatar1 from '../../../assets/images/users/avatar-1.jpg';
+	import avatar2 from '../../../assets/images/users/avatar-2.jpg';
+	import avatar3 from '../../../assets/images/users/avatar-3.jpg';
+	import avatar4 from '../../../assets/images/users/avatar-4.jpg';
 
 	// Default List
 

@@ -7,10 +7,10 @@
         Container,
         Row,
     } from "sveltestrap";
-    import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
-    import Basic from "./Basic.svelte";
-    import Datetime from "./Datetime.svelte";
-    import ImagesChart from "./ImagesChart.svelte";
+    import BreadCrumb from "../../../../../Components/Common/BreadCrumb.svelte";
+    import Basic from "../Basic.svelte";
+    import Datetime from "../Datetime.svelte";
+    import ImagesChart from "../ImagesChart.svelte";
 </script>
 
 <svelte:head>

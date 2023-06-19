@@ -21,7 +21,7 @@
 	import Select from 'svelte-select';
 	import Flatpickr from 'svelte-flatpickr';
 
-	import BreadCrumb from '../../Components/Common/BreadCrumb.svelte';
+	import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
 	import Editor from '@tinymce/tinymce-svelte';
 	import Dropzone from 'svelte-file-dropzone';
 	let files = {

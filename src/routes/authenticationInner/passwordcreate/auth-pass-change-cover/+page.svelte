@@ -1,7 +1,7 @@
 <script>
 import { Button, Card, Col, Container, Row, Form, Label, Input } from 'sveltestrap';
 
-import AuthSlider from '../AuthSlider.svelte';
+import AuthSlider from '../../AuthSlider.svelte';
 import Link from 'svelte-link'
 let passwordShow = false;
 let confrimPasswordShow = false;

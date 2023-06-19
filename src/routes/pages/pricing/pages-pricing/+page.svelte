@@ -12,7 +12,7 @@
 		NavLink,
 		Row,
 	} from 'sveltestrap';
-	import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
+	import BreadCrumb from '../../../../Components/Common/BreadCrumb.svelte';
 	import Link from 'svelte-link';
 
 	const pricing1 = [

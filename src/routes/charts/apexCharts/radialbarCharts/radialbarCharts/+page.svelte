@@ -7,14 +7,14 @@
         Container,
         Row,
     } from "sveltestrap";
-    import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
-    import SimpleRadialbar from "./SimpleRadialbar.svelte";
-    import MultipleRadialbar from "./MultipleRadialbar.svelte";
-    import CircleRadialbar from "./CircleRadialbar.svelte";
-    import GradientCircleRadialbar from "./GradientCircleRadialbar.svelte";
-    import StrokedCircleRadial from "./StrokedCircleRadial.svelte";
-    import SemiCircularRadial from "./SemiCircularRadial.svelte";
-    import ImageRadialbar from './ImageRadialbar.svelte'
+    import BreadCrumb from "../../../../../Components/Common/BreadCrumb.svelte";
+    import SimpleRadialbar from "../SimpleRadialbar.svelte";
+    import MultipleRadialbar from "../MultipleRadialbar.svelte";
+    import CircleRadialbar from "../CircleRadialbar.svelte";
+    import GradientCircleRadialbar from "../GradientCircleRadialbar.svelte";
+    import StrokedCircleRadial from "../StrokedCircleRadial.svelte";
+    import SemiCircularRadial from "../SemiCircularRadial.svelte";
+    import ImageRadialbar from '../ImageRadialbar.svelte'
 </script>
 
 <svelte:head>

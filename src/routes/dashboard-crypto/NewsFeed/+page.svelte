@@ -1,6 +1,6 @@
 <script>
 	import { Card, CardBody, CardHeader, Col } from 'sveltestrap';
-	import data from '../../common/data/crypto';
+	import data from '../../../common/data/crypto';
 </script>
 
 <Col xxl={4}>

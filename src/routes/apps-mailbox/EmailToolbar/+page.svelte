@@ -18,15 +18,15 @@
 		ButtonDropdown,
 	} from "sveltestrap";
 	import Link from "svelte-link";
-	import data from "../../common/data/mailbox";
+	import data from "../../../common/data/mailbox";
 	let isRight = false;
 	const toggleRightCanvas = () => {
 		isRight = !isRight;
 	};
-	import avatar3 from '../../assets/images/users/avatar-3.jpg'
-	import avatar1 from '../../assets/images/users/avatar-1.jpg'
-	import img2 from '../../assets/images/small/img-2.jpg'
-	import img6 from '../../assets/images/small/img-6.jpg'
+	import avatar3 from '../../../assets/images/users/avatar-3.jpg'
+	import avatar1 from '../../../assets/images/users/avatar-1.jpg'
+	import img2 from '../../../assets/images/small/img-2.jpg'
+	import img6 from '../../../assets/images/small/img-6.jpg'
 </script>
 
 <div class="email-content">

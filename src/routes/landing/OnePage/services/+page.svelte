@@ -2,7 +2,7 @@
     import Link from "svelte-link";
     import { Col, Container, Row } from "sveltestrap";
 
-    import farming from "./assets/farming02.png";
+    import farming from "../assets/farming02.png";
 </script>
 
 <section class="section" id="services">

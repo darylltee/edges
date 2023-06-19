@@ -3,7 +3,7 @@
 </svelte:head>
 <script>
 	import { Container } from 'sveltestrap';
-	import Section from './ProjectOverview/Section.svelte';
+	import Section from '../ProjectOverview/Section.svelte';
 </script>
 
 <div class="page-content">

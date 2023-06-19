@@ -13,11 +13,11 @@
   } from "sveltestrap";
   import { createForm } from "svelte-forms-lib";
   import * as yup from "yup";
-  import BreadCrumb from "../../Components/Common/BreadCrumb.svelte";
-  import PreviewCardHeader from "../../Components/Common/PreviewCardHeader.svelte";
-  import PrismCode from "../../Components/Common/Prism.svelte";
-  import Tooltipform from './tooltipform.svelte'
-  import UiContent from "../../Components/Common/UiContent.svelte";
+  import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
+  import PreviewCardHeader from "../../../Components/Common/PreviewCardHeader.svelte";
+  import PrismCode from "../../../Components/Common/Prism.svelte";
+  import Tooltipform from '../tooltipform.svelte'
+  import UiContent from "../../../Components/Common/UiContent.svelte";
   const { form, errors, state, handleChange, handleSubmit } = createForm({
       initialValues: {
         firstname: "Mark",

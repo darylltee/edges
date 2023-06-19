@@ -1,7 +1,7 @@
 <script>
-	import cryptoData from "../../../common/data/cryptoPage";
+	import cryptoData from "../../../../common/data/cryptoPage";
 	import { Card, CardBody, Col } from "sveltestrap";
-	import Counter from "../../../Components/Common/counter.svelte";
+	import Counter from "../../../../Components/Common/counter.svelte";
 </script>
 
 <Counter />

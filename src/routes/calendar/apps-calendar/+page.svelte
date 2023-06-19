@@ -15,12 +15,12 @@
 	import interactionPlugin from "@fullcalendar/interaction";
 	import BootstrapTheme from "@fullcalendar/bootstrap";
 	import { CalendarIcon } from "svelte-feather-icons";
-	import CDeleteModal from "../../Components/Common/CDeleteModal.svelte";
+	import CDeleteModal from "../../../Components/Common/CDeleteModal.svelte";
 
-	import UpcommingEvents from "./UpcommingEvents.svelte";
+	import UpcommingEvents from "../UpcommingEvents.svelte";
 
-	import BreadCrumb from "../../Components/Common/BreadCrumb.svelte";
-	import CalendarEventsList from "../../common/data/calender";
+	import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
+	import CalendarEventsList from "../../../common/data/calender";
 
 	let isOpen = false;
 	let calendarComponentRef;

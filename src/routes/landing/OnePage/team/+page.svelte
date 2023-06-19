@@ -2,18 +2,18 @@
     import Link from "svelte-link";
     import { Card, CardBody, Col, Container, Row } from "sveltestrap";
     // Import Images
-    import avatar10 from "../../../assets/images/users/avatar-10.jpg";
-    import avatar3 from "../../../assets/images/users/avatar-3.jpg";
-    import avatar5 from "../../../assets/images/users/avatar-5.jpg";
-    import avatar6 from "../../../assets/images/users/avatar-6.jpg";
-    import avatar7 from "../../../assets/images/users/avatar-7.jpg";
-    import avatar8 from "../../../assets/images/users/avatar-8.jpg";
-    import dumilag from "./assets/dumilag.png";
-    import escopete from "./assets/escopete.png";
-    import malto from "./assets/malto.png";
-    import mirasol from "./assets/mirasol.png";
-    import orgela from "./assets/orgela.png";
-    import profile from "./assets/profile.png";
+    import avatar10 from "../../../../assets/images/users/avatar-10.jpg";
+    import avatar3 from "../../../../assets/images/users/avatar-3.jpg";
+    import avatar5 from "../../../../assets/images/users/avatar-5.jpg";
+    import avatar6 from "../../../../assets/images/users/avatar-6.jpg";
+    import avatar7 from "../../../../assets/images/users/avatar-7.jpg";
+    import avatar8 from "../../../../assets/images/users/avatar-8.jpg";
+    import dumilag from "../assets/dumilag.png";
+    import escopete from "../assets/escopete.png";
+    import malto from "../assets/malto.png";
+    import mirasol from "../assets/mirasol.png";
+    import orgela from "../assets/orgela.png";
+    import profile from "../assets/profile.png";
 </script>
 
 <section class="section bg-light" id="team">

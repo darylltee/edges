@@ -9,9 +9,9 @@
 		Row,
 		Dropdown,
 	} from "sveltestrap";
-	import WatchListChart from "./watchListChart.svelte";
+	import WatchListChart from "../watchListChart.svelte";
 	import { Swiper, SwiperSlide } from "swiper/svelte";
-	import cryptoData from "../../../common/data/cryptoPage";
+	import cryptoData from "../../../../common/data/cryptoPage";
 
 	// Import Swiper styles
 	import "swiper/css";

@@ -1,7 +1,7 @@
 <script>
     import Link from 'svelte-link'
     import { Card, CardBody, Col, Row } from "sveltestrap";
-    import overviewJobs from "../../../../common/data/appsJobs";
+    import overviewJobs from "../../../../../common/data/appsJobs";
 </script>
 <Row>
     <Col lg={12}>

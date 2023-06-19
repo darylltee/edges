@@ -1,6 +1,6 @@
 <script>
 	import { Card, CardBody} from "sveltestrap";
-	import CryptoData from "../../../common/data/cryptoPage";
+	import CryptoData from "../../../../common/data/cryptoPage";
 </script>
 
 {#each CryptoData.CryptoicoWidgets as item}

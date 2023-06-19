@@ -1,9 +1,9 @@
 <script>
     import { Carousel, CarouselItem } from 'sveltestrap';
     // Carousel images
-    import img1 from "../../../assets/images/small/img-1.jpg";
-    import img2 from "../../../assets/images/small/img-2.jpg";
-    import img3 from "../../../assets/images/small/img-3.jpg";
+    import img1 from "../../../../assets/images/small/img-1.jpg";
+    import img2 from "../../../../assets/images/small/img-2.jpg";
+    import img3 from "../../../../assets/images/small/img-3.jpg";
     
     const items = [
         img1,

@@ -1,7 +1,7 @@
 <script>
 	import { Card, CardHeader, Row, Col, CardBody } from 'sveltestrap';
 
-	import RevenueCharts from './DashboardEcommerceCharts.svelte';
+	import RevenueCharts from '../DashboardEcommerceCharts.svelte';
 
 </script>
 

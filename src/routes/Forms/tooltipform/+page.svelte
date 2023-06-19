@@ -6,8 +6,8 @@
         CardBody,
         Label
     } from "sveltestrap";
-    import PrismCode from '../../Components/Common/Prism.svelte'
-    import PreviewCardHeader from '../../Components/Common/PreviewCardHeader.svelte';
+    import PrismCode from '../../../Components/Common/Prism.svelte'
+    import PreviewCardHeader from '../../../Components/Common/PreviewCardHeader.svelte';
     import { createForm } from "svelte-forms-lib";
     import * as yup from "yup";
 

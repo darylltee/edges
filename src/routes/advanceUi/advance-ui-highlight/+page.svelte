@@ -7,8 +7,8 @@
 		Container,
 		Row,
 	} from "sveltestrap";
-	import BreadCrumb from "../../Components/Common/BreadCrumb.svelte";
-	import PrismCode from "../../Components/Common/Prism.svelte";
+	import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
+	import PrismCode from "../../../Components/Common/Prism.svelte";
 	// HTML Highlight
 
 	const htmlHighlightCode = `<!DOCTYPE html>

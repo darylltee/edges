@@ -23,13 +23,13 @@
 		Button,
 		Table
 	} from 'sveltestrap';
-	import BreadCrumb from '../../Components/Common/BreadCrumb.svelte';
+	import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
 	import Link from 'svelte-link';
 	import Select from 'svelte-select';
 
-	import img8 from '../../assets/images/products/img-8.png'
-	import img7 from '../../assets/images/products/img-7.png'
-	import img3 from '../../assets/images/products/img-3.png'
+	import img8 from '../../../assets/images/products/img-8.png'
+	import img7 from '../../../assets/images/products/img-7.png'
+	import img3 from '../../../assets/images/products/img-3.png'
 
 	const productState = [
 		{ label: 'Select State...', value: 'Select State' },

@@ -1,8 +1,8 @@
 <script>
 	import { browser } from "$app/environment";
 	import { onMount } from "svelte";
-	import logosm from "../../../../assets/images/logo-sm.png";
-	import allseries from "../series";
+	import logosm from "../../../../../assets/images/logo-sm.png";
+	import allseries from "../../series";
 
 	function getChartColorsArray(colors) {
 		if (browser) {

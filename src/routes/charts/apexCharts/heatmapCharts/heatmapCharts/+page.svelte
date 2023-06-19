@@ -7,11 +7,11 @@
 		Container,
 		Row,
 	} from "sveltestrap";
-	import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
-	import BasicHeatmap from "./BasicHeatmap.svelte";
-	import MultipleHeatmap from "./MultipleHeatmap.svelte";
-	import ColorRange from "./ColorRange.svelte";
-	import RangeWithoutShades from "./RangeWithoutShades.svelte";
+	import BreadCrumb from "../../../../../Components/Common/BreadCrumb.svelte";
+	import BasicHeatmap from "../BasicHeatmap.svelte";
+	import MultipleHeatmap from "../MultipleHeatmap.svelte";
+	import ColorRange from "../ColorRange.svelte";
+	import RangeWithoutShades from "../RangeWithoutShades.svelte";
 </script>
 
 <svelte:head>

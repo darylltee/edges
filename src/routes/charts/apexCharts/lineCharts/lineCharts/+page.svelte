@@ -9,21 +9,21 @@
 		Row,
 	} from "sveltestrap";
 
-	import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
+	import BreadCrumb from "../../../../../Components/Common/BreadCrumb.svelte";
 
-	import LineAllCharts from "./LineAllCharts.svelte";
-	import ZoomableTimeseries from "./ZoomableTimeseries.svelte";
-	import LinewithDataLabels from "./LinewithDataLabels.svelte";
-	import DashedLine from "./DashedLine.svelte";
-	import LinewithAnnotations from "./LinewithAnnotations.svelte";
-	import BrushChart from "./BrushChart.svelte";
-	import BrushChart1 from "./BrushChart1.svelte";
-	import SteplineChart from "./SteplineChart.svelte";
-	import GradientCharts from "./GradientCharts.svelte";
-	import MissingData from "./MissingData.svelte";
-	import ChartSyncingLine from './ChartSyncingLine.svelte';
-	import ChartSyncingLine2 from './ChartSyncingLine2.svelte';
-	import ChartSyncingArea from './ChartSyncingArea.svelte';
+	import LineAllCharts from "../LineAllCharts.svelte";
+	import ZoomableTimeseries from "../ZoomableTimeseries.svelte";
+	import LinewithDataLabels from "../LinewithDataLabels.svelte";
+	import DashedLine from "../DashedLine.svelte";
+	import LinewithAnnotations from "../LinewithAnnotations.svelte";
+	import BrushChart from "../BrushChart.svelte";
+	import BrushChart1 from "../BrushChart1.svelte";
+	import SteplineChart from "../SteplineChart.svelte";
+	import GradientCharts from "../GradientCharts.svelte";
+	import MissingData from "../MissingData.svelte";
+	import ChartSyncingLine from '../ChartSyncingLine.svelte';
+	import ChartSyncingLine2 from '../ChartSyncingLine2.svelte';
+	import ChartSyncingArea from '../ChartSyncingArea.svelte';
 </script>
 
 <svelte:head>

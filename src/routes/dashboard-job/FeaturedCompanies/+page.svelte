@@ -1,6 +1,6 @@
 <script>
     import { Card, CardBody, CardHeader, Col, Table } from "sveltestrap";
-    import featuredCompany from "../../common/data/dashboardJobs";
+    import featuredCompany from "../../../common/data/dashboardJobs";
     import Link from 'svelte-link';
 </script>
 <Col xl={6}>

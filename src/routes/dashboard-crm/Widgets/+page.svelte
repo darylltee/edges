@@ -1,5 +1,5 @@
 <script>
-	import data from '../../common/data/dashboardcrm';
+	import data from '../../../common/data/dashboardcrm';
 </script>
 
 <div class="col-xl-12">

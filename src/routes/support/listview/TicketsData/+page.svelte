@@ -1,9 +1,11 @@
 <script>
+	throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
+
 	import { Card, CardBody, Col, Modal, ModalBody, Row } from 'sveltestrap';
 	import Select from 'svelte-select';
 	import Flatpickr from 'svelte-flatpickr';
 	import { SvelteWrapper } from 'gridjs-svelte/plugins';
-	import Actions from './Actions.svelte';
+	import Actions from '../Actions.svelte';
 	import { html } from 'gridjs';
 	import Grid from 'gridjs-svelte';
 

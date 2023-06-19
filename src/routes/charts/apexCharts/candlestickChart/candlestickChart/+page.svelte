@@ -7,12 +7,12 @@
         Container,
         Row,
     } from "sveltestrap";
-    import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
-    import Basic from "./Basic.svelte";
-    import ComboCandlestick from "./ComboCandlestick.svelte";
-    import ComboCandlestick1 from "./ComboCandlestick1.svelte";
-    import Category from "./Category.svelte";
-    import CandlestickLine from "./CandlestickLine.svelte";
+    import BreadCrumb from "../../../../../Components/Common/BreadCrumb.svelte";
+    import Basic from "../Basic.svelte";
+    import ComboCandlestick from "../ComboCandlestick.svelte";
+    import ComboCandlestick1 from "../ComboCandlestick1.svelte";
+    import Category from "../Category.svelte";
+    import CandlestickLine from "../CandlestickLine.svelte";
 </script>
 
 <svelte:head>

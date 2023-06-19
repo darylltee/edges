@@ -1,10 +1,10 @@
 <script>
 import { DropdownItem, DropdownMenu, DropdownToggle, Dropdown } from 'sveltestrap';
-import PortfolioCharts from './PortfolioCharts.svelte';
-import btc from '../../assets/images/svg/crypto-icons/btc.svg'
-import eth from '../../assets/images/svg/crypto-icons/eth.svg'
-import ltc from '../../assets/images/svg/crypto-icons/ltc.svg'
-import dash from '../../assets/images/svg/crypto-icons/dash.svg'
+import PortfolioCharts from '../PortfolioCharts.svelte';
+import btc from '../../../assets/images/svg/crypto-icons/btc.svg'
+import eth from '../../../assets/images/svg/crypto-icons/eth.svg'
+import ltc from '../../../assets/images/svg/crypto-icons/ltc.svg'
+import dash from '../../../assets/images/svg/crypto-icons/dash.svg'
 </script>
 <div class="col-xxl-3">
     <div class="card card-height-100">

@@ -3,7 +3,7 @@
 </svelte:head>
 <script>
     import { Row, Col, Container, Card, CardBody, CardTitle } from "sveltestrap";
-    import BreadCrumb from '../../Components/Common/BreadCrumb.svelte';
+    import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
     import RangeSlider from "svelte-range-slider-pips";
     let demo = ["😁"];
     const moods = ["😁", "😀", "😊", "😐", "😥", "😫"];

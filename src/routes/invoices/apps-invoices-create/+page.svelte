@@ -2,12 +2,12 @@
   <title>Create Invoice | Velzon - Svelte Admin & Dashboard Template</title>
 </svelte:head>
 <script>
-	import BreadCrumb from '../../Components/Common/BreadCrumb.svelte';
+	import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
 	import { CardBody, Row, Col, Card, Container, Form, Input, Label, Table } from 'sveltestrap';
 	import Select from 'svelte-select';
 	import Link from 'svelte-link';
-	import logodark from '../../assets/images/logo-dark.png';
-	import logolight from '../../assets/images/logo-light.png';
+	import logodark from '../../../assets/images/logo-dark.png';
+	import logolight from '../../../assets/images/logo-light.png';
 
 	const paymentdetails = [
 		{ label: 'Payment Method', value: 'Payment Method' },

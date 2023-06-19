@@ -8,9 +8,9 @@
   } from 'sveltestrap';
 
     // Carousel images
-    import img7 from "../../../assets/images/small/img-7.jpg";
-    import img2 from "../../../assets/images/small/img-2.jpg";
-    import img9 from "../../../assets/images/small/img-9.jpg";
+    import img7 from "../../../../assets/images/small/img-7.jpg";
+    import img2 from "../../../../assets/images/small/img-2.jpg";
+    import img9 from "../../../../assets/images/small/img-9.jpg";
 
   const items = [
     {

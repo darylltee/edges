@@ -10,13 +10,13 @@
         Row,
         Dropdown,
     } from "sveltestrap";
-    import data from "../../common/data/dashboardNFT";
+    import data from "../../../common/data/dashboardNFT";
     // Import Images
-    import usFlag from "../../assets/images/flags/us.svg";
-    import russiaFlag from "../../assets/images/flags/russia.svg";
-    import spainFlag from "../../assets/images/flags/spain.svg";
-    import italyFlag from "../../assets/images/flags/italy.svg";
-    import germanyFlag from "../../assets/images/flags/germany.svg";
+    import usFlag from "../../../assets/images/flags/us.svg";
+    import russiaFlag from "../../../assets/images/flags/russia.svg";
+    import spainFlag from "../../../assets/images/flags/spain.svg";
+    import italyFlag from "../../../assets/images/flags/italy.svg";
+    import germanyFlag from "../../../assets/images/flags/germany.svg";
 
     // Swiper
     import { Swiper, SwiperSlide } from "swiper/svelte";
@@ -25,7 +25,7 @@
     import "swiper/css/navigation";
     import { Pagination, Navigation, Autoplay } from "swiper";
     import Link from "svelte-link";
-    import Map from "../../Components/Common/Map.svelte";
+    import Map from "../../../Components/Common/Map.svelte";
 </script>
 
 <Row>

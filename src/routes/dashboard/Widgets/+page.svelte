@@ -1,7 +1,7 @@
 <script>
     
 	import { Col, Card, CardBody } from 'sveltestrap';
-	import data from '../../common/data/dashboardEcommerce';
+	import data from '../../../common/data/dashboardEcommerce';
 
 </script>
 

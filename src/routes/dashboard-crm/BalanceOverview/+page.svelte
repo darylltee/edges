@@ -9,7 +9,7 @@
 		DropdownToggle,
 		Dropdown
 	} from 'sveltestrap';
-	import BalanceOverviewCharts from './BalanceOverviewCharts.svelte';
+	import BalanceOverviewCharts from '../BalanceOverviewCharts.svelte';
 </script>
 
 <Col xxl={6}>

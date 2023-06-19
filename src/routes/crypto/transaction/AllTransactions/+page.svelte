@@ -6,7 +6,7 @@
     import Grid from "gridjs-svelte";
     import { html } from "gridjs";
 
-    import transactionsData from "../../../common/data/cryptoPage";
+    import transactionsData from "../../../../common/data/cryptoPage";
 
     const Sortby = [
         { label: "All", value: "All" },

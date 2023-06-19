@@ -2,9 +2,9 @@
   <title>Google Maps | Velzon - Svelte Admin & Dashboard Template</title>
 </svelte:head>
 <script>
-import Map from "../../Components/Common/Map.svelte";
+import Map from "../../../Components/Common/Map.svelte";
 import { Card, CardBody, CardHeader, Col, Container, Row } from 'sveltestrap';
-import BreadCrumb from '../../Components/Common/BreadCrumb.svelte';
+import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
 </script>
 
 <div class="page-content">

@@ -2,7 +2,7 @@
     import Link from "svelte-link";
     import { Card, Col, Container, Row,Label } from "sveltestrap";
 
-    import AuthSlider from "../AuthSlider.svelte";
+    import AuthSlider from "../../AuthSlider.svelte";
 </script>
 
 <svelte:head>

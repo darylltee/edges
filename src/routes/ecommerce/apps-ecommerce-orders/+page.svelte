@@ -7,9 +7,9 @@
 	import Select from 'svelte-select';
 	import { html } from 'gridjs';
 	import Grid from 'gridjs-svelte';
-	import BreadCrumb from '../../Components/Common/BreadCrumb.svelte';
+	import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
 
-	import ecommerceData from '../../common/data/ecommerce';
+	import ecommerceData from '../../../common/data/ecommerce';
 
 	const options = [
 		{ value: 'Status', label: 'Status' },

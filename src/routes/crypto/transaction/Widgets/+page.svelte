@@ -6,7 +6,7 @@
     import "swiper/css";
     import "swiper/css/pagination";
     import { Autoplay, Mousewheel } from "swiper";
-    import Counter from "./../../../Components/Common/counter.svelte";
+    import Counter from "../../../../Components/Common/counter.svelte";
 </script>
 
 <Counter />

@@ -1,6 +1,6 @@
 <script>
 import { Card, CardBody, CardHeader, Col, Row } from 'sveltestrap';
-import MarkerCharts from './MarkerCharts.svelte';
+import MarkerCharts from '../MarkerCharts.svelte';
 
 </script>
 <Row>

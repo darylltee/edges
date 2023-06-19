@@ -7,10 +7,10 @@
 		Container,
 		Row,
 	} from "sveltestrap";
-	import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
-	import SimpleRadar from "./SimpleRadar.svelte";
-	import MultipleRadar from "./MultipleRadar.svelte";
-	import PolygonRadar from "./PolygonRadar.svelte";
+	import BreadCrumb from "../../../../../Components/Common/BreadCrumb.svelte";
+	import SimpleRadar from "../SimpleRadar.svelte";
+	import MultipleRadar from "../MultipleRadar.svelte";
+	import PolygonRadar from "../PolygonRadar.svelte";
 </script>
 
 <svelte:head>

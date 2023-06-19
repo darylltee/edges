@@ -1,13 +1,13 @@
 <script>
 	import { Card, CardBody, Row, Progress } from "sveltestrap";
-	import data from "../../common/data/dashboardEcommerce";
-	import ReviewSlider from "../../Components/Common/ReviewSlider.svelte";
-	import img1 from '../../assets/images/products/img-1.png';
-	import img2 from '../../assets/images/products/img-2.png';
-	import img8 from '../../assets/images/products/img-8.png';
-	import avatar2 from '../../assets/images/users/avatar-2.jpg';
-	import avatar3 from '../../assets/images/users/avatar-3.jpg';
-	import giftbox from '../../assets/images/giftbox.png';
+	import data from "../../../common/data/dashboardEcommerce";
+	import ReviewSlider from "../../../Components/Common/ReviewSlider.svelte";
+	import img1 from '../../../assets/images/products/img-1.png';
+	import img2 from '../../../assets/images/products/img-2.png';
+	import img8 from '../../../assets/images/products/img-8.png';
+	import avatar2 from '../../../assets/images/users/avatar-2.jpg';
+	import avatar3 from '../../../assets/images/users/avatar-3.jpg';
+	import giftbox from '../../../assets/images/giftbox.png';
 </script>
 
 <div class="col-auto layout-rightside-col" id="layout-rightside-coll">

@@ -12,7 +12,7 @@
 	} from 'sveltestrap';
 	import Dropzone from 'svelte-file-dropzone';
 	import Link from 'svelte-link';
-	import BreadCrumb from '../../Components/Common/BreadCrumb.svelte';
+	import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
 
 
 	let files = {

@@ -22,16 +22,16 @@
 	} from "sveltestrap";
 
 	import Select from "svelte-select";
-	import DeleteModal from "../../Components/Common/CDeleteModal.svelte";
-	import BreadCrumb from "../../Components/Common/BreadCrumb.svelte";
+	import DeleteModal from "../../../Components/Common/CDeleteModal.svelte";
+	import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
 	import Link from "svelte-link";
 	import { html } from "gridjs";
 	import Grid from "gridjs-svelte";
 	import { SvelteWrapper } from "gridjs-svelte/plugins";
-	import crmData from "../../common/data/crm";
-	import ContactAction from "./ContactAction.svelte";
+	import crmData from "../../../common/data/crm";
+	import ContactAction from "../ContactAction.svelte";
 
-	import avatar10 from '../../assets/images/users/avatar-10.jpg'
+	import avatar10 from '../../../assets/images/users/avatar-10.jpg'
 	let deleteModal = false;
 
 	let open = false;

@@ -3,8 +3,8 @@
 </svelte:head>
 <script>
     import { Col, Container, Row } from 'sveltestrap';
-    import ParticlesAuth from '../authenticationInner/ParticlesAuth.svelte';
-    import maintenanceImg from '../../assets/images/maintenance.png';
+    import ParticlesAuth from '../../authenticationInner/ParticlesAuth.svelte';
+    import maintenanceImg from '../../../assets/images/maintenance.png';
     import Link from 'svelte-link';
 </script>
 <ParticlesAuth>

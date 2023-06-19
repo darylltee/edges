@@ -4,9 +4,9 @@
 <script>
 	import { Container, Row } from 'sveltestrap';
 
-	import Section from './Section.svelte';
-	import TicketDescription from './TicketDescription.svelte';
-	import TicketDetails from './TicketDetails.svelte';
+	import Section from '../Section.svelte';
+	import TicketDescription from '../TicketDescription.svelte';
+	import TicketDetails from '../TicketDetails.svelte';
 </script>
 
 <div class="page-content">

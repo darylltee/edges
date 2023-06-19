@@ -1,12 +1,12 @@
 <script>
     import { Col, Card, CardBody, CardHeader, Row } from "sveltestrap";
     import Link from "svelte-link";
-    import avtar10 from "../../assets/images/users/avatar-10.jpg";
-    import avtar1 from "../../assets/images/users/avatar-1.jpg";
-    import avtar9 from "../../assets/images/users/avatar-9.jpg";
-    import avtar2 from "../../assets/images/users/avatar-2.jpg";
-    import avtar5 from "../../assets/images/users/avatar-5.jpg";
-    import avtar8 from "../../assets/images/users/avatar-8.jpg";
+    import avtar10 from "../../../assets/images/users/avatar-10.jpg";
+    import avtar1 from "../../../assets/images/users/avatar-1.jpg";
+    import avtar9 from "../../../assets/images/users/avatar-9.jpg";
+    import avtar2 from "../../../assets/images/users/avatar-2.jpg";
+    import avtar5 from "../../../assets/images/users/avatar-5.jpg";
+    import avtar8 from "../../../assets/images/users/avatar-8.jpg";
 
     const candidateList = [
         {

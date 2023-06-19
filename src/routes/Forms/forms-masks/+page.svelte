@@ -4,7 +4,7 @@
 <script>
 	import { cleave } from 'svelte-cleavejs';
 	import { Card, CardBody, CardHeader, Col, Container, Row, Label } from 'sveltestrap';
-	import BreadCrumb from '../../Components/Common/BreadCrumb.svelte';
+	import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
 </script>
 
 <div class="page-content">

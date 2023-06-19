@@ -8,7 +8,7 @@
 		Dropdown,
 		DropdownItem
 	} from 'sveltestrap';
-	import AudiencesSessionsCharts from './AudiencesSessionsCharts.svelte';
+	import AudiencesSessionsCharts from '../AudiencesSessionsCharts.svelte';
 </script>
 
 <Col xl={6}>

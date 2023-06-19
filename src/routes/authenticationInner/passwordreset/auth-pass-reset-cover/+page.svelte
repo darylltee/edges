@@ -1,7 +1,7 @@
 <script>
 	import { Button, Card, Col, Container, Row,Label } from "sveltestrap";
 
-	import AuthSlider from "../AuthSlider.svelte";
+	import AuthSlider from "../../AuthSlider.svelte";
 	import Link from "svelte-link";
 </script>
 

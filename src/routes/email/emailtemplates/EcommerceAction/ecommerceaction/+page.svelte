@@ -1,9 +1,9 @@
 <script>
-    import BreadCrumb from './../../../../Components/Common/BreadCrumb.svelte';
+    import BreadCrumb from '../../../../../Components/Common/BreadCrumb.svelte';
     import { Container } from 'sveltestrap';
-    import InvoiceAction from "./InvoiceAction.svelte";
-    import FeedbackAction from "./FeedbackAction.svelte";
-    import RatingTemplate from "./RatingTemplate.svelte";
+    import InvoiceAction from "../InvoiceAction.svelte";
+    import FeedbackAction from "../FeedbackAction.svelte";
+    import RatingTemplate from "../RatingTemplate.svelte";
 </script>
 <svelte:head>
 	<title>Ecommerce Action | Velzon - Svelte Admin & Dashboard Template</title>

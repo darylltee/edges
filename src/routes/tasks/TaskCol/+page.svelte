@@ -1,7 +1,9 @@
 <script>
+	throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
+
 	
 	import Link from 'svelte-link';
-	import CreateTaskModal from './createTaskModal.svelte';
+	import CreateTaskModal from '../createTaskModal.svelte';
 	export let row;
 
 	$: item = row.cell(3).data;

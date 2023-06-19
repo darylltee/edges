@@ -1,7 +1,7 @@
 <script>
     import { Container, Row, Col, Card, CardBody } from 'sveltestrap';
     import Link from 'svelte-link';
-    import data from '../../../common/data/LandingNFT';
+    import data from '../../../../common/data/LandingNFT';
 
     const favouriteBtn = (ele) => {
         if (ele.closest("button").classList.contains("active")) {

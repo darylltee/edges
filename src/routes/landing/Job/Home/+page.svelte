@@ -10,10 +10,10 @@
 } from "sveltestrap";
 import Link from 'svelte-link'
 
-import Avatar3 from "../../../assets/images/users/avatar-3.jpg";
-import Avatar9 from "../../../assets/images/users/avatar-9.jpg";
-import Avatar10 from "../../../assets/images/users/avatar-10.jpg";
-import JobProfile2 from "../../../assets/images/job-profile2.png";
+import Avatar3 from "../../../../assets/images/users/avatar-3.jpg";
+import Avatar9 from "../../../../assets/images/users/avatar-9.jpg";
+import Avatar10 from "../../../../assets/images/users/avatar-10.jpg";
+import JobProfile2 from "../../../../assets/images/job-profile2.png";
 
 </script>
 <section class="section job-hero-section bg-light pb-0" id="hero">

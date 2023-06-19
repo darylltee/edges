@@ -1,6 +1,6 @@
 <script>
 import { Card, CardHeader, Col, DropdownMenu, DropdownToggle, Dropdown, DropdownItem, CardBody } from 'sveltestrap';
-import UsersByDeviceCharts from "./UsersByDeviceCharts.svelte"
+import UsersByDeviceCharts from "../UsersByDeviceCharts.svelte"
 import { UsersIcon } from 'svelte-feather-icons'
 
 </script>

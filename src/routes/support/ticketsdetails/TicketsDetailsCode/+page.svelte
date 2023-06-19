@@ -1,5 +1,5 @@
 <script>
-  import PrismCode from "../../../Components/Common/Prism.svelte";
+  import PrismCode from "../../../../Components/Common/Prism.svelte";
 
   const ticketCode = `var app = document.getElementById("app");
 var run = (model) => get(model, "users", () =>

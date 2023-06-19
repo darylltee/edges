@@ -19,7 +19,7 @@
 	import Flatpickr from "svelte-flatpickr";
 	import Select from "svelte-select";
 	import Link from "svelte-link";
-	import verificationimg from '../../../assets/images/verification-img.png'
+	import verificationimg from '../../../../assets/images/verification-img.png'
 
 	let isKycVerification = false;
 

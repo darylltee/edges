@@ -2,7 +2,7 @@
   import { Col, Container, Row } from "sveltestrap";
   import Link from "svelte-link";
   // Import Images
-  import error400cover from "../../../assets/images/error400-cover.png";
+  import error400cover from "../../../../assets/images/error400-cover.png";
 </script>
 
 <svelte:head>

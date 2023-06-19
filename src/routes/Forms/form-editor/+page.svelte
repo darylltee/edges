@@ -8,7 +8,7 @@
         CardBody,
     } from "sveltestrap";
     import Editor from '@tinymce/tinymce-svelte';
-    import BreadCrumb from "../../Components/Common/BreadCrumb.svelte";
+    import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
 
 </script>
 

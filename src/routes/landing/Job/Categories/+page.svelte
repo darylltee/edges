@@ -1,6 +1,6 @@
 <script>
     import { Card, CardBody, Col, Container, Row } from "sveltestrap";
-    import categories from "../../../common/data/jobLanding";
+    import categories from "../../../../common/data/jobLanding";
     import Link from 'svelte-link';
 </script>
 <section class="section bg-light" id="categories">

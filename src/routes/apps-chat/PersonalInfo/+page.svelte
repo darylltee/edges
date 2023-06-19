@@ -1,4 +1,6 @@
 <script>
+  throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
+
   import Link from "svelte-link";
   import {
     Button,
@@ -9,13 +11,13 @@
     DropdownItem,
   } from "sveltestrap";
 
-  import data from "../../common/data/chat";
-  import Attachements from "./attachement.svelte";
+  import data from "../../../common/data/chat";
+  import Attachements from "../attachement.svelte";
 
   export let currentuser, cuurentiseImg, show, onCloseClick;
 
-  import img9 from '../../assets/images/small/img-9.jpg'
-  import userdummyimg from '../../assets/images/users/user-dummy-img.jpg'
+  import img9 from '../../../assets/images/small/img-9.jpg'
+  import userdummyimg from '../../../assets/images/users/user-dummy-img.jpg'
 </script>
 
 <Offcanvas

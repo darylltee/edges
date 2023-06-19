@@ -1,9 +1,9 @@
 <script>
   import { Card, CardBody, CardHeader, Col, Container, Row } from "sveltestrap";
-  import BreadCrumb from "../../Components/Common/BreadCrumb.svelte";
-  import PrismCode from "../../Components/Common/Prism.svelte";
+  import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
+  import PrismCode from "../../../Components/Common/Prism.svelte";
 
-  import macimg from '../../assets/images/mac-img.png'
+  import macimg from '../../../assets/images/mac-img.png'
   // Fade Up
 
   const fadeUpCode = `<div data-aos="fade-up"></div>`;

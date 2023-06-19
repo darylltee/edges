@@ -2,7 +2,7 @@
     import { Card, CardBody, CardHeader, Col, Row } from "sveltestrap";
     import { html } from "gridjs";
     import Grid from "gridjs-svelte";
-    import cryptoData from "../../../common/data/cryptoPage";
+    import cryptoData from "../../../../common/data/cryptoPage";
 
     const data = cryptoData.market;
 

@@ -1,7 +1,7 @@
 <script>
 	import { Container, Row } from "sveltestrap";
-	import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
-	import KYC from "./KYCVerification.svelte";
+	import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
+	import KYC from "../KYCVerification.svelte";
 </script>
 
 <svelte:head>

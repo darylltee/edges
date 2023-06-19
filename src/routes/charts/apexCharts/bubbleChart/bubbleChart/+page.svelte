@@ -7,9 +7,9 @@
 		Container,
 		Row,
 	} from "sveltestrap";
-	import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
-	import Simple from "./Simple.svelte";
-	import ThreeDBubble from "./ThreeDBubble.svelte";
+	import BreadCrumb from "../../../../../Components/Common/BreadCrumb.svelte";
+	import Simple from "../Simple.svelte";
+	import ThreeDBubble from "../ThreeDBubble.svelte";
 </script>
 
 <svelte:head>

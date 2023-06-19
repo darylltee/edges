@@ -1,8 +1,8 @@
 <script>
     import { Button, Card, CardBody, Col, Container, Row, Form, Input, Label } from 'sveltestrap';
     import Link from 'svelte-link'
-    import ParticlesAuth from '../ParticlesAuth.svelte';
-    import logoLight from "../../../assets/images/logo-light.png";
+    import ParticlesAuth from '../../ParticlesAuth.svelte';
+    import logoLight from "../../../../assets/images/logo-light.png";
     let passwordShow = false;
     let confrimPasswordShow = false;
     const setPasswordShow = () => {

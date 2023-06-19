@@ -17,8 +17,8 @@
 		Dropdown
 	} from 'sveltestrap';
 
-	import data from '../../common/data/crypto';
-    import DashboardCryptoCharts from './DashboardCryptoCharts.svelte';
+	import data from '../../../common/data/crypto';
+    import DashboardCryptoCharts from '../DashboardCryptoCharts.svelte';
 	
 </script>
 

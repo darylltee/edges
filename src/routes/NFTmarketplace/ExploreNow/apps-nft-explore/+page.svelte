@@ -3,9 +3,9 @@
 </svelte:head>
 <script>
     import {Card,CardBody,CardHeader,Col,Container,DropdownItem,DropdownMenu,DropdownToggle,Row,Collapse,Dropdown} from "sveltestrap";
-    import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
+    import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
     import Link from "svelte-link";
-    import data from '../../../common/data/NFTMarketplace'
+    import data from '../../../../common/data/NFTMarketplace'
     let isOpen = true;
 </script>
 <div class="page-content">

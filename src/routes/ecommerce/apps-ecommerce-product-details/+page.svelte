@@ -22,14 +22,14 @@
 
 	let activeTab = 1;
 
-	import data from '../../common/data/ecommerce';
-	import PricingWidgetList from './PricingWidgetList.svelte';
-	import img1 from '../../assets/images/products/img-1.png';
-	import img6 from '../../assets/images/products/img-6.png';
-	import img8 from '../../assets/images/products/img-8.png';
-	import img10 from '../../assets/images/small/img-10.jpg';
-	import img11 from '../../assets/images/small/img-11.jpg';
-	import img12 from '../../assets/images/small/img-12.jpg';
+	import data from '../../../common/data/ecommerce';
+	import PricingWidgetList from '../PricingWidgetList.svelte';
+	import img1 from '../../../assets/images/products/img-1.png';
+	import img6 from '../../../assets/images/products/img-6.png';
+	import img8 from '../../../assets/images/products/img-8.png';
+	import img10 from '../../../assets/images/small/img-10.jpg';
+	import img11 from '../../../assets/images/small/img-11.jpg';
+	import img12 from '../../../assets/images/small/img-12.jpg';
 
 	import { Swiper, SwiperSlide } from 'swiper/svelte';
 
@@ -42,7 +42,7 @@
 
 	// import required modules
 	import { FreeMode, Navigation, Thumbs } from 'swiper';
-	import BreadCrumb from '../../Components/Common/BreadCrumb.svelte';
+	import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
 
 	let thumbsSwiper = null;
 

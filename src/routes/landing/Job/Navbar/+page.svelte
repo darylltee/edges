@@ -3,8 +3,8 @@
     import { onMount } from "svelte";
     import Link from "svelte-link";
     import { Collapse, Container, NavbarToggler, NavLink } from "sveltestrap";
-    import LogoDark from "../../../assets/images/logo-dark.png";
-    import LogoLight from "../../../assets/images/logo-light.png";
+    import LogoDark from "../../../../assets/images/logo-dark.png";
+    import LogoLight from "../../../../assets/images/logo-light.png";
     var navClass = "";
     let isOpen = true;
     const toggle = () => (isOpen = !isOpen);

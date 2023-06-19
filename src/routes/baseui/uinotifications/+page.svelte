@@ -11,14 +11,14 @@
 		ToastHeader,
 		Form
 	} from "sveltestrap";
-	import BreadCrumb from "../../Components/Common/BreadCrumb.svelte";
-	import PreviewCardHeader from "../../Components/Common/PreviewCardHeader.svelte";
-	import UiContent from "../../Components/Common/UiContent.svelte";
-	import PrismCode from "../../Components/Common/Prism.svelte";
+	import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
+	import PreviewCardHeader from "../../../Components/Common/PreviewCardHeader.svelte";
+	import UiContent from "../../../Components/Common/UiContent.svelte";
+	import PrismCode from "../../../Components/Common/Prism.svelte";
 	import { toasts, ToastContainer, BootstrapToast } from "svelte-toasts";
 	import Link from "svelte-link";
 
-	import logosm from '../../assets/images/logo-sm.png'
+	import logosm from '../../../assets/images/logo-sm.png'
 	
 	let toast1 = true;
 	let toast2 = true;

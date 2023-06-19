@@ -9,10 +9,10 @@
 		DropdownToggle,
 		Dropdown
 	} from 'sveltestrap';
-import avatar2 from '../../assets/images/users/avatar-2.jpg'
-import avatar1 from '../../assets/images/users/avatar-1.jpg'
-import img1 from '../../assets/images/small/img-1.jpg'
-import img2 from '../../assets/images/small/img-2.jpg'
+import avatar2 from '../../../assets/images/users/avatar-2.jpg'
+import avatar1 from '../../../assets/images/users/avatar-1.jpg'
+import img1 from '../../../assets/images/small/img-1.jpg'
+import img2 from '../../../assets/images/small/img-2.jpg'
 </script>
 
 <Col xxl={4} lg={6}>

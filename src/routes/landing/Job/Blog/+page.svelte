@@ -1,8 +1,8 @@
 <script>
     import { Button, Card, CardBody, Col, Container, Row , NavLink} from "sveltestrap";
-    import img8 from "../../../assets/images/small/img-8.jpg";
-    import img6 from "../../../assets/images/small/img-6.jpg";
-    import img9 from "../../../assets/images/small/img-9.jpg";
+    import img8 from "../../../../assets/images/small/img-8.jpg";
+    import img6 from "../../../../assets/images/small/img-6.jpg";
+    import img9 from "../../../../assets/images/small/img-9.jpg";
 </script>
 <section class="section" id="blog">
     <Container>

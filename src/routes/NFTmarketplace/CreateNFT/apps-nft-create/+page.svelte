@@ -3,7 +3,7 @@
 </svelte:head>
 <script>
     import { Card, CardBody, CardHeader, Col, Container, Form, Row, Label } from "sveltestrap";
-    import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
+    import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
 </script>
 <div class="page-content">
     <Container fluid>

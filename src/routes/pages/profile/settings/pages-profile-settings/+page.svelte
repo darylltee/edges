@@ -21,8 +21,8 @@
 	import Link from 'svelte-link';
 	import Flatpickr from 'svelte-flatpickr';
 	import Select from 'svelte-select';
-	import profilebg from '../../../../assets/images/profile-bg.jpg'
-	import avatar1 from '../../../../assets/images/users/avatar-1.jpg'
+	import profilebg from '../../../../../assets/images/profile-bg.jpg'
+	import avatar1 from '../../../../../assets/images/users/avatar-1.jpg'
 	
 	let activeTab = 1;
 

@@ -12,8 +12,8 @@
 	} from 'sveltestrap';
 	import Select from 'svelte-select';
 	import Link from 'svelte-link';
-	import SellerChats from './SellerChats.svelte';
-	import BreadCrumb from '../../Components/Common/BreadCrumb.svelte';
+	import SellerChats from '../SellerChats.svelte';
+	import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
 
 	const optionvisibility = [
 		{ value: 'Select Categories', label: 'Select Categories' },
@@ -25,7 +25,7 @@
 		{ value: 'Computers & Electronics', label: 'Computers & Electronics' }
 	];
 
-	import ecommerceData from '../../common/data/ecommerce';
+	import ecommerceData from '../../../common/data/ecommerce';
 </script>
 
 <div class="page-content">

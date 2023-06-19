@@ -19,9 +19,9 @@
 		TabPane,
 		Progress
 	} from 'sveltestrap';
-	import BreadCrumb from '../../Components/Common/BreadCrumb.svelte';
-	import userdummyimg from '../../assets/images/users/user-dummy-img.jpg'
-	import logodark from '../../assets/images/logo-dark.png';
+	import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
+	import userdummyimg from '../../../assets/images/users/user-dummy-img.jpg'
+	import logodark from '../../../assets/images/logo-dark.png';
 	let progressbarvalue = 0;
 	let activeTab = 1;
 	let activeArrowTab = 4;

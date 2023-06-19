@@ -1,7 +1,7 @@
 <script>
     import { AlertTriangleIcon } from 'svelte-feather-icons'
     import { Alert, Card, CardBody, Col, Row } from 'sveltestrap';
-    import illustarator2 from '../../assets/images/user-illustarator-2.png'
+    import illustarator2 from '../../../assets/images/user-illustarator-2.png'
 </script>
 <Row>
     <Col xs={12}>

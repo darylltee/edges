@@ -1,8 +1,8 @@
 <script>
     import { Card, CardBody, Col, Container, Row } from "sveltestrap";
 
-    import Avatar10 from "../../../assets/images/users/avatar-10.jpg";
-    import About from "../../../assets/images/about.jpg";
+    import Avatar10 from "../../../../assets/images/users/avatar-10.jpg";
+    import About from "../../../../assets/images/about.jpg";
     import Link from 'svelte-link'
 </script>
 <section class="section">

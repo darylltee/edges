@@ -3,7 +3,7 @@
 	import { Col, Container, Row } from "sveltestrap";
 
 	// Import Images
-	import error500 from "../../../assets/images/error500.png";
+	import error500 from "../../../../assets/images/error500.png";
 </script>
 
 <svelte:head>

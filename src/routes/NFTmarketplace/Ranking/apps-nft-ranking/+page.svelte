@@ -3,10 +3,10 @@
 </svelte:head>
 <script>
 import { Container } from "sveltestrap";
-import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
+import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
 import Grid from 'gridjs-svelte';
 import { html } from 'gridjs';
-import nftranking from '../../../common/data/NFTMarketplace'
+import nftranking from '../../../../common/data/NFTMarketplace'
 
 const data = nftranking.NFTRanking;
 

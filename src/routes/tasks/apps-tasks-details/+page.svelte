@@ -3,10 +3,10 @@
 </svelte:head>
 <script>
 import { Container, Col, Row } from 'sveltestrap';
-import BreadCrumb from '../../Components/Common/BreadCrumb.svelte';
-import Comments from './Comments.svelte';
-import Summary from './Summary.svelte';
-import TimeTracking from "./TimeTracking.svelte";
+import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
+import Comments from '../Comments.svelte';
+import Summary from '../Summary.svelte';
+import TimeTracking from "../TimeTracking.svelte";
 </script>
 <div class="page-content">
     <Container fluid>

@@ -8,7 +8,7 @@
         Row,
         Button,
     } from "sveltestrap";
-    import AuthSlider from "../AuthSlider.svelte";
+    import AuthSlider from "../../AuthSlider.svelte";
     import Link from "svelte-link";
 </script>
 

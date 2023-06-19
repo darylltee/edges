@@ -1,10 +1,10 @@
 <script>
 	import { Container, Row } from "sveltestrap";
-	import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
-	import MarketGraph from "./MarketGraph.svelte";
-	import Widgets from "./Widgets.svelte";
-	import BuySellCoin from "./BuySellCoin.svelte";
-	import Market from "./Market.svelte";
+	import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
+	import MarketGraph from "../MarketGraph.svelte";
+	import Widgets from "../Widgets.svelte";
+	import BuySellCoin from "../BuySellCoin.svelte";
+	import Market from "../Market.svelte";
 </script>
 
 <svelte:head>

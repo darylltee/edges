@@ -24,9 +24,9 @@
 
 	import RangeSlider from 'svelte-range-slider-pips';
 
-	import BreadCrumb from '../../Components/Common/BreadCrumb.svelte';
+	import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
 	import { SvelteWrapper } from 'gridjs-svelte/plugins';
-	import Actions from './Actions.svelte';
+	import Actions from '../Actions.svelte';
 
 	let activeTab = 1;
 	const SingleOptions = [
@@ -37,7 +37,7 @@
 		{ value: '4 star', label: '4 star' }
 	];
 
-	import ecommerceData from '../../common/data/ecommerce';
+	import ecommerceData from '../../../common/data/ecommerce';
 
 	const data = ecommerceData.productsData;
 

@@ -1,7 +1,7 @@
 <script>
 	import { Container } from "sveltestrap";
-	import EmailSidebar from "./EmailSidebar.svelte";
-	import EmailToolbar from "./EmailToolbar.svelte";
+	import EmailSidebar from "../EmailSidebar.svelte";
+	import EmailToolbar from "../EmailToolbar.svelte";
 </script>
 
 <svelte:head>

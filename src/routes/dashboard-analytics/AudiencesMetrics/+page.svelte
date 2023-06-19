@@ -1,6 +1,6 @@
 <script>
 import { Card, CardBody, CardHeader, Col, Row } from 'sveltestrap';
-import AudiencesCharts from "./AudiencesCharts.svelte"
+import AudiencesCharts from "../AudiencesCharts.svelte"
 </script>
 <Col xl={6}>
     <Card>

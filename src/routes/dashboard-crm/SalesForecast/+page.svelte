@@ -8,7 +8,7 @@
 		DropdownToggle,
 		Dropdown
 	} from 'sveltestrap';
-	import SalesForecastCharts from './DashboardCrmCharts.svelte';
+	import SalesForecastCharts from '../DashboardCrmCharts.svelte';
 </script>
 
 <Col xxl={3} md={6}>

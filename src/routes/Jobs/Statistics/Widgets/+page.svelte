@@ -1,7 +1,7 @@
 <script>
     import { Card, Col } from "sveltestrap";
-    import jobWidgets from "../../../common/data/appsJobs";
-    import Charts from "./Charts.svelte";
+    import jobWidgets from "../../../../common/data/appsJobs";
+    import Charts from "../Charts.svelte";
 
 </script>
 {#each jobWidgets.jobWidgets as item}

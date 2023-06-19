@@ -3,7 +3,7 @@
     import Link from 'svelte-link';
 
     //import Images
-    import logo_dark from "../../../../assets/images/logo-dark.png";
+    import logo_dark from "../../../../../assets/images/logo-dark.png";
 </script>
 <Row>
     <Col lg={12}>

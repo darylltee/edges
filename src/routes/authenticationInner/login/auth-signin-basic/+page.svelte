@@ -1,8 +1,8 @@
 <script>
 	import { Container, Row, Col, Card, CardBody, Label } from "sveltestrap";
 	import Link from "svelte-link";
-	import ParticlesAuth from "../ParticlesAuth.svelte";
-	import logolight from '../../../assets/images/logo-light.png'
+	import ParticlesAuth from "../../ParticlesAuth.svelte";
+	import logolight from '../../../../assets/images/logo-light.png'
 </script>
 
 <svelte:head>

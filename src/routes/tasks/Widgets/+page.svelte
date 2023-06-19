@@ -1,7 +1,7 @@
 <script>
 	import { Card, CardBody, Col } from 'sveltestrap';
-	import Counter from '../../Components/Common/counter.svelte';
-	import Task from '../../common/data/taskList';
+	import Counter from '../../../Components/Common/counter.svelte';
+	import Task from '../../../common/data/taskList';
 </script>
 
 <Counter />

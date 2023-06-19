@@ -3,9 +3,9 @@
 	import Select from 'svelte-select';
 	import Link from 'svelte-link';
 
-	import avatar3 from '../../../assets/images/users/avatar-3.jpg';
-	import avatar4 from '../../../assets/images/users/avatar-4.jpg';
-	import avatar10 from '../../../assets/images/users/avatar-10.jpg';
+	import avatar3 from '../../../../assets/images/users/avatar-3.jpg';
+	import avatar4 from '../../../../assets/images/users/avatar-4.jpg';
+	import avatar10 from '../../../../assets/images/users/avatar-10.jpg';
 
 	const allStatus = [
 		{ label: 'Stauts', value: 'Stauts' },

@@ -9,7 +9,7 @@
 		Row,
 		Dropdown
 	} from 'sveltestrap';
-    import img4 from '../../../assets/images/companies/img-4.png'
+    import img4 from '../../../../assets/images/companies/img-4.png'
 </script>
 
 <Col lg={12}>

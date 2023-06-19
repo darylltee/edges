@@ -17,15 +17,15 @@
 	import Link from 'svelte-link';
 	import Flatpickr from 'svelte-flatpickr';
 	import Select from 'svelte-select';
-	import Counter from '../../Components/Common/counter.svelte';
+	import Counter from '../../../Components/Common/counter.svelte';
 
-	import BreadCrumb from '../../Components/Common/BreadCrumb.svelte';
-	import invoiceData from '../../common/data/invoiceList';
+	import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
+	import invoiceData from '../../../common/data/invoiceList';
 	import { FileTextIcon,CheckSquareIcon,ClockIcon,XOctagonIcon } from 'svelte-feather-icons';
 	import { html } from 'gridjs';
 	import Grid from 'gridjs-svelte';
 	import { SvelteWrapper } from 'gridjs-svelte/plugins';
-	import Actions from './Actions.svelte';
+	import Actions from '../Actions.svelte';
 
 	const allstatus = [
 		{ label: 'Status', value: 'Status' },

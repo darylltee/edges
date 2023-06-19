@@ -11,26 +11,26 @@
 		Tooltip,
 	} from "sveltestrap";
 
-	import BreadCrumb from "../../Components/Common/BreadCrumb.svelte";
-	import PreviewCardHeader from "../../Components/Common/PreviewCardHeader.svelte";
-	import UiContent from "../../Components/Common/UiContent.svelte";
-	import PrismCode from "../../Components/Common/Prism.svelte";
+	import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
+	import PreviewCardHeader from "../../../Components/Common/PreviewCardHeader.svelte";
+	import UiContent from "../../../Components/Common/UiContent.svelte";
+	import PrismCode from "../../../Components/Common/Prism.svelte";
 	import Link from "svelte-link";
 
-	import avatar1 from '../../assets/images/users/avatar-1.jpg';
-	import avatar2 from '../../assets/images/users/avatar-2.jpg';
-	import avatar3 from '../../assets/images/users/avatar-3.jpg';
-	import avatar4 from '../../assets/images/users/avatar-4.jpg';
-	import avatar6 from '../../assets/images/users/avatar-6.jpg';
-	import avatar7 from '../../assets/images/users/avatar-7.jpg';
-	import avatar8 from '../../assets/images/users/avatar-8.jpg';
-	import img2 from '../../assets/images/small/img-2.jpg';
-	import img3 from '../../assets/images/small/img-3.jpg';
-	import img4 from '../../assets/images/small/img-4.jpg';
-	import img9 from '../../assets/images/small/img-9.jpg';
-	import img10 from '../../assets/images/small/img-10.jpg';
-	import img11 from '../../assets/images/small/img-11.jpg';
-	import img12 from '../../assets/images/small/img-12.jpg';
+	import avatar1 from '../../../assets/images/users/avatar-1.jpg';
+	import avatar2 from '../../../assets/images/users/avatar-2.jpg';
+	import avatar3 from '../../../assets/images/users/avatar-3.jpg';
+	import avatar4 from '../../../assets/images/users/avatar-4.jpg';
+	import avatar6 from '../../../assets/images/users/avatar-6.jpg';
+	import avatar7 from '../../../assets/images/users/avatar-7.jpg';
+	import avatar8 from '../../../assets/images/users/avatar-8.jpg';
+	import img2 from '../../../assets/images/small/img-2.jpg';
+	import img3 from '../../../assets/images/small/img-3.jpg';
+	import img4 from '../../../assets/images/small/img-4.jpg';
+	import img9 from '../../../assets/images/small/img-9.jpg';
+	import img10 from '../../../assets/images/small/img-10.jpg';
+	import img11 from '../../../assets/images/small/img-11.jpg';
+	import img12 from '../../../assets/images/small/img-12.jpg';
 
 	let open = false;
 	const toggleDefultCanvas = () => (open = !open);

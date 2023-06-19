@@ -2,7 +2,7 @@
 	import { Card, CardBody, Col, Row } from "sveltestrap";
 	import Flatpickr from "svelte-flatpickr";
 	import Select from "svelte-select";
-	import CryptoData from "../../../common/data/cryptoPage";
+	import CryptoData from "../../../../common/data/cryptoPage";
 	import Link from "svelte-link";
 
 	const ordeType = [

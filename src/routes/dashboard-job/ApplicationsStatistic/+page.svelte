@@ -2,7 +2,7 @@
   import { browser } from "$app/environment";
   import { onMount } from "svelte";
   import { Card, CardBody, CardHeader, Col, Row } from "sveltestrap";
-  import Counter from "../../Components/Common/counter.svelte";
+  import Counter from "../../../Components/Common/counter.svelte";
   function getChartColorsArray(colors) {
     if (browser) {
       return colors.map(function (value) {

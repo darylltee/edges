@@ -1,8 +1,8 @@
 <script>
     import { Card, CardBody, CardHeader, Col } from 'sveltestrap';
-    import data from "../../common/data/dashboardNFT";
+    import data from "../../../common/data/dashboardNFT";
     import Link from 'svelte-link'
-    import PopularityChart from "./PopularityChart.svelte";
+    import PopularityChart from "../PopularityChart.svelte";
 
 </script>
 <Col xxl={3}>

@@ -2,10 +2,10 @@
   <title>Product List | Velzon - Svelte Admin & Dashboard Template</title>
 </svelte:head>
 <script>
-	import BreadCrumb from '../../Components/Common/BreadCrumb.svelte';
+	import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
 	import { Container } from 'sveltestrap';
-	import data from '../../common/data/projectList';
-	import List from './List.svelte';
+	import data from '../../../common/data/projectList';
+	import List from '../List.svelte';
 </script>
 
 <div class="page-content">

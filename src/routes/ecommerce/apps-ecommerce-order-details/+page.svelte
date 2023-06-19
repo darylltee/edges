@@ -4,11 +4,11 @@
 <script>
 	import { Container, Row, Col, Card, CardBody, CardHeader, Collapse } from 'sveltestrap';
 	import Link from 'svelte-link';
-	import BreadCrumb from '../../Components/Common/BreadCrumb.svelte';
-	import img8 from '../../assets/images/products/img-8.png'
-	import img7 from '../../assets/images/products/img-7.png'
-	import img3 from '../../assets/images/products/img-3.png'
-	import avatar3 from '../../assets/images/users/avatar-3.jpg'
+	import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
+	import img8 from '../../../assets/images/products/img-8.png'
+	import img7 from '../../../assets/images/products/img-7.png'
+	import img3 from '../../../assets/images/products/img-3.png'
+	import avatar3 from '../../../assets/images/users/avatar-3.jpg'
 </script>
 
 <div class="page-content">

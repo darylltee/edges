@@ -8,19 +8,19 @@
 		Row,
 	} from "sveltestrap";
 
-	import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
-	import BasicAreaCharts from "./BasicAreaCharts.svelte";
-	import SplineAreaChart from "./SplineAreaChart.svelte";
-	import AxisChart from "./AxisChart.svelte";
-	import NegativeAreaChart from "./NegativeAreaChart.svelte";
-	import GithubStyleCharts from "./GithubStyleCharts.svelte";
-	import GithubStyleCharts1 from "./GithubStyleCharts1.svelte";
-	import StackedAreaChart from "./StackedAreaChart.svelte";
-	import IrregularAreaCharts from "./IrregularAreaCharts.svelte";
-	import AreaNullValueChart from "./AreaNullValueChart.svelte";
+	import BreadCrumb from "../../../../../Components/Common/BreadCrumb.svelte";
+	import BasicAreaCharts from "../BasicAreaCharts.svelte";
+	import SplineAreaChart from "../SplineAreaChart.svelte";
+	import AxisChart from "../AxisChart.svelte";
+	import NegativeAreaChart from "../NegativeAreaChart.svelte";
+	import GithubStyleCharts from "../GithubStyleCharts.svelte";
+	import GithubStyleCharts1 from "../GithubStyleCharts1.svelte";
+	import StackedAreaChart from "../StackedAreaChart.svelte";
+	import IrregularAreaCharts from "../IrregularAreaCharts.svelte";
+	import AreaNullValueChart from "../AreaNullValueChart.svelte";
 	import Link from "svelte-link";
 
-	import avatar2 from '../../../../assets/images/users/avatar-2.jpg'
+	import avatar2 from '../../../../../assets/images/users/avatar-2.jpg'
 </script>
 
 <svelte:head>

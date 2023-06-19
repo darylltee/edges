@@ -1,7 +1,7 @@
 <script>
     import { onMount } from "svelte";
-    import comingSoon from "../../../../assets/images/comingsoon.png";
-    import Img4 from "../../../../assets/images/small/img-4.jpg";
+    import comingSoon from "../../../../../assets/images/comingsoon.png";
+    import Img4 from "../../../../../assets/images/small/img-4.jpg";
 
     onMount(() => {
         var options = {

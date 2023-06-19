@@ -7,14 +7,14 @@
 		Container,
 		Row,
 	} from "sveltestrap";
-	import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
-	import SimplePie from "./SimplePie.svelte";
-	import SimpleDonut from "./SimpleDonut.svelte";
-	import UpdateDonut from "./UpdateDonut.svelte";
-	import MonochromePie from "./MonochromePie.svelte";
-	import GradientDonut from "./GradientDonut.svelte";
-	import PatternedDonut from "./PatternedDonut.svelte";
-	import ImagePieChart from "./ImagePieChart.svelte";
+	import BreadCrumb from "../../../../../Components/Common/BreadCrumb.svelte";
+	import SimplePie from "../SimplePie.svelte";
+	import SimpleDonut from "../SimpleDonut.svelte";
+	import UpdateDonut from "../UpdateDonut.svelte";
+	import MonochromePie from "../MonochromePie.svelte";
+	import GradientDonut from "../GradientDonut.svelte";
+	import PatternedDonut from "../PatternedDonut.svelte";
+	import ImagePieChart from "../ImagePieChart.svelte";
 </script>
 
 <svelte:head>

@@ -3,9 +3,9 @@
 </svelte:head>
 <script>
     import { Card, CardBody, Col, Container, DropdownItem, DropdownMenu, DropdownToggle, Row, Dropdown } from "sveltestrap";
-    import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
+    import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
     import Link from "svelte-link";
-    import data from "../../../common/data/NFTMarketplace";
+    import data from "../../../../common/data/NFTMarketplace";
     import Select from "svelte-select";
     let sortBy = "All";
 

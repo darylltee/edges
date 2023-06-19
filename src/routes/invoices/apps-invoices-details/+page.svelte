@@ -2,9 +2,9 @@
 	import { browser } from "$app/environment";
 	import Link from "svelte-link";
 	import { Card, CardBody, CardHeader, Col, Container, Row } from "sveltestrap";
-	import BreadCrumb from "../../Components/Common/BreadCrumb.svelte";
-	import logodark from "../../assets/images/logo-dark.png";
-	import logolight from "../../assets/images/logo-light.png";
+	import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
+	import logodark from "../../../assets/images/logo-dark.png";
+	import logolight from "../../../assets/images/logo-light.png";
 	const printInvoice = () => {
 		if (browser) {
 			window.print();

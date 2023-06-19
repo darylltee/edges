@@ -3,7 +3,7 @@
     import { Button, Card, Col, Container, Row,Label } from "sveltestrap";
 
     //import images
-    import AuthSlider from "../AuthSlider.svelte";
+    import AuthSlider from "../../AuthSlider.svelte";
 </script>
 
 <svelte:head>

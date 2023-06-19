@@ -1,8 +1,8 @@
 <script>
 	import { browser } from "$app/environment";
 	import { onMount } from "svelte";
-	import avatar1 from "../../../../assets/images/users/avatar-1.jpg";
-	import avatar2 from "../../../../assets/images/users/avatar-2.jpg";
+	import avatar1 from "../../../../../assets/images/users/avatar-1.jpg";
+	import avatar2 from "../../../../../assets/images/users/avatar-2.jpg";
 	function getChartColorsArray(colors) {
 		if (browser) {
 			return colors.map(function (value) {

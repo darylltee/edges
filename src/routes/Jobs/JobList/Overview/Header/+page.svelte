@@ -1,7 +1,7 @@
 <script>
     import { Card, CardBody, Col, Row } from "sveltestrap";
     
-    import Slack from "../../../../assets/images/brands/slack.png";
+    import Slack from "../../../../../assets/images/brands/slack.png";
     </script>
     <Col lg={12}>
         <Card class="mt-n4 mx-n4">

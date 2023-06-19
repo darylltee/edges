@@ -1,13 +1,13 @@
 <script>
 	import { Card, CardBody, Col, Container, Row } from "sveltestrap";
-	import BreadCrumb from "../../Components/Common/BreadCrumb.svelte";
-	import PreviewCardHeader from "../../Components/Common/PreviewCardHeader.svelte";
-	import UiContent from "../../Components/Common/UiContent.svelte";
-	import PrismCode from "../../Components/Common/Prism.svelte";
+	import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
+	import PreviewCardHeader from "../../../Components/Common/PreviewCardHeader.svelte";
+	import UiContent from "../../../Components/Common/UiContent.svelte";
+	import PrismCode from "../../../Components/Common/Prism.svelte";
 	import Link from "svelte-link";
 
-	import img1 from '../../assets/images/small/img-1.jpg';
-	import img2 from '../../assets/images/small/img-2.jpg';
+	import img1 from '../../../assets/images/small/img-1.jpg';
+	import img2 from '../../../assets/images/small/img-2.jpg';
 
 	// Default Placeholder
 

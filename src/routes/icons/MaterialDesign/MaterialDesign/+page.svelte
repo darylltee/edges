@@ -2,7 +2,7 @@
   import { browser } from "$app/environment";
   import { onMount } from "svelte";
   import { Card, CardBody, CardTitle, Col, Container, Row } from "sveltestrap";
-  import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
+  import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
 
   onMount(async () => {
     const isNew = (icon) => {

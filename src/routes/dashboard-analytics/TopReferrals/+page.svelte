@@ -1,6 +1,6 @@
 <script>
 import { Card, CardBody, CardHeader, Col, Row ,Progress} from 'sveltestrap';
-import illustrator from '../../assets/images/illustrator-1.png'
+import illustrator from '../../../assets/images/illustrator-1.png'
 </script>
 <Col xl={4} md={6}>
     <Card class="card-height-100">

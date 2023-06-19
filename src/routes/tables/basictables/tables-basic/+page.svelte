@@ -1,8 +1,8 @@
 <script>
-	import UiContent from "../../../Components/Common/UiContent.svelte";
-	import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
-	import PreviewCardHeader from "../../../Components/Common/PreviewCardHeader.svelte";
-	import PrismCode from "../../../Components/Common/Prism.svelte";
+	import UiContent from "../../../../Components/Common/UiContent.svelte";
+	import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
+	import PreviewCardHeader from "../../../../Components/Common/PreviewCardHeader.svelte";
+	import PrismCode from "../../../../Components/Common/Prism.svelte";
 	import {
 		Card,
 		CardBody,
@@ -14,11 +14,11 @@
 		Table,
 	} from "sveltestrap";
 
-	import avatar1 from '../../../assets/images/users/avatar-1.jpg';
-	import avatar3 from '../../../assets/images/users/avatar-3.jpg';
-	import avatar4 from '../../../assets/images/users/avatar-4.jpg';
-	import avatar5 from '../../../assets/images/users/avatar-5.jpg';
-	import avatar6 from '../../../assets/images/users/avatar-6.jpg';
+	import avatar1 from '../../../../assets/images/users/avatar-1.jpg';
+	import avatar3 from '../../../../assets/images/users/avatar-3.jpg';
+	import avatar4 from '../../../../assets/images/users/avatar-4.jpg';
+	import avatar5 from '../../../../assets/images/users/avatar-5.jpg';
+	import avatar6 from '../../../../assets/images/users/avatar-6.jpg';
 	import Link from "svelte-link";
 
 	const DefaultTables = `<div class="table-responsive">

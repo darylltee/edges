@@ -1,13 +1,13 @@
 <script>
 	import { Card, CardBody, Col, Label, Row, Form } from 'sveltestrap';
 	import Link from 'svelte-link';
-	import TicketsDetailsCode from './TicketsDetailsCode.svelte';
+	import TicketsDetailsCode from '../TicketsDetailsCode.svelte';
 
-	import avatar6 from '../../../assets/images/users/avatar-6.jpg';
-	import avatar8 from '../../../assets/images/users/avatar-8.jpg';
-	import avatar10 from '../../../assets/images/users/avatar-10.jpg';
-	import img4 from '../../../assets/images/small/img-4.jpg';
-	import img5 from '../../../assets/images/small/img-5.jpg';
+	import avatar6 from '../../../../assets/images/users/avatar-6.jpg';
+	import avatar8 from '../../../../assets/images/users/avatar-8.jpg';
+	import avatar10 from '../../../../assets/images/users/avatar-10.jpg';
+	import img4 from '../../../../assets/images/small/img-4.jpg';
+	import img5 from '../../../../assets/images/small/img-5.jpg';
 </script>
 
 <Col xxl={9}>

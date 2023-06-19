@@ -3,9 +3,9 @@
 </svelte:head>
 <script>
     import { Card, CardBody, Col, Container, Row } from "sveltestrap";
-    import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
+    import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
     import Link from "svelte-link";
-    import data from '../../../common/data/NFTMarketplace'
+    import data from '../../../../common/data/NFTMarketplace'
 </script>
 <div class="page-content">
     <Container fluid>

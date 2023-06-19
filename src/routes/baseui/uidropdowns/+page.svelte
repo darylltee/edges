@@ -18,21 +18,21 @@
 		Dropdown,
 		Label,
 	} from "sveltestrap";
-	import BreadCrumb from "../../Components/Common/BreadCrumb.svelte";
-	import PreviewCardHeader from "../../Components/Common/PreviewCardHeader.svelte";
-	import UiContent from "../../Components/Common/UiContent.svelte";
-	import PrismCode from "../../Components/Common/Prism.svelte";
+	import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
+	import PreviewCardHeader from "../../../Components/Common/PreviewCardHeader.svelte";
+	import UiContent from "../../../Components/Common/UiContent.svelte";
+	import PrismCode from "../../../Components/Common/Prism.svelte";
 	import Link from "svelte-link";
 	let activeTab = 1;
 	let NotificationTab = 1;
 	let Notification1Tab = 1;
 
-	import avatar2 from '../../assets/images/users/avatar-2.jpg';
-	import avatar3 from '../../assets/images/users/avatar-3.jpg';
-	import avatar6 from '../../assets/images/users/avatar-6.jpg';
-	import avatar8 from '../../assets/images/users/avatar-8.jpg';
+	import avatar2 from '../../../assets/images/users/avatar-2.jpg';
+	import avatar3 from '../../../assets/images/users/avatar-3.jpg';
+	import avatar6 from '../../../assets/images/users/avatar-6.jpg';
+	import avatar8 from '../../../assets/images/users/avatar-8.jpg';
 
-	import bell from '../../assets/images/svg/bell.svg'
+	import bell from '../../../assets/images/svg/bell.svg'
 	// Single Button Dropdown
 
 	const singleButtonDropdownCode = `

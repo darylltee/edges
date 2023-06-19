@@ -16,9 +16,9 @@
 	import Link from 'svelte-link';
 	import Select from 'svelte-select';
 	import Flatpickr from 'svelte-flatpickr';
-	import BreadCrumb from '../../Components/Common/BreadCrumb.svelte';
-	import avatar3 from '../../assets/images/users/avatar-3.jpg';
-	import avatar4 from '../../assets/images/users/avatar-4.jpg';
+	import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
+	import avatar3 from '../../../assets/images/users/avatar-3.jpg';
+	import avatar4 from '../../../assets/images/users/avatar-4.jpg';
 	import Dropzone from 'svelte-file-dropzone';
 	import Editor from '@tinymce/tinymce-svelte';
 

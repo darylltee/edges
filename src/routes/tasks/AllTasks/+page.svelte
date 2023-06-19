@@ -14,11 +14,11 @@
 	import Link from 'svelte-link';
 	import { html } from 'gridjs';
 	import Grid from 'gridjs-svelte';
-	import Task from '../../common/data/taskList';
-	import TaskListCol from './TaskListCol.svelte';
-	import TaskCol from './TaskCol.svelte';
+	import Task from '../../../common/data/taskList';
+	import TaskListCol from '../TaskListCol.svelte';
+	import TaskCol from '../TaskCol.svelte';
 	import { SvelteWrapper } from 'gridjs-svelte/plugins';
-	import CreateTaskModal from './createTaskModal.svelte';
+	import CreateTaskModal from '../createTaskModal.svelte';
 
 	let isOpen = false;
 	let createModal = false;

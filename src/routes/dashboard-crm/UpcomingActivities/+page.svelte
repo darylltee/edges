@@ -11,7 +11,7 @@
 		Row,
 		Dropdown
 	} from 'sveltestrap';
-	import data from '../../common/data/dashboardcrm';
+	import data from '../../../common/data/dashboardcrm';
 
 </script>
 

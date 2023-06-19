@@ -1,6 +1,6 @@
 <script>
 	import { Card, CardBody, CardHeader, Col, Row } from 'sveltestrap';
-	import ProjectsOverviewCharts from './ProjectsOverviewCharts.svelte';
+	import ProjectsOverviewCharts from '../ProjectsOverviewCharts.svelte';
 </script>
 
 <Row>

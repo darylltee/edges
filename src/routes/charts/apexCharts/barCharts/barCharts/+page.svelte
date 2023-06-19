@@ -7,17 +7,17 @@
 		Container,
 		Row,
 	} from "sveltestrap";
-	import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
-	import Basic from "./Basic.svelte";
-	import CustomDataLabel from "./CustomDataLabel.svelte";
-	import Stacked from "./Stacked.svelte";
-	import Stacked2 from "./Stacked2.svelte";
-	import Negative from "./Negative.svelte";
-	import Markers from "./Markers.svelte";
-	import Reversed from "./Reversed.svelte";
-	import Patterned from "./Patterned.svelte";
-	import Groupes from "./Groupes.svelte";
-	import BarwithImages from "./BarwithImages.svelte";
+	import BreadCrumb from "../../../../../Components/Common/BreadCrumb.svelte";
+	import Basic from "../Basic.svelte";
+	import CustomDataLabel from "../CustomDataLabel.svelte";
+	import Stacked from "../Stacked.svelte";
+	import Stacked2 from "../Stacked2.svelte";
+	import Negative from "../Negative.svelte";
+	import Markers from "../Markers.svelte";
+	import Reversed from "../Reversed.svelte";
+	import Patterned from "../Patterned.svelte";
+	import Groupes from "../Groupes.svelte";
+	import BarwithImages from "../BarwithImages.svelte";
 </script>
 
 <svelte:head>

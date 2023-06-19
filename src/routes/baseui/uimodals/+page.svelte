@@ -15,18 +15,18 @@
 		Label,
 		Alert
 	} from "sveltestrap";
-	import BreadCrumb from "../../Components/Common/BreadCrumb.svelte";
-	import PreviewCardHeader from "../../Components/Common/PreviewCardHeader.svelte";
-	import UiContent from "../../Components/Common/UiContent.svelte";
-	import PrismCode from "../../Components/Common/Prism.svelte";
+	import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
+	import PreviewCardHeader from "../../../Components/Common/PreviewCardHeader.svelte";
+	import UiContent from "../../../Components/Common/UiContent.svelte";
+	import PrismCode from "../../../Components/Common/Prism.svelte";
 	import Link from "svelte-link";
 
 	// Import Images
-	import loginImg from "../../assets/images/modals/login.png";
-	import signupImg from "../../assets/images/modals/signup.png";
-	import subscribeImg from "../../assets/images/modals/subscribe.png";
-	import paymentImg from "../../assets/images/modals/success-payment.png";
-	import authbg from "../../assets/images/auth-one-bg.jpg";
+	import loginImg from "../../../assets/images/modals/login.png";
+	import signupImg from "../../../assets/images/modals/signup.png";
+	import subscribeImg from "../../../assets/images/modals/subscribe.png";
+	import paymentImg from "../../../assets/images/modals/success-payment.png";
+	import authbg from "../../../assets/images/auth-one-bg.jpg";
 
 	let modal_standard = false;
 	const tog_standard = () => (modal_standard = !modal_standard);

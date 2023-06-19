@@ -12,8 +12,8 @@
         DropdownToggle,
         Row,
     } from "sveltestrap";
-    import Counter from "../../Components/Common/counter.svelte";
-    import MarketplaceChart from "./DashboardNFTCharts.svelte";
+    import Counter from "../../../Components/Common/counter.svelte";
+    import MarketplaceChart from "../DashboardNFTCharts.svelte";
 
     // Set the date we're counting down to
     var countDownDate = new Date("Jan 1, 2023").getTime();

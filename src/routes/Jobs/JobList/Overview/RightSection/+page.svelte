@@ -1,7 +1,7 @@
 <script>
     import Link from 'svelte-link'
     import { Card, CardBody, CardHeader, Table ,Label} from "sveltestrap";
-    import img3 from "../../../../assets/images/companies/img-3.png";
+    import img3 from "../../../../../assets/images/companies/img-3.png";
     var isBookmarkClick = false;
 </script>
 <Card class="card">

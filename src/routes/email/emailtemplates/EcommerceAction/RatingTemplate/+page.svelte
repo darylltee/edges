@@ -2,10 +2,10 @@
     import { Row, Col } from 'sveltestrap';
     import Link from 'svelte-link';
     //import Images
-    import logo_dark from "../../../../assets/images/logo-dark.png";
-    import img01 from "../../../../assets/images/products/img-1.png";
-    import img02 from "../../../../assets/images/products/img-2.png";
-    import img03 from "../../../../assets/images/products/img-3.png";
+    import logo_dark from "../../../../../assets/images/logo-dark.png";
+    import img01 from "../../../../../assets/images/products/img-1.png";
+    import img02 from "../../../../../assets/images/products/img-2.png";
+    import img03 from "../../../../../assets/images/products/img-3.png";
 </script>
 <Row>
     <Col lg={12}>

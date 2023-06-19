@@ -1,7 +1,7 @@
 <script>
     import { Card, CardBody, CardHeader, Col, Table } from "sveltestrap";
     import Link from 'svelte-link';
-    import recentApplicants from "../../common/data/dashboardJobs";
+    import recentApplicants from "../../../common/data/dashboardJobs";
 </script>
 <Col xxl={8}>
     <Card>

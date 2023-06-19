@@ -17,8 +17,8 @@
 		Label,
 		Input
 	} from 'sveltestrap';
-	import BreadCrumb from '../../Components/Common/BreadCrumb.svelte';
-	import ecommerceData from '../../common/data/ecommerce';
+	import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
+	import ecommerceData from '../../../common/data/ecommerce';
 	import { html } from 'gridjs';
 	import Grid from 'gridjs-svelte';
 	import Flatpickr from 'svelte-flatpickr';

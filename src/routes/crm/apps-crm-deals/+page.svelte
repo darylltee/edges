@@ -18,11 +18,11 @@
 		Label,
 		ModalHeader,
 	} from "sveltestrap";
-	import BreadCrumb from "../../Components/Common/BreadCrumb.svelte";
+	import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
 	import Select from "svelte-select";
-	import crmData from "../../common/data/crm";
+	import crmData from "../../../common/data/crm";
 	import Flatpickr from "svelte-flatpickr";
-	import LeadDiscover from "./leadDiscover.svelte";
+	import LeadDiscover from "../leadDiscover.svelte";
 
 	let sortBy = "Owner";
 

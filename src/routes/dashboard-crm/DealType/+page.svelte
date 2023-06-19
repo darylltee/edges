@@ -1,7 +1,7 @@
 <script>
     import { Card, Col, DropdownItem, DropdownMenu, DropdownToggle, Dropdown } from 'sveltestrap';
 
-import DealTypeCharts from "./DealTypeCharts.svelte";
+import DealTypeCharts from "../DealTypeCharts.svelte";
 
 </script>
 <Col xxl={3} md={6}>

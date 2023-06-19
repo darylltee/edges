@@ -2,7 +2,7 @@
     import Link from "svelte-link";
     import { Col, Container, Row } from "sveltestrap";
     // Import Images
-    import logolight from "../../assets/images/logo-light.png";
+    import logolight from "../../../assets/images/logo-light.png";
 </script>
 
 <footer class="custom-footer bg-dark py-5 position-relative">

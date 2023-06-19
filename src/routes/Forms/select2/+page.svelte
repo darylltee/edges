@@ -3,7 +3,7 @@
 </svelte:head>
 <script>
 import { Card, CardBody, CardHeader, Col, Container, Row } from 'sveltestrap';
-import BreadCrumb from '../../Components/Common/BreadCrumb.svelte';
+import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
 import Select from "svelte-select";
 const sortbyname = [
         { label: "Alabama", value: "AL" },

@@ -1,8 +1,10 @@
 <script>
+	throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
+
 	import { browser } from "$app/environment";
 	import dayjs from "dayjs";
 	import { onMount } from "svelte";
-	import allseries from "../series";
+	import allseries from "../../series";
 	export let dataColors;
 
 	function getChartColorsArray(colors) {

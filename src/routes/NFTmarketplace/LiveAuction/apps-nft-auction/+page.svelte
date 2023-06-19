@@ -11,10 +11,10 @@
         Row,
     } from "sveltestrap";
     import { onMount } from "svelte";
-    import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
+    import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
     import Link from "svelte-link";
 
-    import data from "../../../common/data/NFTMarketplace";
+    import data from "../../../../common/data/NFTMarketplace";
     var displayCategory = "All";
 
     function setCategory(category) {

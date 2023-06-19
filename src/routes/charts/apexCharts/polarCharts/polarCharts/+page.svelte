@@ -7,9 +7,9 @@
 		Container,
 		Row,
 	} from "sveltestrap";
-	import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
-	import BasicPolar from "./BasicPolar.svelte";
-	import PolarMonochrome from "./PolarMonochrome.svelte";
+	import BreadCrumb from "../../../../../Components/Common/BreadCrumb.svelte";
+	import BasicPolar from "../BasicPolar.svelte";
+	import PolarMonochrome from "../PolarMonochrome.svelte";
 </script>
 
 <svelte:head>

@@ -1,8 +1,8 @@
 <script>
-	import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
+	import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
 	import { Container, Row } from "sveltestrap";
-	import Widgets from "./Widgets.svelte";
-	import AllTransactions from "./AllTransactions.svelte";
+	import Widgets from "../Widgets.svelte";
+	import AllTransactions from "../AllTransactions.svelte";
 </script>
 
 <svelte:head>

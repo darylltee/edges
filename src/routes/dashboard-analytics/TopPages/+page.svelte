@@ -10,7 +10,7 @@
 		DropdownToggle
 	} from 'sveltestrap';
 
-	import data from '../../common/data/analytics';
+	import data from '../../../common/data/analytics';
 
 </script>
 

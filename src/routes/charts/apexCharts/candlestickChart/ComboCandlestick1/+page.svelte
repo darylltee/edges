@@ -1,7 +1,7 @@
 <script>
     import { browser } from "$app/environment";
     import { onMount } from "svelte";
-    import data from "./series";
+    import data from "../series";
 
     function getChartColorsArray(colors) {
         if (browser) {

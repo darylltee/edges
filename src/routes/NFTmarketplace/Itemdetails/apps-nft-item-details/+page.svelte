@@ -19,24 +19,24 @@
         TabPane,
         Dropdown,
     } from "sveltestrap";
-    import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
+    import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
     import Link from "svelte-link";
 
     // Import Images
-    import Img1 from "../../../assets/images/nft/img-01.jpg";
-    import Img2 from "../../../assets/images/nft/img-02.jpg";
-    import Img3 from "../../../assets/images/nft/img-03.jpg";
-    import Img5 from "../../../assets/images/nft/img-05.jpg";
-    import Img6 from "../../../assets/images/nft/img-06.jpg";
+    import Img1 from "../../../../assets/images/nft/img-01.jpg";
+    import Img2 from "../../../../assets/images/nft/img-02.jpg";
+    import Img3 from "../../../../assets/images/nft/img-03.jpg";
+    import Img5 from "../../../../assets/images/nft/img-05.jpg";
+    import Img6 from "../../../../assets/images/nft/img-06.jpg";
     
-    import avatar1 from "../../../assets/images/users/avatar-1.jpg";
-    import avatar3 from "../../../assets/images/users/avatar-3.jpg";
-    import avatar5 from "../../../assets/images/users/avatar-5.jpg";
-    import avatar8 from "../../../assets/images/users/avatar-8.jpg";
+    import avatar1 from "../../../../assets/images/users/avatar-1.jpg";
+    import avatar3 from "../../../../assets/images/users/avatar-3.jpg";
+    import avatar5 from "../../../../assets/images/users/avatar-5.jpg";
+    import avatar8 from "../../../../assets/images/users/avatar-8.jpg";
 
-    import SImg10 from "../../../assets/images/small/img-10.jpg";
-    import SImg11 from "../../../assets/images/small/img-11.jpg";
-    import SImg12 from "../../../assets/images/small/img-12.jpg";
+    import SImg10 from "../../../../assets/images/small/img-10.jpg";
+    import SImg11 from "../../../../assets/images/small/img-11.jpg";
+    import SImg12 from "../../../../assets/images/small/img-12.jpg";
 
 	let customActiveTab = 1;
 

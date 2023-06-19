@@ -14,8 +14,8 @@
 		CardHeader
 	} from 'sveltestrap';
 	import Link from 'svelte-link';
-	import BreadCrumb from '../../Components/Common/BreadCrumb.svelte';
-	import ecommerceData from '../../common/data/ecommerce';
+	import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
+	import ecommerceData from '../../../common/data/ecommerce';
 
 	const plusItem = (product) => {
 		for (let item of ecommerceData.shoppingCart) {

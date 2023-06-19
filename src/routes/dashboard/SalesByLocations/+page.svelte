@@ -1,6 +1,6 @@
 <script>
 	import { Card, CardHeader, Col, CardBody, Progress } from 'sveltestrap';
-    import Map from '../../Components/Common/Map.svelte'
+    import Map from '../../../Components/Common/Map.svelte'
 
 </script>
 

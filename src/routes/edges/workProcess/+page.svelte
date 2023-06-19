@@ -2,7 +2,7 @@
     import { Col, Container, Row } from "sveltestrap";
 
     // Import Images
-    import processArrow from "../../assets/images/landing/process-arrow-img.png";
+    import processArrow from "../../../assets/images/landing/process-arrow-img.png";
 </script>
 
 <section class="section">

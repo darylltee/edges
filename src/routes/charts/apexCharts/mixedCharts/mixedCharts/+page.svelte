@@ -7,11 +7,11 @@
         Container,
         Row,
     } from "sveltestrap";
-    import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
-    import Line from "./Line.svelte";
-    import YAxis from "./YAxis.svelte";
-    import Area from "./Area.svelte";
-    import LineColumnArea from "./LineColumnArea.svelte";
+    import BreadCrumb from "../../../../../Components/Common/BreadCrumb.svelte";
+    import Line from "../Line.svelte";
+    import YAxis from "../YAxis.svelte";
+    import Area from "../Area.svelte";
+    import LineColumnArea from "../LineColumnArea.svelte";
 </script>
 
 <svelte:head>

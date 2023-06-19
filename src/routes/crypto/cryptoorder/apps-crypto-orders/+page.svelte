@@ -1,11 +1,11 @@
 <script>
 	import { Container, Row } from "sveltestrap";
-	import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
+	import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
 	import Flatpickr from "svelte-flatpickr";
 	import Select from "svelte-select";
 	import { html } from "gridjs";
 	import Grid from "gridjs-svelte";
-	import cryptoData from "../../../common/data/cryptoPage";
+	import cryptoData from "../../../../common/data/cryptoPage";
 
 	const ordeType = [
 		{ value: "Select Type", label: "Select Type" },

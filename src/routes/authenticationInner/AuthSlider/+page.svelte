@@ -3,7 +3,7 @@
 	import '@splidejs/svelte-splide/css';
 	import { Col } from "sveltestrap";
 	import Link from "svelte-link";
-	import logoLight from "../../assets/images/logo-light.png";
+	import logoLight from "../../../assets/images/logo-light.png";
 </script>
 
 <Col lg={6}>

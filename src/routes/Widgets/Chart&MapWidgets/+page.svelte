@@ -1,12 +1,14 @@
 <script>
+throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
+
 import { Alert, Button, Card, CardBody, CardHeader, Col, DropdownItem, DropdownMenu, DropdownToggle, ListGroup, ListGroupItem, Progress, Row, Dropdown } from 'sveltestrap';
 import Link from 'svelte-link';
 export let widgetsAudiences,widgetsPortfolio;
-import SessionsByCountriesCharts from './sessionsByCountries.svelte';
-import AudiencesMetricsCharts from './audiencesMetrics.svelte';
-import MyPortfolioCharts from './myPortfolio.svelte';
-import TopReferralsPagesCharts from './topReferralsPages.svelte';
-import Map from '../../Components/Common/Map.svelte'
+import SessionsByCountriesCharts from '../sessionsByCountries.svelte';
+import AudiencesMetricsCharts from '../audiencesMetrics.svelte';
+import MyPortfolioCharts from '../myPortfolio.svelte';
+import TopReferralsPagesCharts from '../topReferralsPages.svelte';
+import Map from '../../../Components/Common/Map.svelte'
 
 </script>
 <Row>

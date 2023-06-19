@@ -1,6 +1,6 @@
 <script>
     import { Card, CardBody, Col, Container, Row } from "sveltestrap";
-    import jobProcess from "../../../common/data/jobLanding";
+    import jobProcess from "../../../../common/data/jobLanding";
 </script>
 <section class="section" id="process">
     <Container>

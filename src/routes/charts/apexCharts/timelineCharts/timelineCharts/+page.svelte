@@ -7,13 +7,13 @@
         Container,
         Row,
     } from "sveltestrap";
-    import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
+    import BreadCrumb from "../../../../../Components/Common/BreadCrumb.svelte";
 
-    import Basic from "./Basic.svelte";
-    import DifferentColor from "./DifferentColor.svelte";
-    import MultiSeries from "./MultiSeries.svelte";
-    import Advanced from "./Advanced.svelte";
-    import MultipleSeries from "./MultipleSeries.svelte";
+    import Basic from "../Basic.svelte";
+    import DifferentColor from "../DifferentColor.svelte";
+    import MultiSeries from "../MultiSeries.svelte";
+    import Advanced from "../Advanced.svelte";
+    import MultipleSeries from "../MultipleSeries.svelte";
 </script>
 
 <svelte:head>

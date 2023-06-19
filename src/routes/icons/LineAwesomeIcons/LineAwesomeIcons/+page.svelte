@@ -2,7 +2,7 @@
   <title>Line Awesome | Velzon - Svelte Admin & Dashboard Template</title>
 </svelte:head>
 <script>
-import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
+import BreadCrumb from '../../../../Components/Common/BreadCrumb.svelte';
 import { Card, Row, CardHeader, Col, Container, CardBody } from 'sveltestrap';
 </script>
 <div class="page-content">

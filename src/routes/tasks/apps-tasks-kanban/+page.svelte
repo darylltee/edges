@@ -3,7 +3,7 @@
 </svelte:head>
 <script>
     import Kanban from "svelte-kanban";
-    import BreadCrumb from "../../Components/Common/BreadCrumb.svelte";
+    import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
     import { Container, Row } from "sveltestrap";
 </script>
 

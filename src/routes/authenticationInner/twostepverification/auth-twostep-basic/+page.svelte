@@ -10,8 +10,8 @@
 		Label,
 		Row,
 	} from "sveltestrap";
-	import logoLight from "../../../assets/images/logo-light.png";
-	import ParticlesAuth from "../ParticlesAuth.svelte";
+	import logoLight from "../../../../assets/images/logo-light.png";
+	import ParticlesAuth from "../../ParticlesAuth.svelte";
 
 	const moveToNext = (value, count) => {
 		if (browser) {

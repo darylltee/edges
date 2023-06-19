@@ -2,7 +2,7 @@
   <title>Seller Details | Velzon - Svelte Admin & Dashboard Template</title>
 </svelte:head>
 <script>
-	import BreadCrumb from '../../Components/Common/BreadCrumb.svelte';
+	import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
 
 	import {
 		CardBody,
@@ -17,21 +17,21 @@
 
 	import Link from 'svelte-link';
 
-	import ecommerceData from '../../common/data/ecommerce';
+	import ecommerceData from '../../../common/data/ecommerce';
 
-	import ReviewSlider from '../../Components/Common/ReviewSlider.svelte';
+	import ReviewSlider from '../../../Components/Common/ReviewSlider.svelte';
 
-	import Counter from '../../Components/Common/counter.svelte';
+	import Counter from '../../../Components/Common/counter.svelte';
 
-	import Revenue from '../dashboard/Revenue.svelte';
-	import img2 from '../../assets/images/companies/img-2.png'
+	import Revenue from '../../dashboard/Revenue.svelte';
+	import img2 from '../../../assets/images/companies/img-2.png'
 
 	const data = ecommerceData.productsData;
 
 	import { html } from 'gridjs';
 	import Grid from 'gridjs-svelte';
 	import { SvelteWrapper } from 'gridjs-svelte/plugins';
-	import Actions from './Actions.svelte';
+	import Actions from '../Actions.svelte';
 
 	const columns = [
 		{

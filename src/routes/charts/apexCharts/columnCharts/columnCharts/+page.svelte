@@ -7,20 +7,20 @@
 		Container,
 		Row,
 	} from "sveltestrap";
-	import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
+	import BreadCrumb from "../../../../../Components/Common/BreadCrumb.svelte";
 
-	import BasicColumn from "./BasicColumn.svelte";
-	import ColumnWithLable from "./ColumnWithLable.svelte";
-	import StackedColumn from "./StackedColumn.svelte";
-	import StackedColumn2 from "./StackedColumn2.svelte";
-	import ColumnMarker from "./ColumnMarker.svelte";
-	import RotateLable from "./RotateLable.svelte";
-	import NagetiveLable from "./NagetiveLable.svelte";
-	import RangeColumn from "./RangeColumn.svelte";
-	import DynamicColumn from "./DynamicColumn.svelte";
-	import Quarter from "./Quarter.svelte";
-	import DistributedColumn from "./DistributedColumn.svelte";
-	import ColumnGroupLabels from './ColumnGroupLabels.svelte'
+	import BasicColumn from "../BasicColumn.svelte";
+	import ColumnWithLable from "../ColumnWithLable.svelte";
+	import StackedColumn from "../StackedColumn.svelte";
+	import StackedColumn2 from "../StackedColumn2.svelte";
+	import ColumnMarker from "../ColumnMarker.svelte";
+	import RotateLable from "../RotateLable.svelte";
+	import NagetiveLable from "../NagetiveLable.svelte";
+	import RangeColumn from "../RangeColumn.svelte";
+	import DynamicColumn from "../DynamicColumn.svelte";
+	import Quarter from "../Quarter.svelte";
+	import DistributedColumn from "../DistributedColumn.svelte";
+	import ColumnGroupLabels from '../ColumnGroupLabels.svelte'
 </script>
 
 <svelte:head>

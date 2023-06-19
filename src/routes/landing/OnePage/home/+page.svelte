@@ -10,19 +10,19 @@
     import { Swiper, SwiperSlide } from "swiper/svelte";
     // Import Images
     import Link from "svelte-link";
-    import creativeDemo from "../../../assets/images/demos/creative.png";
-    import defaultDemo from "../../../assets/images/demos/default.png";
-    import interactiveDemo from "../../../assets/images/demos/interactive.png";
-    import materialDemo from "../../../assets/images/demos/material.png";
-    import minimalDemo from "../../../assets/images/demos/minimal.png";
-    import modernDemo from "../../../assets/images/demos/modern.png";
-    import saasDemo from "../../../assets/images/demos/saas.png";
-    import imgpattern from "../../../assets/images/landing/img-pattern.png";
-    import slider01 from "./assets/bg-home.png";
-    import slider02 from "./assets/farming01.png";
-    import slider03 from "./assets/farming02.png";
-    import slider04 from "./assets/farming04.png";
-    import slider05 from "./assets/farming05.png";
+    import creativeDemo from "../../../../assets/images/demos/creative.png";
+    import defaultDemo from "../../../../assets/images/demos/default.png";
+    import interactiveDemo from "../../../../assets/images/demos/interactive.png";
+    import materialDemo from "../../../../assets/images/demos/material.png";
+    import minimalDemo from "../../../../assets/images/demos/minimal.png";
+    import modernDemo from "../../../../assets/images/demos/modern.png";
+    import saasDemo from "../../../../assets/images/demos/saas.png";
+    import imgpattern from "../../../../assets/images/landing/img-pattern.png";
+    import slider01 from "../assets/bg-home.png";
+    import slider02 from "../assets/farming01.png";
+    import slider03 from "../assets/farming02.png";
+    import slider04 from "../assets/farming04.png";
+    import slider05 from "../assets/farming05.png";
 </script>
 
 <div

@@ -1,7 +1,7 @@
 <script>
     import { Card, CardBody, Col, Row } from "sveltestrap";
-    import jobWidgets from "../../common/data/dashboardJobs";
-    import DashboardCharts from './DashboardCharts.svelte'
+    import jobWidgets from "../../../common/data/dashboardJobs";
+    import DashboardCharts from '../DashboardCharts.svelte'
 </script>
 <Col xl={6}>
     <div class="d-flex flex-column h-100">

@@ -1,6 +1,6 @@
 <script>
 	import { Card, CardBody, Col } from 'sveltestrap';
-	import data from '../../common/data/crypto';
+	import data from '../../../common/data/crypto';
 </script>
 
 {#each data.cyptoWidgets as item}

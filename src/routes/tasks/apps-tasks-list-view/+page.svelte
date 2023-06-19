@@ -2,10 +2,10 @@
   <title>Task List | Velzon - Svelte Admin & Dashboard Template</title>
 </svelte:head>
 <script>
-	import BreadCrumb from '../../Components/Common/BreadCrumb.svelte';
+	import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
 	import { Container, Row } from 'sveltestrap';
-	import AllTasks from './AllTasks.svelte';
-	import Widgets from './Widgets.svelte';
+	import AllTasks from '../AllTasks.svelte';
+	import Widgets from '../Widgets.svelte';
 </script>
 
 <div class="page-content">

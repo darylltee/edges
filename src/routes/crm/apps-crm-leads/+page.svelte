@@ -18,15 +18,15 @@
 		Label,
 	} from "sveltestrap";
 
-	import DeleteModal from "../../Components/Common/CDeleteModal.svelte";
-	import BreadCrumb from "../../Components/Common/BreadCrumb.svelte";
-	import crmData from "../../common/data/crm";
+	import DeleteModal from "../../../Components/Common/CDeleteModal.svelte";
+	import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
+	import crmData from "../../../common/data/crm";
 	import Grid from "gridjs-svelte";
 	import { html } from "gridjs";
 	import { SvelteWrapper } from "gridjs-svelte/plugins";
-	import CompanyAction from "./CompanyAction.svelte";
+	import CompanyAction from "../CompanyAction.svelte";
 	import Flatpickr from "svelte-flatpickr";
-	import CrmFilter from "./CrmFilter.svelte";
+	import CrmFilter from "../CrmFilter.svelte";
 
 	let open = false;
 	let filteropen = false;

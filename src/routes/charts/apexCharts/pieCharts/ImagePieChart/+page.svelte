@@ -2,10 +2,10 @@
 	import { browser } from "$app/environment";
 	import { onMount } from "svelte";
 
-	import smallImage1 from "../../../../assets/images/small/img-1.jpg";
-	import smallImage2 from "../../../../assets/images/small/img-2.jpg";
-	import smallImage3 from "../../../../assets/images/small/img-3.jpg";
-	import smallImage4 from "../../../../assets/images/small/img-4.jpg";
+	import smallImage1 from "../../../../../assets/images/small/img-1.jpg";
+	import smallImage2 from "../../../../../assets/images/small/img-2.jpg";
+	import smallImage3 from "../../../../../assets/images/small/img-3.jpg";
+	import smallImage4 from "../../../../../assets/images/small/img-4.jpg";
 
 	function getChartColorsArray(colors) {
 		if (browser) {

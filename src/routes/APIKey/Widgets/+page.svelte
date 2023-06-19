@@ -1,6 +1,6 @@
 <script>
     import { Card, CardBody, Col, Progress } from "sveltestrap";
-    import Counter from "../../Components/Common/counter.svelte";
+    import Counter from "../../../Components/Common/counter.svelte";
     import { CheckCircleIcon, AlertOctagonIcon } from "svelte-feather-icons";
 </script>
 

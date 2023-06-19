@@ -4,14 +4,14 @@
 <script>
 	
 	import { Container } from 'sveltestrap';
-	import BreadCrumb from '../../Components/Common/BreadCrumb.svelte';
-	import TileBoxs from './TileBoxs.svelte';
-	import OtherWidgets from './OtherWidgets.svelte';
-	import UpcomingActivity from './UpcomingActivities.svelte';
-	import ChartMapWidgets from './Chart&MapWidgets.svelte';
-	import WidgetData from '../../common/data/widgets';
-	import EcommerceWidgets from './EcommerceWidgets.svelte';
-	import CreditCard from './CreditCard.svelte';
+	import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
+	import TileBoxs from '../TileBoxs.svelte';
+	import OtherWidgets from '../OtherWidgets.svelte';
+	import UpcomingActivity from '../UpcomingActivities.svelte';
+	import ChartMapWidgets from '../Chart&MapWidgets.svelte';
+	import WidgetData from '../../../common/data/widgets';
+	import EcommerceWidgets from '../EcommerceWidgets.svelte';
+	import CreditCard from '../CreditCard.svelte';
 </script>
 
 <div class="page-content">

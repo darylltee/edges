@@ -1,6 +1,6 @@
 <script>
     import { Col, Container, Row } from "sveltestrap";
-    import LogoLight from "../../../assets/images/logo-light.png";
+    import LogoLight from "../../../../assets/images/logo-light.png";
     import Link from 'svelte-link'
 </script>
 <footer class="custom-footer bg-dark py-5 position-relative">

@@ -3,7 +3,7 @@
 </svelte:head>
 <script>
 import { Row, Col, Card, CardBody,  Container, CardHeader } from "sveltestrap";
-import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
+import BreadCrumb from '../../../../Components/Common/BreadCrumb.svelte';
 </script>
 
 <div class="page-content">

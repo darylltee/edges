@@ -3,10 +3,10 @@
 </svelte:head>
 <script>
     import { Card, CardBody, Col, Container, Row } from "sveltestrap";
-    import data from '../../../common/data/NFTMarketplace';
-    import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
+    import data from '../../../../common/data/NFTMarketplace';
+    import BreadCrumb from "../../../../Components/Common/BreadCrumb.svelte";
     import Link from 'svelte-link';
-    import BgPattern from "../../../assets/images/nft/bg-pattern.png";
+    import BgPattern from "../../../../assets/images/nft/bg-pattern.png";
 </script>
 <div class="page-content">
     <Container fluid>

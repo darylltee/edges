@@ -2,11 +2,11 @@
   <title>Tickets List | Velzon - Svelte Admin & Dashboard Template</title>
 </svelte:head>
 <script>
-	import BreadCrumb from '../../../Components/Common/BreadCrumb.svelte';
-	import Counter from '../../../Components/Common/counter.svelte';
-	import tickitData from '../../../common/data/supportTickets';
-	import Widgets from './Widgets.svelte';
-	import TicketsData from './TicketsData.svelte';
+	import BreadCrumb from '../../../../Components/Common/BreadCrumb.svelte';
+	import Counter from '../../../../Components/Common/counter.svelte';
+	import tickitData from '../../../../common/data/supportTickets';
+	import Widgets from '../Widgets.svelte';
+	import TicketsData from '../TicketsData.svelte';
 
 	import { Row, Container } from 'sveltestrap';
 </script>

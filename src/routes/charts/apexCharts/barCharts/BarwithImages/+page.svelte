@@ -1,6 +1,6 @@
 <script>
 	import {onMount} from 'svelte';
-	import user from "../../../../assets/images/small/img-4.jpg";
+	import user from "../../../../../assets/images/small/img-4.jpg";
 
 	var options = {
 		chart: {

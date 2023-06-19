@@ -1,4 +1,6 @@
 <script>
+    throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
+
 	import {
 		Button,
 		Card,
@@ -17,14 +19,14 @@
 		Dropdown,
 		Label
 	} from 'sveltestrap';
-	import OtherWidgetsCharts from './WidgetsCharts.svelte';
+	import OtherWidgetsCharts from '../WidgetsCharts.svelte';
 	import Link from 'svelte-link';
 	export let widgetsActivities, widgetsTasks;
-	import avatar2 from '../../assets/images/users/avatar-2.jpg';
-	import avatar3 from '../../assets/images/users/avatar-3.jpg';
-	import img2 from '../../assets/images/products/img-2.png';
-	import img8 from '../../assets/images/products/img-8.png';
-	import img10 from '../../assets/images/products/img-10.png';
+	import avatar2 from '../../../assets/images/users/avatar-2.jpg';
+	import avatar3 from '../../../assets/images/users/avatar-3.jpg';
+	import img2 from '../../../assets/images/products/img-2.png';
+	import img8 from '../../../assets/images/products/img-8.png';
+	import img10 from '../../../assets/images/products/img-10.png';
 
 	const chartDataOptions = [
         {

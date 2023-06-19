@@ -10,8 +10,8 @@
     import "swiper/css/effect-fade";
     import "swiper/css/effect-flip";
     import "swiper/css/autoplay";
-    import data from "../../common/data/dashboardNFT";
-    import TopArtworkChart from "./TopArtworkChart.svelte";
+    import data from "../../../common/data/dashboardNFT";
+    import TopArtworkChart from "../TopArtworkChart.svelte";
 </script>
 
 <Row>

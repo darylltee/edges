@@ -1,6 +1,6 @@
 <script>
 	import { Card, CardBody, CardHeader, Col } from 'sveltestrap';
-	import data from '../../common/data/dashboardcrm';
+	import data from '../../../common/data/dashboardcrm';
 </script>
 
 <Col xxl={7}>

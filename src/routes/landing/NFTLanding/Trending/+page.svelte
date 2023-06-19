@@ -11,12 +11,12 @@
     import { Pagination, Autoplay, Navigation } from "swiper";
 
     //import Images
-    import Img01 from "../../../assets/images/nft/img-01.jpg";
-    import Img02 from "../../../assets/images/nft/img-02.jpg";
-    import Img03 from "../../../assets/images/nft/img-03.jpg";
-    import Img04 from "../../../assets/images/nft/img-04.jpg";
-    import Img05 from "../../../assets/images/nft/img-05.jpg";
-    import Img06 from "../../../assets/images/nft/img-06.jpg";
+    import Img01 from "../../../../assets/images/nft/img-01.jpg";
+    import Img02 from "../../../../assets/images/nft/img-02.jpg";
+    import Img03 from "../../../../assets/images/nft/img-03.jpg";
+    import Img04 from "../../../../assets/images/nft/img-04.jpg";
+    import Img05 from "../../../../assets/images/nft/img-05.jpg";
+    import Img06 from "../../../../assets/images/nft/img-06.jpg";
 </script>
 <section class="section bg-light" id="categories">
     <Container fluid>

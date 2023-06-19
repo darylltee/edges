@@ -1,10 +1,12 @@
 <script>
+	throw new Error("@migration task: Add data prop (https://github.com/sveltejs/kit/discussions/5774#discussioncomment-3292707)");
+
 	import { Alert, Card, CardBody, Col, Row } from 'sveltestrap';
 	import Link from 'svelte-link';
 	export let otherWidgets2;
 	import { AlertTriangleIcon } from 'svelte-feather-icons';
-	import userillustarator from '../../assets/images/user-illustarator-2.png'
-	import userillustarator1 from '../../assets/images/user-illustarator-1.png'
+	import userillustarator from '../../../assets/images/user-illustarator-2.png'
+	import userillustarator1 from '../../../assets/images/user-illustarator-1.png'
 </script>
 
 <Row>

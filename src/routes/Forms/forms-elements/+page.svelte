@@ -12,10 +12,10 @@
 		Row,
 		Dropdown
 	} from "sveltestrap";
-	import UiContent from "../../Components/Common/UiContent.svelte";
-	import BreadCrumb from "../../Components/Common/BreadCrumb.svelte";
-	import PreviewCardHeader from "../../Components/Common/PreviewCardHeader.svelte";
-	import PrismCode from "../../Components/Common/Prism.svelte";
+	import UiContent from "../../../Components/Common/UiContent.svelte";
+	import BreadCrumb from "../../../Components/Common/BreadCrumb.svelte";
+	import PreviewCardHeader from "../../../Components/Common/PreviewCardHeader.svelte";
+	import PrismCode from "../../../Components/Common/Prism.svelte";
 
 	//InputExample code
 	const InputExample = `<!-- Basic Input -->

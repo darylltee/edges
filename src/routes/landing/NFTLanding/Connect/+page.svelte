@@ -1,7 +1,7 @@
 <script>
     import { Container, Row, Col, Card, CardBody } from 'sveltestrap';
     import Link from 'svelte-link';
-    import data from '../../../common/data/LandingNFT';
+    import data from '../../../../common/data/LandingNFT';
 </script>
 <section class="section" id="wallet">
     <Container>
