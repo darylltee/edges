@@ -1,4 +1,20 @@
 {
-	"/": [],
-	"/landing/OnePage": []
+	"/": [
+		"src/routes/+page.js"
+	],
+	"/landing/OnePage": [],
+	"/landing/OnePage/client": [],
+	"/landing/OnePage/contact": [],
+	"/landing/OnePage/counter": [],
+	"/landing/OnePage/cta": [],
+	"/landing/OnePage/faq": [],
+	"/landing/OnePage/features": [],
+	"/landing/OnePage/footer": [],
+	"/landing/OnePage/home": [],
+	"/landing/OnePage/navbar": [],
+	"/landing/OnePage/products": [],
+	"/landing/OnePage/reviews": [],
+	"/landing/OnePage/services": [],
+	"/landing/OnePage/team": [],
+	"/landing/OnePage/workProcess": []
 }
