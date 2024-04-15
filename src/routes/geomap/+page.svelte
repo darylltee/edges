@@ -12,14 +12,14 @@
   });
 </script>
 
-<section>
+<section class="section bg-light py-5">
   <Container>
     <Row>
-      <Col lg={12} sm={12} style="margin-top:-50px;margin-bottom:50px">
+      <Col lg={12} sm={12} style="margin-top:-10px;">
         <h1 class="mb-3 ff-secondary fw-semibold lh-base text-center">
           GEOMAP DATABASE
         </h1>
-        <svelte:component this={EsriMap} />
+        <svelte:component this={EsriMap} style="border:1px solid green" />
       </Col>
     </Row>
   </Container>

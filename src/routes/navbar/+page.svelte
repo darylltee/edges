@@ -77,7 +77,11 @@
                 <li class="nav-item">
                     <NavLink class="fs-15" href="#products">Products</NavLink>
                 </li>
-
+                <li class="nav-item">
+                    <NavLink class="fs-15" href="#publication"
+                        >Publication</NavLink
+                    >
+                </li>
                 <li class="nav-item">
                     <NavLink class="fs-15" href="#team">Team</NavLink>
                 </li>

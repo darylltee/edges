@@ -588,22 +588,18 @@
       </h3>
       <p class="mb-4 ff-secondary fs-16">
         Almost all the seaweed farmers in the three target sites are insured
-        under the Philippine Crop Insurance Corporation (PCIC), showing that
-        farmers are becoming more aware of the importance of insuring their
-        crops. The benefits of being insured under PCIC for seaweed farmers are
-        significant as they will be able to recover their investment in the
-        event of loss or damage to their crops, and the insurance covers the
-        labor costs that they have already spent on cultivating the seaweed.
+        under the Philippine Crop Insurance Corporation (PCIC). Seaweed farmers
+        gain significantly from being covered under PCIC since they will be able
+        to recover their investment in the event of crop loss or damage. The
+        insurance also covers the labor expenditures that they have already
+        spent on seaweed cultivation.
       </p>
       <p class="mb-4 ff-secondary fs-16">
-        The negotiation of seaweed prices was solely decided by the local buyer,
-        which means that the local buyer has the authority to determine the
-        price at which they are willing to purchase seaweed from seaweed
-        farmers. One of the advantages of this arrangement is creating an
-        opportunity for local buyers to secure seaweed at a price that suits
-        their budget and requirements. However, seaweed farmers may find it
-        challenging to maintain consistent pricing and profit margins if they
-        continually negotiate with local buyers seeking lower prices.
+        The local buyer was exclusively responsible for negotiating seaweed
+        prices, which allows them to acquire seaweed at a price that is
+        appropriate for their budget and needs. However, seaweed farmers may
+        find it challenging to maintain consistent pricing and profit margins if
+        they continually negotiate with local buyers seeking lower prices.
       </p></Col
     >
     <Col lg={6} sm={12}>

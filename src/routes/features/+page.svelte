@@ -272,3 +272,69 @@
         </Row>
     </Container>
 </section>
+
+<section class="section bg-light py-5" id="publication">
+    <Container>
+        <Row class="align-items-center gy-4">
+            <h3
+                class="mb-3 fs-48"
+                style="color:green; border-bottom: 1px solid green"
+            >
+                Publication
+            </h3>
+
+            <Col lg={6} sm={7} class="mx-auto">
+                <div class="text-muted">
+                    <div class="avatar-sm icon-effect mb-4">
+                        <div
+                            class="avatar-title bg-transparent rounded-circle text-success h1"
+                        >
+                            <i class="ri-collage-line fs-36" />
+                        </div>
+                    </div>
+
+                    <p class="mb-4 ff-secondary fs-16">
+                        The first paper entitled <b
+                            ><i
+                                >“The Personal entrepreneurial competencies
+                                among seaweed farmers in Sorsogon, Philippines”</i
+                            ></b
+                        > tackled the personal entrepreneurial competencies of seaweed
+                        farmers in Sorsogon, Philippines based on Personal Entrepreneurial
+                        Competencies (PEC) test. The findings revealed that seaweed
+                        farmers possess only a range of moderate personal entrepreneurial
+                        competencies and that seaweed farmers manifested risk aversion
+                        and poor demand for quality and efficiency.
+                    </p>
+                </div>
+            </Col>
+            <Col lg={6}>
+                <div class="text-muted">
+                    <div class="avatar-sm icon-effect mb-4">
+                        <div
+                            class="avatar-title bg-transparent rounded-circle text-success h1"
+                        >
+                            <i class="ri-collage-line fs-36" />
+                        </div>
+                    </div>
+
+                    <p class="mb-4 ff-secondary fs-16">
+                        The second paper entitled <b
+                            ><i
+                                >“Are the Fishers of Sorsogon Knowledgeable
+                                about and Willing to Farm the Seaweed Ulva?”</i
+                            ></b
+                        > aimed to assess the knowledge of the local Ulva resources
+                        and the willingness of fishers to engage in Ulva farming,
+                        including identifying the challenges that may hinder its
+                        adoption. The findings revealed that most Bulusanon fishers
+                        were knowledgeable about Ulva resources and could identify
+                        barriers to farming. They were generally receptive to engaging
+                        in farming Ulva, primarily due to the perceived economic
+                        benefits.
+                    </p>
+                </div>
+            </Col>
+        </Row>
+    </Container>
+</section>

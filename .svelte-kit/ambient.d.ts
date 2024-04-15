@@ -28,6 +28,7 @@
 declare module '$env/static/private' {
 	export const ALLUSERSPROFILE: string;
 	export const ANDROID_HOME: string;
+	export const ANDROID_HOMEV2: string;
 	export const ANDROID_SDK_ROOT: string;
 	export const APPDATA: string;
 	export const CHROME_CRASHPAD_PIPE_NAME: string;
@@ -41,7 +42,7 @@ declare module '$env/static/private' {
 	export const digiweb: string;
 	export const DriverData: string;
 	export const EDITOR: string;
-	export const EFC_4668: string;
+	export const EFC_25252: string;
 	export const FPS_BROWSER_APP_PROFILE_STRING: string;
 	export const FPS_BROWSER_USER_PROFILE_STRING: string;
 	export const GIT_ASKPASS: string;
@@ -155,6 +156,7 @@ declare module '$env/dynamic/private' {
 	export const env: {
 		ALLUSERSPROFILE: string;
 		ANDROID_HOME: string;
+		ANDROID_HOMEV2: string;
 		ANDROID_SDK_ROOT: string;
 		APPDATA: string;
 		CHROME_CRASHPAD_PIPE_NAME: string;
@@ -168,7 +170,7 @@ declare module '$env/dynamic/private' {
 		digiweb: string;
 		DriverData: string;
 		EDITOR: string;
-		EFC_4668: string;
+		EFC_25252: string;
 		FPS_BROWSER_APP_PROFILE_STRING: string;
 		FPS_BROWSER_USER_PROFILE_STRING: string;
 		GIT_ASKPASS: string;
