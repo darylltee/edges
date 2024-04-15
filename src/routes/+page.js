@@ -1,4 +1,4 @@
-import { redirect } from '@sveltejs/kit';
+/*import { redirect } from '@sveltejs/kit';
 
 export async function load({ session }) {
   // Get the authenticated user from the current session
@@ -7,4 +7,4 @@ export async function load({ session }) {
   if (user == null) {
     throw redirect(302, "/landing/OnePage/");
   }
-}
+}*/

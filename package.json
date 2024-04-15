@@ -13,12 +13,13 @@
     "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
   },
   "devDependencies": {
+    "@arcgis/core": "^4.27.6",
     "@fullcalendar/common": "^5.11.3",
     "@fullcalendar/core": "^5.11.3",
     "@playwright/test": "^1.19.1",
     "@sveltejs/adapter-auto": "^2.0.0",
     "@sveltejs/adapter-node": "^1.2.4",
-    "@sveltejs/kit": "^1.20.4",
+    "@sveltejs/kit": "^1.20.5",
     "@sveltejs/vite-plugin-svelte": "^2.4.1",
     "@typescript-eslint/eslint-plugin": "^5.10.1",
     "@typescript-eslint/parser": "^5.10.1",
@@ -51,6 +52,7 @@
     "@types/debug": "^4.1.7",
     "aos": "^2.3.4",
     "bootstrap": "^5.2.3",
+    "chart.js": "^4.3.0",
     "gridjs": "^5.0.2",
     "gridjs-svelte": "^2.1.0",
     "lottie-web": "^5.9.1",

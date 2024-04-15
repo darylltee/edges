@@ -28,12 +28,7 @@ const Navdata = [
 				link: '/dashboard',
 				parentId: 'dashboard'
 			},
-			{
-				id: 'crypto',
-				label: 'Crypto',
-				link: '/dashboard-crypto',
-				parentId: 'dashboard'
-			},
+
 			{
 				id: 'projects',
 				label: 'Projects',
@@ -238,86 +233,86 @@ const Navdata = [
 				isChildItem: true,
 				stateVariables: 'isJobs',
 				childItems: [
-				  {
-					id: "job-statistics",
-					label: "Statistics",
-					link: "/Jobs/Statistics",
-					parentId: "apps",
-				  },
-				  {
-					id: 2,
-					label: "Job Lists",
-					link: "/#",
-					parentId: "apps",
-					isChildItem: true,
-					stateVariables: 'isJobList',
-					childItems: [
-					  {
-						id: 1,
-						label: "List",
-						link: "/Jobs/JobList/List",
+					{
+						id: "job-statistics",
+						label: "Statistics",
+						link: "/Jobs/Statistics",
 						parentId: "apps",
-					  },
-					  {
+					},
+					{
 						id: 2,
-						label: "Grid",
-						link: "/Jobs/JobList/Grid",
+						label: "Job Lists",
+						link: "/#",
 						parentId: "apps",
-					  },
-					  {
+						isChildItem: true,
+						stateVariables: 'isJobList',
+						childItems: [
+							{
+								id: 1,
+								label: "List",
+								link: "/Jobs/JobList/List",
+								parentId: "apps",
+							},
+							{
+								id: 2,
+								label: "Grid",
+								link: "/Jobs/JobList/Grid",
+								parentId: "apps",
+							},
+							{
+								id: 3,
+								label: "Overview",
+								link: "/Jobs/JobList/Overview",
+								parentId: "apps",
+							},
+						],
+					},
+					{
 						id: 3,
-						label: "Overview",
-						link: "/Jobs/JobList/Overview",
+						label: "Candidate Lists",
+						link: "/#",
 						parentId: "apps",
-					  },
-					],
-				  },
-				  {
-					id: 3,
-					label: "Candidate Lists",
-					link: "/#",
-					parentId: "apps",
-					isChildItem: true,
-					stateVariables: 'isCandidateList',
-					childItems: [
-					  {
-						id: 1,
-						label: "List View",
-						link: "/Jobs/CandidateList/ListView",
+						isChildItem: true,
+						stateVariables: 'isCandidateList',
+						childItems: [
+							{
+								id: 1,
+								label: "List View",
+								link: "/Jobs/CandidateList/ListView",
+								parentId: "apps",
+							},
+							{
+								id: 2,
+								label: "Grid View",
+								link: "/Jobs/CandidateList/GridView",
+								parentId: "apps",
+							},
+						],
+					},
+					{
+						id: 4,
+						label: "Application",
+						link: "/Jobs/Application",
 						parentId: "apps",
-					  },
-					  {
-						id: 2,
-						label: "Grid View",
-						link: "/Jobs/CandidateList/GridView",
+					},
+					{
+						id: 5,
+						label: "New Job",
+						link: "/Jobs/NewJob",
 						parentId: "apps",
-					  },
-					],
-				  },
-				  {
-					id: 4,
-					label: "Application",
-					link: "/Jobs/Application",
-					parentId: "apps",
-				  },
-				  {
-					id: 5,
-					label: "New Job",
-					link: "/Jobs/NewJob",
-					parentId: "apps",
-				  },
-				  {
-					id: 6,
-					label: "Companies List",
-					link: "/Jobs/CompaniesList",
-					parentId: "apps",
-				  },
-				  {
-					id: 7,
-					label: "Job Categories",
-					link: "/Jobs/JobCategories",
-					parentId: "apps",
-				  },
+					},
+					{
+						id: 6,
+						label: "Companies List",
+						link: "/Jobs/CompaniesList",
+						parentId: "apps",
+					},
+					{
+						id: 7,
+						label: "Job Categories",
+						link: "/Jobs/JobCategories",
+						parentId: "apps",
+					},
 				],
 			},
 			{
@@ -483,8 +478,8 @@ const Navdata = [
 				link: '/pages/searchresults/pages-search-results',
 				parentId: 'pages'
 			},
-			{ id: "PrivecyPolicy", label: "Privacy Policy", link: "/pages/privacypolicy", parentId: "pages",  badgeColor: "success",badgeName: "New", },
-            { id: "TermsCondition", label: "Terms Condition", link: "/pages/termscondition", parentId: "pages", badgeColor: "success",badgeName: "New", },
+			{ id: "PrivecyPolicy", label: "Privacy Policy", link: "/pages/privacypolicy", parentId: "pages", badgeColor: "success", badgeName: "New", },
+			{ id: "TermsCondition", label: "Terms Condition", link: "/pages/termscondition", parentId: "pages", badgeColor: "success", badgeName: "New", },
 		]
 	},
 	{
@@ -496,7 +491,7 @@ const Navdata = [
 		subItems: [
 			{ id: "onePage", label: "One Page", link: "/landing/OnePage", parentId: "landing" },
 			{ id: "nftLanding", label: "NFT Landing", link: "/landing/NFTLanding", parentId: "landing" },
-			{ id: "jobLanding", label: "Job", link: "/landing/Job", parentId: "landing", badgeColor: "success",badgeName: "New" }
+			{ id: "jobLanding", label: "Job", link: "/landing/Job", parentId: "landing", badgeColor: "success", badgeName: "New" }
 		],
 	},
 	{

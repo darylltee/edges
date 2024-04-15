@@ -25,21 +25,21 @@ export const server_loads = [];
 
 export const dictionary = {
 		"/": [2],
-		"/landing/OnePage": [3],
-		"/landing/OnePage/client": [4],
-		"/landing/OnePage/contact": [5],
-		"/landing/OnePage/counter": [6],
-		"/landing/OnePage/cta": [7],
-		"/landing/OnePage/faq": [8],
-		"/landing/OnePage/features": [9],
-		"/landing/OnePage/footer": [10],
-		"/landing/OnePage/home": [11],
-		"/landing/OnePage/navbar": [12],
-		"/landing/OnePage/products": [13],
-		"/landing/OnePage/reviews": [14],
-		"/landing/OnePage/services": [15],
-		"/landing/OnePage/team": [16],
-		"/landing/OnePage/workProcess": [17]
+		"/client": [3],
+		"/contact": [4],
+		"/counter": [5],
+		"/cta": [6],
+		"/faq": [7],
+		"/features": [8],
+		"/footer": [9],
+		"/geomap": [10],
+		"/home": [11],
+		"/navbar": [12],
+		"/products": [13],
+		"/reviews": [14],
+		"/services": [15],
+		"/team": [16],
+		"/workProcess": [17]
 	};
 
 export const hooks = {

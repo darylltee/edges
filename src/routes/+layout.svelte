@@ -30,7 +30,8 @@
 		"/landing/Job",
 	];
 
-	$: isPublic = publicRoutes.includes($page.url.pathname);
+	//$: isPublic = publicRoutes.includes($page.url.pathname);
+	$: isPublic = true;
 
 	import { addMessages, init } from "svelte-i18n";
 	import en from "../lang/en.json";
@@ -89,12 +90,12 @@
 {:else}
 	<div id="layout-wrapper">
 		<Header {headerClass} />
-		<Sidebar {layoutType} />
+		<!--<Sidebar {layoutType} />-->
 		<div class="main-content" id="maincontent">
 			<slot />
 			<Footer />
 		</div>
-		<Rightbar bind:open {layoutType} />
+		<!--<Rightbar bind:open {layoutType} /> -->
 	</div>
 {/if}
 

@@ -41,7 +41,7 @@ declare module '$env/static/private' {
 	export const digiweb: string;
 	export const DriverData: string;
 	export const EDITOR: string;
-	export const EFC_29616: string;
+	export const EFC_4668: string;
 	export const FPS_BROWSER_APP_PROFILE_STRING: string;
 	export const FPS_BROWSER_USER_PROFILE_STRING: string;
 	export const GIT_ASKPASS: string;
@@ -86,6 +86,8 @@ declare module '$env/static/private' {
 	export const npm_package_version: string;
 	export const NPM_PREFIX_NPM_CLI_JS: string;
 	export const NUMBER_OF_PROCESSORS: string;
+	export const NVM_HOME: string;
+	export const NVM_SYMLINK: string;
 	export const OneDrive: string;
 	export const opas: string;
 	export const ORIGINAL_XDG_CURRENT_DESKTOP: string;
@@ -166,7 +168,7 @@ declare module '$env/dynamic/private' {
 		digiweb: string;
 		DriverData: string;
 		EDITOR: string;
-		EFC_29616: string;
+		EFC_4668: string;
 		FPS_BROWSER_APP_PROFILE_STRING: string;
 		FPS_BROWSER_USER_PROFILE_STRING: string;
 		GIT_ASKPASS: string;
@@ -211,6 +213,8 @@ declare module '$env/dynamic/private' {
 		npm_package_version: string;
 		NPM_PREFIX_NPM_CLI_JS: string;
 		NUMBER_OF_PROCESSORS: string;
+		NVM_HOME: string;
+		NVM_SYMLINK: string;
 		OneDrive: string;
 		opas: string;
 		ORIGINAL_XDG_CURRENT_DESKTOP: string;
