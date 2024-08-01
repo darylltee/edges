@@ -1,7 +1,19 @@
 <script>
     import { onMount } from "svelte";
     import Link from "svelte-link";
-    import { Collapse, Container, NavbarToggler, NavLink } from "sveltestrap";
+    import {
+        Collapse,
+        Container,
+        Dropdown,
+        DropdownItem,
+        DropdownMenu,
+        DropdownToggle,
+        Nav,
+        Navbar,
+        NavbarToggler,
+        NavItem,
+        NavLink,
+    } from "sveltestrap";
     // Import Images
     import {
         default as logodark,
@@ -31,7 +43,7 @@
     id="navbar"
 >
     <Container>
-        <Link class="navbar-brand" href="/index">
+        <Link class="navbar-brand" href="/">
             <img
                 src={logodark}
                 class="card-logo card-logo-dark"
@@ -61,42 +73,115 @@
 
         <Collapse
             isOpen={screenSize > 500 ? true : false}
-            class="navbar-collapse"
+            class="navbar-collapse  justify-content-start"
             id="navbarSupportedContent"
+            style={{ overflow: "visible !important" }}
         >
-            <div class="navbar-nav mx-auto mt-2 mt-lg-0" id="navbar-example">
-                <li class="nav-item">
-                    <NavLink class="fs-15" href="#hero">Home</NavLink>
-                </li>
-                <li class="nav-item">
-                    <NavLink class="fs-15" href="#services">Farming</NavLink>
-                </li>
-                <li class="nav-item">
-                    <NavLink class="fs-15" href="#features">EDGES</NavLink>
-                </li>
-                <li class="nav-item">
-                    <NavLink class="fs-15" href="#products">Products</NavLink>
-                </li>
-                <li class="nav-item">
-                    <NavLink class="fs-15" href="#publication"
-                        >Publication</NavLink
-                    >
-                </li>
-                <li class="nav-item">
-                    <NavLink class="fs-15" href="#team">Team</NavLink>
-                </li>
-                <li class="nav-item">
-                    <NavLink class="fs-15" href="#contact">Contact</NavLink>
-                </li>
-            </div>
+            <Nav class="ms-auto d-flex" navbar>
+                <Dropdown nav inNavbar>
+                    <DropdownToggle nav caret>ABOUT US</DropdownToggle>
+                    <DropdownMenu end>
+                        <DropdownItem>
+                            <NavLink
+                                class="navlinkcs"
+                                href="/about-us/our-goals">Our Goals</NavLink
+                            >
+                        </DropdownItem>
+                        <DropdownItem
+                            ><NavLink
+                                class="navlinkcs"
+                                href="/about-us/how-we-do-it"
+                                >How we do it</NavLink
+                            ></DropdownItem
+                        >
+                        <DropdownItem
+                            ><NavLink
+                                class="navlinkcs"
+                                href="/about-us/our-outputs"
+                                >Our Outputs</NavLink
+                            ></DropdownItem
+                        >
+                        <DropdownItem
+                            ><NavLink
+                                class="navlinkcs"
+                                href="/about-us/implications"
+                                >Implications</NavLink
+                            ></DropdownItem
+                        >
+                        <DropdownItem
+                            ><NavLink
+                                class="navlinkcs"
+                                href="/about-us/community-influence"
+                                >Community Influence</NavLink
+                            ></DropdownItem
+                        >
+                        <DropdownItem
+                            ><NavLink
+                                class="navlinkcs"
+                                href="/about-us/farmer-beneficiaries"
+                                >Farmer Beneficiaries</NavLink
+                            ></DropdownItem
+                        >
+                        <DropdownItem
+                            ><NavLink
+                                class="navlinkcs"
+                                href="/about-us/testimonies"
+                                >Testimonies</NavLink
+                            ></DropdownItem
+                        >
+                        <DropdownItem
+                            ><NavLink
+                                class="navlinkcs"
+                                href="/about-us/our-team">Our Team</NavLink
+                            ></DropdownItem
+                        >
+                    </DropdownMenu>
+                </Dropdown>
+                <Dropdown nav inNavbar>
+                    <DropdownToggle nav caret>OUR WORK</DropdownToggle>
+                    <DropdownMenu end>
+                        <DropdownItem
+                            ><NavLink
+                                class="navlinkcs"
+                                href="/our-work/geomapping">Geomapping</NavLink
+                            ></DropdownItem
+                        >
+                        <DropdownItem>Profiling</DropdownItem>
+                        <Dropdown nav inNavbar>
+                            <DropdownToggle nav caret>Farming</DropdownToggle>
+                            <DropdownMenu end style={{ left: "50%" }}>
+                                <DropdownItem>Planting</DropdownItem>
+                                <DropdownItem>Monitoring</DropdownItem>
 
-            <!--<div class="">
-                <Link
-                    href="/authenticationInner/login/auth-signin-basic"
-                    class="btn btn-link fw-medium text-decoration-none text-dark"
-                    >Sign in</Link
-                >
-            </div>-->
+                                <DropdownItem>Harvesting</DropdownItem>
+                                <DropdownItem>Value-Adding</DropdownItem>
+                                <DropdownItem>Marketing</DropdownItem>
+                                <DropdownItem>Insurance</DropdownItem>
+                            </DropdownMenu>
+                        </Dropdown>
+                    </DropdownMenu>
+                </Dropdown>
+                <Dropdown nav inNavbar>
+                    <DropdownToggle nav caret>OUR PARTNERS</DropdownToggle>
+                    <DropdownMenu end>
+                        <DropdownItem>Sorsogon State University</DropdownItem>
+                        <DropdownItem>DOST-PCAARRD AABH</DropdownItem>
+                        <DropdownItem>BFAR-NSTDC</DropdownItem>
+                        <DropdownItem>PCIC</DropdownItem>
+                        <DropdownItem>Seoul National University</DropdownItem>
+                    </DropdownMenu>
+                </Dropdown>
+                <NavItem>
+                    <NavLink href="https://github.com/sveltestrap/sveltestrap"
+                        >PUBLICATION</NavLink
+                    >
+                </NavItem>
+                <NavItem>
+                    <NavLink href="https://github.com/sveltestrap/sveltestrap"
+                        >CONTACT US</NavLink
+                    >
+                </NavItem>
+            </Nav>
         </Collapse>
     </Container>
 </nav>

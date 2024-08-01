@@ -93,11 +93,6 @@
                             (EDGES)
                         </span>
                     </h1>
-                    <p class="lead text-muted lh-base">
-                        Revitalizing Sorsogon's Seaweed Industry: Overcoming
-                        Challenges to Harness Global Demand and Foster Viable
-                        Enterprises.
-                    </p>
 
                     <!--<div class="d-flex gap-2 justify-content-center mt-4">
                         <Link
@@ -117,38 +112,7 @@
                     </div>-->
                     <br />
                 </div>
-
-                <div class="mt-4 mt-sm-5 pt-sm-5 mb-sm-n5 demo-carousel">
-                    <div class="demo-img-patten-top d-none d-sm-block">
-                        <img
-                            src={imgpattern}
-                            class="d-block img-fluid"
-                            alt="..."
-                        />
-                    </div>
-                    <div class="demo-img-patten-bottom d-none d-sm-block">
-                        <img
-                            src={imgpattern}
-                            class="d-block img-fluid"
-                            alt="..."
-                        />
-                    </div>
-                </div>
             </Col>
         </Row>
     </Container>
-
-    <div class="position-absolute start-0 end-0 bottom-0 hero-shape-svg">
-        <svg
-            xmlns="http://www.w3.org/2000/svg"
-            version="1.1"
-            viewBox="0 0 1440 120"
-        >
-            <g mask="url(&quot;#SvgjsMask1003&quot;)" fill="none">
-                <path
-                    d="M 0,118 C 288,98.6 1152,40.4 1440,21L1440 140L0 140z"
-                />
-            </g>
-        </svg>
-    </div>
 </section>
