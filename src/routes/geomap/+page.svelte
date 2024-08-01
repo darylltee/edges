@@ -25,6 +25,7 @@
   </Container>
 </section>
 
+<!--
 <section>
   <Container>
     <Row>
@@ -37,7 +38,7 @@
       </Col>
     </Row>
   </Container>
-</section>
+</section>-->
 
 <style>
   @import "https://js.arcgis.com/4.25/@arcgis/core/assets/esri/themes/light/main.css";

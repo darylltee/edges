@@ -495,6 +495,64 @@ const Navdata = [
 		],
 	},
 	{
+		id: 'about-us',
+		label: 'About Us',
+		icon: 'ri-information-line',
+		link: '/#',
+		subItems: [
+			{
+				id: 'our-goals',
+				label: 'Our Goals',
+				icon: 'ri-compass-3-line',
+				link: '/about-us/our-goals',
+				parentId: 'about-us'
+			},
+			{
+				id: 'how-we-do-it',
+				label: 'How We Do It',
+				icon: 'ri-focus-3-line',
+				link: '/about-us/how-we-do-it',
+				parentId: 'about-us'
+			},
+			{
+				id: 'our-outputs',
+				label: 'Our Outputs',
+				icon: 'ri-stack-line',
+				link: '/about-us/our-outputs',
+				parentId: 'about-us'
+			},
+			{
+				id: 'implications',
+				label: 'Implications',
+				icon: 'ri-bar-chart-line',
+				link: '/about-us/implications',
+				parentId: 'about-us'
+			},
+			{
+				id: 'farmer-beneficiaries',
+				label: 'Farmer Beneficiaries',
+				icon: 'ri-group-line',
+				link: '/about-us/farmer-beneficiaries',
+				parentId: 'about-us'
+			},
+			{
+				id: 'community-influence',
+				label: 'Community Influence',
+				icon: 'ri-group-line',
+				link: '/about-us/community-influence',
+				parentId: 'about-us'
+			},
+			{
+				id: 'our-team',
+				label: 'Our Team',
+				icon: 'ri-group-line',
+				link: '/about-us/our-team',
+				parentId: 'about-us'
+			}
+		]
+	},
+
+	{
 		label: 'Components',
 		isHeader: true
 	},

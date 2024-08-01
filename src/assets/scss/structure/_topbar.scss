@@ -184,7 +184,7 @@
 
     span {
         display: block;
-        overflow: hidden;
+        //  overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
     }
@@ -240,7 +240,7 @@
         }
 
         .user-name-sub-text {
-            color: $header-item-color-dark  !important;
+            color: $header-item-color-dark !important;
         }
     }
 

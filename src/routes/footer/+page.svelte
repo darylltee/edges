@@ -3,31 +3,123 @@
     import { Col, Container, Row } from "sveltestrap";
     // Import Images
     import logolight from "../../assets/images/logo-light.png";
+    import dost from "../assets/dost.webp";
+    import edgeslogoonly from "../assets/edgeslogoonly.png";
+    import nstdc from "../assets/nstdc.webp";
+    import pcic from "../assets/pcic.webp";
+    import sorsu from "../assets/ssu.webp";
+    import veritas from "../assets/veritas.png";
 </script>
 
-<footer class="custom-footer bg-dark py-5 position-relative">
+<footer class="custom-footer bg-light py-5 position-relative">
     <Container>
         <Row>
-            <Col lg={4} class="mt-4">
+            <Col lg={6} class="mt-4 d-flex justify-content-center">
                 <div>
-                    <div>
-                        <img src={logolight} alt="logo light" height="17" />
-                    </div>
-                    <div class="mt-4">
-                        <p>Premium Multipurpose Admin & Dashboard Template</p>
-                        <p class="ff-secondary">
-                            You can build any type of web application like
-                            eCommerce, CRM, CMS, Project management apps, Admin
-                            Panels, etc using Velzon.
-                        </p>
-                    </div>
+                    <img src={edgeslogoonly} alt="logo light" height="270" />
                 </div>
             </Col>
-
-            <Col lg={7} class="ms-lg-auto">
+            <Col lg={6} class="mt-4">
                 <Row>
-                    <Col sm={4} class="mt-4">
-                        <h5 class="text-white mb-0">Company</h5>
+                    <Col lg={4}>
+                        <div class="client-images">
+                            <img
+                                src={sorsu}
+                                alt="client-img"
+                                class="mx-auto img-fluid d-block"
+                            />
+                        </div>
+                    </Col>
+                    <Col lg={4}>
+                        <div class="client-images">
+                            <img
+                                src={dost}
+                                alt="client-img"
+                                class="mx-auto img-fluid d-block"
+                            />
+                        </div>
+                    </Col>
+                    <Col lg={4}>
+                        <div class="client-images">
+                            <img
+                                src={nstdc}
+                                alt="client-img"
+                                class="mx-auto img-fluid d-block"
+                            />
+                        </div>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col lg={6}>
+                        <div class="client-images">
+                            <img
+                                src={pcic}
+                                alt="client-img"
+                                class="mx-auto img-fluid d-block"
+                            />
+                        </div>
+                    </Col>
+                    <Col lg={6}>
+                        <div class="client-images">
+                            <img
+                                src={veritas}
+                                alt="client-img"
+                                class="mx-auto img-fluid d-block"
+                            />
+                        </div>
+                    </Col>
+                </Row>
+            </Col>
+        </Row>
+        <Row>
+            <Col lg={12} class="ms-lg-auto">
+                <Row>
+                    <Col class="mt-4" lg={2}>
+                        <h5 class=" mb-0">ABOUT US</h5>
+                        <div class=" mt-3">
+                            <ul class="list-unstyled footer-list fs-14">
+                                <li>
+                                    <Link
+                                        href="/pages/profile/simple/simplepage"
+                                        >Our Goals</Link
+                                    >
+                                </li>
+                                <li>
+                                    <Link href="/pages/gallery/pages-gallery"
+                                        >How We Do it</Link
+                                    >
+                                </li>
+                                <li>
+                                    <Link
+                                        href="/projects/apps-projects-overview"
+                                        >Our Outputs</Link
+                                    >
+                                </li>
+                                <li>
+                                    <Link href="/pages/timeline/timeline"
+                                        >Implications</Link
+                                    >
+                                </li>
+                                <li>
+                                    <Link href="/pages/timeline/timeline"
+                                        >Community Influence</Link
+                                    >
+                                </li>
+                                <li>
+                                    <Link href="/pages/timeline/timeline"
+                                        >Farmer Beneficiaries</Link
+                                    >
+                                </li>
+                                <li>
+                                    <Link href="/pages/timeline/timeline"
+                                        >Our Team</Link
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </Col>
+                    <Col class="mt-4" lg={2}>
+                        <h5 class=" mb-0">OUR WORK</h5>
                         <div class="text-muted mt-3">
                             <ul
                                 class="list-unstyled ff-secondary footer-list fs-14"
@@ -35,72 +127,80 @@
                                 <li>
                                     <Link
                                         href="/pages/profile/simple/simplepage"
-                                        >About Us</Link
+                                        >Geomapping</Link
                                     >
                                 </li>
                                 <li>
                                     <Link href="/pages/gallery/pages-gallery"
-                                        >Gallery</Link
+                                        >Profiling</Link
                                     >
                                 </li>
                                 <li>
                                     <Link
                                         href="/projects/apps-projects-overview"
-                                        >Projects</Link
+                                        >Farming</Link
                                     >
                                 </li>
                                 <li>
                                     <Link href="/pages/timeline/timeline"
-                                        >Timeline</Link
+                                        >Testimonies</Link
                                     >
                                 </li>
                             </ul>
                         </div>
                     </Col>
-                    <Col sm={4} class="mt-4">
-                        <h5 class="text-white mb-0">Apps Pages</h5>
+                    <Col class="mt-4" lg={2}>
+                        <h5 class=" mb-0">OUR PARTNERS</h5>
                         <div class="text-muted mt-3">
                             <ul
                                 class="list-unstyled ff-secondary footer-list fs-14"
                             >
                                 <li>
                                     <Link href="/pages/pricing/pages-pricing"
-                                        >Calendar</Link
+                                        >Sorsogon State University</Link
                                     >
                                 </li>
                                 <li>
                                     <Link href="/emailInbox/apps-mailbox"
-                                        >Mailbox</Link
+                                        >DOST-PCAARRD AABH</Link
                                     >
                                 </li>
-                                <li><Link href="/apps-chat">Chat</Link></li>
                                 <li>
-                                    <Link href="/crm/apps-crm-deals">Deals</Link
-                                    >
+                                    <Link href="/apps-chat">BFAR-NSTDC</Link>
+                                </li>
+                                <li>
+                                    <Link href="/crm/apps-crm-deals">PCIC</Link>
                                 </li>
                                 <li>
                                     <Link href="/tasks/apps-tasks-kanban"
-                                        >Kanban Board</Link
+                                        >Seoul National University</Link
                                     >
                                 </li>
                             </ul>
                         </div>
                     </Col>
-                    <Col sm={4} class="mt-4">
-                        <h5 class="text-white mb-0">Support</h5>
+                    <Col class="mt-4" lg={2}>
+                        <h5 class=" mb-0">PUBLICATION</h5>
+                        <div class="text-muted mt-3" />
+                    </Col>
+                    <Col class="mt-4" lg={4}>
+                        <h5 class=" mb-0">CONTACT US</h5>
                         <div class="text-muted mt-3">
                             <ul
                                 class="list-unstyled ff-secondary footer-list fs-14"
                             >
                                 <li>
-                                    <Link href="/pages/faqs/pages-faqs"
-                                        >FAQ</Link
-                                    >
+                                    <i class="bi-alarm text-success me-2" />
+                                    <b>Address:</b> Herbarium Sorsogonense, 2nd Floor
+                                    Integrated Academic and Laboratory Building,
+                                    Sorsogon State University, Sorsogon City, Sorsogon,
+                                    Philippines 4700
                                 </li>
                                 <li>
-                                    <Link href="/crm/apps-crm-contacts"
-                                        >Contact</Link
-                                    >
+                                    <br />
+                                </li>
+                                <li>
+                                    <b>Email:</b> edges@sorsu.edu.ph
                                 </li>
                             </ul>
                         </div>
@@ -113,49 +213,8 @@
             <Col sm={6}>
                 <div>
                     <p class="copy-rights mb-0">
-                        {new Date().getFullYear()} © Velzon - Themesbrand
+                        {new Date().getFullYear()} © PROJECT EDGES
                     </p>
-                </div>
-            </Col>
-            <Col sm={6}>
-                <div class="text-sm-end mt-3 mt-sm-0">
-                    <ul class="list-inline mb-0 footer-social-link">
-                        <li class="list-inline-item">
-                            <Link href="#!" class="avatar-xs d-block">
-                                <div class="avatar-title rounded-circle">
-                                    <i class="ri-facebook-fill" />
-                                </div>
-                            </Link>
-                        </li>
-                        <li class="list-inline-item">
-                            <Link href="#!" class="avatar-xs d-block">
-                                <div class="avatar-title rounded-circle">
-                                    <i class="ri-github-fill" />
-                                </div>
-                            </Link>
-                        </li>
-                        <li class="list-inline-item">
-                            <Link href="#!" class="avatar-xs d-block">
-                                <div class="avatar-title rounded-circle">
-                                    <i class="ri-linkedin-fill" />
-                                </div>
-                            </Link>
-                        </li>
-                        <li class="list-inline-item">
-                            <Link href="#!" class="avatar-xs d-block">
-                                <div class="avatar-title rounded-circle">
-                                    <i class="ri-google-fill" />
-                                </div>
-                            </Link>
-                        </li>
-                        <li class="list-inline-item">
-                            <Link href="#!" class="avatar-xs d-block">
-                                <div class="avatar-title rounded-circle">
-                                    <i class="ri-dribbble-line" />
-                                </div>
-                            </Link>
-                        </li>
-                    </ul>
                 </div>
             </Col>
         </Row>
