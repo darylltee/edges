@@ -1,6 +1,7 @@
 <script>
     import Accross from "./accross/+page.svelte";
 
+    import Client from "./client/+page.svelte";
     import Farming from "./farming/+page.svelte";
     import Features from "./features/+page.svelte";
     import Footer from "./footer/+page.svelte";
@@ -8,7 +9,6 @@
     import Home from "./home/+page.svelte";
     import Navbar from "./navbar/+page.svelte";
     import Products from "./products/+page.svelte";
-
     import Services from "./services/+page.svelte";
     import Team from "./team/+page.svelte";
 
@@ -41,7 +41,7 @@
     <Home />
     <Accross />
     <Farming />
-    <!--<Client />-->
+
     <!--<Services />-->
     <!--<GeoMap /><Features />
     <Products /> <Team />-->

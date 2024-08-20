@@ -146,17 +146,58 @@
                                 href="/our-work/geomapping">Geomapping</NavLink
                             ></DropdownItem
                         >
-                        <DropdownItem>Profiling</DropdownItem>
+                        <DropdownItem
+                            ><NavLink
+                                class="navlinkcs"
+                                href="/our-work/profiling">Profiling</NavLink
+                            ></DropdownItem
+                        >
                         <Dropdown nav inNavbar>
                             <DropdownToggle nav caret>Farming</DropdownToggle>
                             <DropdownMenu end style={{ left: "50%" }}>
-                                <DropdownItem>Planting</DropdownItem>
-                                <DropdownItem>Monitoring</DropdownItem>
+                                <DropdownItem
+                                    ><NavLink
+                                        class="navlinkcs"
+                                        href="/our-work/farming/planting"
+                                        >Planting</NavLink
+                                    ></DropdownItem
+                                >
+                                <DropdownItem
+                                    ><NavLink
+                                        class="navlinkcs"
+                                        href="/our-work/farming/monitoring"
+                                        >Monitoring</NavLink
+                                    ></DropdownItem
+                                >
 
-                                <DropdownItem>Harvesting</DropdownItem>
-                                <DropdownItem>Value-Adding</DropdownItem>
-                                <DropdownItem>Marketing</DropdownItem>
-                                <DropdownItem>Insurance</DropdownItem>
+                                <DropdownItem
+                                    ><NavLink
+                                        class="navlinkcs"
+                                        href="/our-work/farming/harvesting"
+                                        >Harvesting</NavLink
+                                    ></DropdownItem
+                                >
+                                <DropdownItem
+                                    ><NavLink
+                                        class="navlinkcs"
+                                        href="/our-work/farming/value-adding"
+                                        >Value-Adding</NavLink
+                                    ></DropdownItem
+                                >
+                                <DropdownItem
+                                    ><NavLink
+                                        class="navlinkcs"
+                                        href="/our-work/farming/marketing"
+                                        >Marketing</NavLink
+                                    ></DropdownItem
+                                >
+                                <DropdownItem
+                                    ><NavLink
+                                        class="navlinkcs"
+                                        href="/our-work/farming/insurance"
+                                        >Insurance</NavLink
+                                    ></DropdownItem
+                                >
                             </DropdownMenu>
                         </Dropdown>
                     </DropdownMenu>
@@ -164,22 +205,50 @@
                 <Dropdown nav inNavbar>
                     <DropdownToggle nav caret>OUR PARTNERS</DropdownToggle>
                     <DropdownMenu end>
-                        <DropdownItem>Sorsogon State University</DropdownItem>
-                        <DropdownItem>DOST-PCAARRD AABH</DropdownItem>
-                        <DropdownItem>BFAR-NSTDC</DropdownItem>
-                        <DropdownItem>PCIC</DropdownItem>
-                        <DropdownItem>Seoul National University</DropdownItem>
+                        <DropdownItem>
+                            <NavLink
+                                class="navlinkcs"
+                                href="https://sorsu.edu.ph/"
+                                target="_blank"
+                                >Sorsogon State University</NavLink
+                            ></DropdownItem
+                        >
+                        <DropdownItem>
+                            <NavLink
+                                class="navlinkcs"
+                                href="https://www.pcaarrd.dost.gov.ph/"
+                                target="_blank">DOST-PCAARRD AABH</NavLink
+                            ></DropdownItem
+                        >
+                        <DropdownItem>
+                            <NavLink
+                                class="navlinkcs"
+                                href="https://nstdc.bfar.da.gov.ph/"
+                                target="_blank">BFAR-NSTDC</NavLink
+                            ></DropdownItem
+                        >
+                        <DropdownItem>
+                            <NavLink
+                                class="navlinkcs"
+                                href="https://pcic.gov.ph/"
+                                target="_blank">PCIC</NavLink
+                            ></DropdownItem
+                        >
+                        <DropdownItem>
+                            <NavLink
+                                class="navlinkcs"
+                                href="https://en.snu.ac.kr/"
+                                target="_blank"
+                                >Seoul National University</NavLink
+                            ></DropdownItem
+                        >
                     </DropdownMenu>
                 </Dropdown>
                 <NavItem>
-                    <NavLink href="https://github.com/sveltestrap/sveltestrap"
-                        >PUBLICATION</NavLink
-                    >
+                    <NavLink href="/publication">PUBLICATION</NavLink>
                 </NavItem>
                 <NavItem>
-                    <NavLink href="https://github.com/sveltestrap/sveltestrap"
-                        >CONTACT US</NavLink
-                    >
+                    <NavLink href="contact-us">CONTACT US</NavLink>
                 </NavItem>
             </Nav>
         </Collapse>

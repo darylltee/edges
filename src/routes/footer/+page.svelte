@@ -7,8 +7,8 @@
     import edgeslogoonly from "../assets/edgeslogoonly.png";
     import nstdc from "../assets/nstdc.webp";
     import pcic from "../assets/pcic.webp";
+    import veritas from "../assets/snu.png";
     import sorsu from "../assets/ssu.webp";
-    import veritas from "../assets/veritas.png";
 </script>
 
 <footer class="custom-footer bg-light py-5 position-relative">

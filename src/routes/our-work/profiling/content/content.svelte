@@ -1,9 +1,10 @@
 <script>
   import Link from "svelte-link";
   import { Carousel, CarouselItem, Col, Container, Row } from "sveltestrap";
+  import CustomSlider from "../../../../Components/Common/CustomSlider.svelte";
   import FullImage from "../../../../Components/Common/FullImage.svelte";
+  import cover from "../../../assets/HowWeDoIt/cover.jpg";
   import img1 from "../../../assets/implication-img1.png";
-  import imageContent from "../../../assets/implicationscover.jpg";
   let activeIndex = 0;
 </script>
 
@@ -16,42 +17,58 @@
     style="max-width:100% !important;"
   >
     <Col lg={12} class="col-sm">
-      <FullImage text="IMPLICATIONS" file={imageContent} />
+      <FullImage text="Profiling" file={cover} />
     </Col>
     <Col lg={12}>
-      <Container style="max-width:80%;">
-        <Row class="text-center gy-4" noGutters>
+      <Container>
+        <Row class="text-center gy-4" noGutters style="max-width:100%;">
           <Col lg={12} md={12} class="col-sm">
-            <h1 class="text-center text">
-              Identification and Application of Interventions
-            </h1>
+            <h4 class="text-center text">
+              We have surveyed 53 voluntary seaweed farmers from the Carayat
+              Seaweed Farmers Association, Rural Improvement Club, and Caricaran
+              Self-Help Group using Key Informant Interviews and Focus Group
+              Discussions.
+            </h4>
           </Col>
-          <Col lg={4} style="padding:0 20px;">
-            <img src={img1} height="450px" alt="icon" />
+          <Col lg={12} md={12} class="col-sm">
+            <h4 class="text-center text">
+              The research focused on farming techniques, production, drying,
+              marketing trends, and product pricing, as well as demographic
+              profiles and income sources.
+            </h4>
           </Col>
-          <Col lg={8} class="text-start align-middle">
-            <p>
-              <b class="fw-bolder">Geo-maps of Seaweed Farm Sites:</b> Geo-maps allow
-              assessment of area vulnerability based on exposure to climate change,
-              pests and diseases, poor selection of strains, and other practices.
-            </p>
-            <p>
-              <b class="fw-bolder">Value chain:</b> The delineation and updating
-              of the value chain for the seaweed industry in Sorsogon will help identify
-              points where products (or services) may be inefficiently passed on
-              or lose the opportunity to maximize profitability.
-            </p>
-            <p>
-              <b class="fw-bolder">Market and database:</b> Increased development
-              of enterprises through market linkage and the development of the farmer
-              database.
-            </p>
-
-            <p>
-              <b class="fw-bolder">Policy brief:</b> The creation of a policy brief
-              will help formulate recommendations to revive the seaweed industry
-              in Sorsogon.
-            </p>
+        </Row>
+        <Row class="justify-content-center">
+          <Col lg={12} class="text-start align-middle">
+            <CustomSlider
+              slidesPerView={3}
+              slides={[
+                {
+                  src: null,
+                  title: "38 OUT OF 53 SEAWEED FARMERS ARE MALE",
+                  text: "                                    ",
+                },
+                {
+                  src: null,
+                  title: "MAJORITY ARE REPORTEDLY MARRIED",
+                  text: "",
+                },
+                {
+                  src: null,
+                  title: "MAJORITY ARE ELEMENTARY GRADUATES",
+                  text: "",
+                },
+                {
+                  src: null,
+                  title: "ALL ARE ROMAN CATHOLIC",
+                },
+                {
+                  src: null,
+                  title: "MOST OF THEM ARE 51-60 YEARS OLD",
+                  text: "",
+                },
+              ]}
+            />
           </Col>
         </Row>
       </Container>

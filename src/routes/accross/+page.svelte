@@ -9,7 +9,10 @@
         <Row class="align-items-center gy-4">
             <Col class="col-sm">
                 <div>
-                    <h4 class=" mb-0 fw-semibold text-center">
+                    <h4
+                        class=" mb-0 text-center"
+                        style="color:rgb(152, 0, 0,0.7)"
+                    >
                         EDGES is a DOST-PCAARRD-funded project that aims to
                         support the growth and development of seaweed-based
                         enterprises in Sorsogon. This project proposes a

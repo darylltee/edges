@@ -10,8 +10,12 @@
 	*/
 
   import L from "leaflet";
+  import bagacayCover from "../routes/assets/OurWork/Geomapping/Bagacay_Gubat.jpg";
+  import carayatCover from "../routes/assets/OurWork/Geomapping/Carayat_Map.jpg";
+  import caricaranCover from "../routes/assets/OurWork/Geomapping/Caricaran, Bacon, Sorsogon.jpg";
   import MapToolbar from "./MapToolbar.svelte";
   import MarkerPopup from "./MarkerPopup.svelte";
+
   import * as markerIcons from "./markers.js";
   let map;
 
@@ -36,6 +40,8 @@ Ms. Shirley Bolaños.`,
           "Seaweed source: BFAR-NSTDC, LGU Bacon, Bogña Self Help Group",
           "Insurance: PCIC",
         ],
+        cover: caricaranCover,
+        src: "/our-work/geomapping/items/caricaran",
       },
     ],
     [
@@ -59,6 +65,8 @@ association was organized on November 8, 2010 and was registered in DOLE on May 
           "Seaweed source: BFAR-NSTDC, LGU Prieto Diaz, Co-member of association",
           "Insurance: PCIC",
         ],
+        cover: carayatCover,
+        src: "/our-work/geomapping/items/carayat",
       },
     ],
     [
@@ -80,6 +88,8 @@ with the Philippine Rural Development Project (PRDP).`,
           "Seaweed source: BFAR-NSTDC, Carayat Farmers Seaweed Association, Rural Improvement Club",
           "Insurance: PCIC",
         ],
+        cover: bagacayCover,
+        src: "/our-work/geomapping/items/bagacay",
       },
     ],
   ];

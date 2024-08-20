@@ -19,17 +19,17 @@
       <FullImage text="IMPLICATIONS" file={imageContent} />
     </Col>
     <Col lg={12}>
-      <Container style="max-width:80%;">
+      <Container style="max-width:60%;">
         <Row class="text-center gy-4" noGutters>
           <Col lg={12} md={12} class="col-sm">
             <h1 class="text-center text">
               Identification and Application of Interventions
             </h1>
           </Col>
-          <Col lg={4} style="padding:0 20px;">
+          <Col lg={6} md={6} style="padding:0 20px;">
             <img src={img1} height="450px" alt="icon" />
           </Col>
-          <Col lg={8} class="text-start align-middle">
+          <Col lg={6} md={9} class="text-start align-middle ">
             <p>
               <b class="fw-bolder">Geo-maps of Seaweed Farm Sites:</b> Geo-maps allow
               assessment of area vulnerability based on exposure to climate change,

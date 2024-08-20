@@ -3,6 +3,7 @@
   import { Carousel, CarouselItem, Col, Container, Row } from "sveltestrap";
   import FullImage from "../../../../Components/Common/FullImage.svelte";
   import imageContent from "../../../assets/geomapping-cover.jpg";
+  import cover from "../../../assets/OurWork/Geomapping/cover.jpg";
   import Geomap from "../../../geomap/+page.svelte";
   let activeIndex = 0;
 </script>
@@ -16,7 +17,7 @@
     style="max-width:100% !important;"
   >
     <Col lg={12} class="col-sm">
-      <FullImage text="Geo-mapping" file={imageContent} />
+      <FullImage text="Geo-mapping" file={cover} />
     </Col>
     <Col lg={12}>
       <Container style="max-width:80%;">
